@@ -1,0 +1,2 @@
+I2C entre arduino et raspberry :
+https://roboticsbackend.com/raspberry-pi-master-arduino-slave-i2c-communication-with-wiringpi/
