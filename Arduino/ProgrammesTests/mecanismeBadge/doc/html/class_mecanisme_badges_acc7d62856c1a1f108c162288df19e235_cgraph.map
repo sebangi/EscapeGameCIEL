@@ -1,0 +1,7 @@
+<map id="MecanismeBadges::gererLecteur" name="MecanismeBadges::gererLecteur">
+<area shape="rect" id="node1" title="Gestion d&#39;une lecture et mise à jour des leds." alt="" coords="5,31,219,56"/>
+<area shape="rect" id="node2" href="$class_mecanisme.html#a21335950943575de47861441cfab8b97" title="Méthode appelée par le loop pour tous les mécanismes." alt="" coords="267,5,429,31"/>
+<area shape="rect" id="node3" href="$class_m_f_r_c522_daisy.html#a2b046338f2b1a05475e472afe5d0a7f5" title="Lecture d&#39;un badge." alt="" coords="275,55,421,80"/>
+<area shape="rect" id="node4" href="$class_m_f_r_c522_daisy.html#ae422c1e9229e26587a6c9016384857d1" title="Affiche en hexadécimal un tableau." alt="" coords="492,29,661,55"/>
+<area shape="rect" id="node5" href="$class_m_f_r_c522_daisy.html#a35b01321ef868dd154a54c7705e367c8" title="Sélectionne un lecteur." alt="" coords="477,79,676,104"/>
+</map>

@@ -1,0 +1,6 @@
+warning: the dot tool could not be found as 'C:/Program Files (x86)/Graphviz2.38/bin/dot.exe'
+H:/EscapeGameCIEL/Arduino/ProgrammesTests/mecanismeBadge/MecanismeBadges.cpp:2: warning: the name 'mecanisme_badges.cpp' supplied as the argument in the \file statement is not an input file
+H:/EscapeGameCIEL/Arduino/ProgrammesTests/mecanismeBadge/MecanismeBadges.h:5: warning: the name 'mecanisme_badges.h' supplied as the argument in the \file statement is not an input file
+H:/EscapeGameCIEL/Arduino/ProgrammesTests/mecanismeBadge/Mecanisme.cpp:91: warning: argument 'valeur' of command @param is not found in the argument list of Mecanisme::deverrouiller(int pin)
+H:/EscapeGameCIEL/Arduino/ProgrammesTests/mecanismeBadge/Mecanisme.cpp:68: warning: The following parameter of Mecanisme::ecrireSortie(int pin, int valeur) is not documented:
+  parameter 'valeur'

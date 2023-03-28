@@ -1,0 +1,8 @@
+<map id="MecanismeBadges::loopMecanisme" name="MecanismeBadges::loopMecanisme">
+<area shape="rect" id="node1" title="Méthode appelée par le loop de base sur Arduino." alt="" coords="5,31,237,56"/>
+<area shape="rect" id="node2" href="$class_mecanisme_badges.html#acc7d62856c1a1f108c162288df19e235" title="Gestion d&#39;une lecture et mise à jour des leds." alt="" coords="285,31,499,56"/>
+<area shape="rect" id="node3" href="$class_mecanisme.html#a21335950943575de47861441cfab8b97" title="Méthode appelée par le loop pour tous les mécanismes." alt="" coords="547,5,709,31"/>
+<area shape="rect" id="node4" href="$class_m_f_r_c522_daisy.html#a2b046338f2b1a05475e472afe5d0a7f5" title="Lecture d&#39;un badge." alt="" coords="555,55,701,80"/>
+<area shape="rect" id="node5" href="$class_m_f_r_c522_daisy.html#ae422c1e9229e26587a6c9016384857d1" title="Affiche en hexadécimal un tableau." alt="" coords="772,29,941,55"/>
+<area shape="rect" id="node6" href="$class_m_f_r_c522_daisy.html#a35b01321ef868dd154a54c7705e367c8" title="Sélectionne un lecteur." alt="" coords="757,79,956,104"/>
+</map>
