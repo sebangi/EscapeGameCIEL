@@ -1,0 +1,4 @@
+<map id="MFRC522Daisy::ajoutLecteur" name="MFRC522Daisy::ajoutLecteur">
+<area shape="rect" id="node1" title="Ajout d&#39;un lecteur." alt="" coords="180,5,372,31"/>
+<area shape="rect" id="node2" href="$class_application.html#a31dd3f7f8fba9fc2fd32ceaff6ce36e7" title="Méthode appelée par le setup de base sur Arduino." alt="" coords="5,5,132,31"/>
+</map>

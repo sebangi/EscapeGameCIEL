@@ -1,0 +1,5 @@
+<map id="monMFRC522" name="monMFRC522">
+<area shape="rect" id="node1" title="Interface de l&#39;ensemble des lecteurs MFRC522 en mode Daisy." alt="" coords="180,31,285,56"/>
+<area shape="rect" id="node2" href="$class_application.html#a6d8650e05b79e76e688a38fb9b92bbb9" title="Méthode appelée par le loop de base sur Arduino." alt="" coords="9,5,128,31"/>
+<area shape="rect" id="node3" href="$class_application.html#a31dd3f7f8fba9fc2fd32ceaff6ce36e7" title="Méthode appelée par le setup de base sur Arduino." alt="" coords="5,55,132,80"/>
+</map>

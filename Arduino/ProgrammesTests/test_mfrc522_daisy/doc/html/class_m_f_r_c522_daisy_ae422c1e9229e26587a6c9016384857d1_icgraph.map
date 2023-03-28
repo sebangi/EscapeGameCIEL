@@ -1,0 +1,5 @@
+<map id="MFRC522Daisy::printHex" name="MFRC522Daisy::printHex">
+<area shape="rect" id="node1" title="Affiche en hexadécimal un tableau." alt="" coords="367,5,536,31"/>
+<area shape="rect" id="node2" href="$class_m_f_r_c522_daisy.html#a2b046338f2b1a05475e472afe5d0a7f5" title="Lecture d&#39;un badge." alt="" coords="172,5,319,31"/>
+<area shape="rect" id="node3" href="$class_application.html#a6d8650e05b79e76e688a38fb9b92bbb9" title="Méthode appelée par le loop de base sur Arduino." alt="" coords="5,5,124,31"/>
+</map>

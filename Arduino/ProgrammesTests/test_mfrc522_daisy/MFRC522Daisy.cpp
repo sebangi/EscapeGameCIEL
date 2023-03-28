@@ -1,4 +1,4 @@
-/*
+/**
  * \file MFRC522Daisy.cpp
  */
  
@@ -13,7 +13,7 @@ MFRC522Daisy::MFRC522Daisy( int nb_lecteurs )
   m_nb_lecteurs = nb_lecteurs;
 }
 
-/*
+/**
  * \brief Ajout d'un lecteur.
  * \param numLecteur Le numéro du lecteur.
  * \param rst_pin Le pin reset utilisé pour ce lecteur.
@@ -24,9 +24,10 @@ void MFRC522Daisy::ajoutLecteur(int numLecteur, int rst_pin)
   m_rstPinLecteurs[numLecteur - 1] = rst_pin;
 }
 
-/*
+/**
  * \brief Lecture d'un badge.
  * \param numLecteur Numero du lecteur sur lequel lire.
+ * \return Retourne \b true si un badge est correctement détecté, \b false sinon
  */
 bool MFRC522Daisy::read( int numLecteur )
 {
@@ -49,7 +50,7 @@ bool MFRC522Daisy::read( int numLecteur )
   return false;
 }
 
-/*
+/**
  * \brief Sélectionne un lecteur.
  * \param numLecteur Le numero de lecteur à sélectionner.
  */
@@ -63,7 +64,7 @@ void MFRC522Daisy::selectLecteur(int numLecteur)
   m_mfrc522.PCD_Init(SS_PIN, RST_PIN);
 }
 
-/*
+/**
  * \brief Affiche en hexadécimal un tableau.
  * \param buffer Le tableau de Byte à écrire.
  * \param bufferSize La taille du tableau.

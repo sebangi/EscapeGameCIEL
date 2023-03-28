@@ -1,0 +1,4 @@
+<map id="MFRC522Daisy::read" name="MFRC522Daisy::read">
+<area shape="rect" id="node1" title="Lecture d&#39;un badge." alt="" coords="172,5,319,31"/>
+<area shape="rect" id="node2" href="$class_application.html#a6d8650e05b79e76e688a38fb9b92bbb9" title="Méthode appelée par le loop de base sur Arduino." alt="" coords="5,5,124,31"/>
+</map>
