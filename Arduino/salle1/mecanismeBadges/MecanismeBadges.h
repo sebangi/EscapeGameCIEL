@@ -22,7 +22,7 @@ class MecanismeBadges : public Mecanisme
   private:
     void setupMecanisme();
     void loopMecanisme();
-    void gererLecteur( int numLecteur, int pin_green, int pin_red ) ;
+    bool gererLecteur( int numLecteur, int pin_green, int pin_red ) ;
 
   private:
     /** \brief Interface de l'ensemble des lecteurs MFRC522 en mode Daisy. */
