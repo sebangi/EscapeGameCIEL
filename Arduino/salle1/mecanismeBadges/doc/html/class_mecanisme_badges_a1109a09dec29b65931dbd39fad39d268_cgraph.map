@@ -1,5 +1,4 @@
 <map id="MecanismeBadges::setupMecanisme" name="MecanismeBadges::setupMecanisme">
-<area shape="rect" id="node1" title="Méthode appelée par le setup de base sur Arduino." alt="" coords="5,31,245,56"/>
-<area shape="rect" id="node2" href="$class_m_f_r_c522_daisy.html#a672cc78d1ea0457b622662dd0a4cede7" title="Ajout d&#39;un lecteur." alt="" coords="293,5,485,31"/>
-<area shape="rect" id="node3" href="$class_mecanisme.html#a21335950943575de47861441cfab8b97" title="Méthode appelée par le loop pour tous les mécanismes." alt="" coords="308,55,471,80"/>
+<area shape="rect" id="node2" href="$class_m_f_r_c522_daisy.html#aa1febdf5908d5d9a6ff59abc647f767f" title="Ajout d&#39;un lecteur. " alt="" coords="293,5,485,32"/>
+<area shape="rect" id="node3" href="$class_mecanisme.html#a21335950943575de47861441cfab8b97" title="Méthode appelée par le loop pour tous les mécanismes. " alt="" coords="308,56,471,83"/>
 </map>

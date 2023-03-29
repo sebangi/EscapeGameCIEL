@@ -2,7 +2,7 @@
 #define __MECANISME_BADGES__
 
 /**
-   \file mecanisme_badges.h
+   \file MecanismeBadges.h
 */
 
 #include "mecanisme.h"

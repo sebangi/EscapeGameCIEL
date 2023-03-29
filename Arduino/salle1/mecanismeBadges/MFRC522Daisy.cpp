@@ -17,6 +17,7 @@ MFRC522Daisy::MFRC522Daisy( int nb_lecteurs )
  * \brief Ajout d'un lecteur.
  * \param numLecteur Le numéro du lecteur.
  * \param rst_pin Le pin reset utilisé pour ce lecteur.
+ * \param uid L'uid du badge à reconnaitre.
  */
 void MFRC522Daisy::ajoutLecteur(int numLecteur, int rst_pin, byte uid[4])
 {

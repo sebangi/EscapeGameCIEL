@@ -1,4 +1,3 @@
 <map id="Mecanisme" name="Mecanisme">
-<area shape="rect" id="node1" title="Déclaration de la classe Mecanisme décrivant le fonctionnement commun à tous les mécanismes." alt="" coords="27,5,117,31"/>
-<area shape="rect" id="node2" href="$class_mecanisme_badges.html" title="Déclaration de la classe pour gérer le mécanisme des badges RFID." alt="" coords="5,79,139,104"/>
+<area shape="rect" id="node2" href="$class_mecanisme_badges.html" title="Déclaration de la classe pour gérer le mécanisme des badges RFID. " alt="" coords="5,80,139,107"/>
 </map>

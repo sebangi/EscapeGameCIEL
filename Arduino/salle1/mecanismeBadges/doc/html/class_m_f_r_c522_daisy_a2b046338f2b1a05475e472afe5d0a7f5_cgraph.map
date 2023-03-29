@@ -1,5 +1,5 @@
 <map id="MFRC522Daisy::read" name="MFRC522Daisy::read">
-<area shape="rect" id="node1" title="Lecture d&#39;un badge." alt="" coords="5,31,152,56"/>
-<area shape="rect" id="node2" href="$class_m_f_r_c522_daisy.html#ae422c1e9229e26587a6c9016384857d1" title="Affiche en hexadécimal un tableau." alt="" coords="215,5,384,31"/>
-<area shape="rect" id="node3" href="$class_m_f_r_c522_daisy.html#a35b01321ef868dd154a54c7705e367c8" title="Sélectionne un lecteur." alt="" coords="200,55,399,80"/>
+<area shape="rect" id="node2" href="$class_m_f_r_c522_daisy.html#a35b01321ef868dd154a54c7705e367c8" title="Sélectionne un lecteur. " alt="" coords="200,5,399,32"/>
+<area shape="rect" id="node3" href="$class_m_f_r_c522_daisy.html#ae422c1e9229e26587a6c9016384857d1" title="Affiche en hexadécimal un tableau. " alt="" coords="215,56,384,83"/>
+<area shape="rect" id="node4" href="$class_m_f_r_c522_daisy.html#a5f5c5a9941901b9446ccdccf45b76a44" title="Test si l&#39;uid du badge est reconnu. " alt="" coords="221,107,377,133"/>
 </map>

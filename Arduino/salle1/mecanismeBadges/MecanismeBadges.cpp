@@ -1,8 +1,8 @@
 /**
- * \file mecanisme_badges.cpp
+ * \file MecanismeBadges.cpp
  */
 
-#include "mecanismeBadges.h"
+#include "MecanismeBadges.h"
 #include <HardwareSerial.h>
 
 /**

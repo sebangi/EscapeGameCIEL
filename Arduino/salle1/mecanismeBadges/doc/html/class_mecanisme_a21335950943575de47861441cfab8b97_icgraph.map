@@ -1,6 +1,5 @@
 <map id="Mecanisme::ecrireSortie" name="Mecanisme::ecrireSortie">
-<area shape="rect" id="node1" title="Méthode appelée par le loop pour tous les mécanismes." alt="" coords="573,31,736,56"/>
-<area shape="rect" id="node2" href="$class_mecanisme_badges.html#acc7d62856c1a1f108c162288df19e235" title="Gestion d&#39;une lecture et mise à jour des leds." alt="" coords="299,5,512,31"/>
-<area shape="rect" id="node4" href="$class_mecanisme_badges.html#a1109a09dec29b65931dbd39fad39d268" title="Méthode appelée par le setup de base sur Arduino." alt="" coords="285,55,525,80"/>
-<area shape="rect" id="node3" href="$class_mecanisme_badges.html#a83e03e766fd0ce21349a58c16271afa9" title="Méthode appelée par le loop de base sur Arduino." alt="" coords="5,5,237,31"/>
+<area shape="rect" id="node2" href="$class_mecanisme_badges.html#a1109a09dec29b65931dbd39fad39d268" title="Méthode appelée par le setup de base sur Arduino. " alt="" coords="216,5,456,32"/>
+<area shape="rect" id="node3" href="$class_mecanisme_badges.html#afa31a83411ea0e23043fb0081f920e64" title="Gestion d&#39;une lecture et mise à jour des leds. " alt="" coords="229,56,443,83"/>
+<area shape="rect" id="node4" href="$class_mecanisme_badges.html#a83e03e766fd0ce21349a58c16271afa9" title="Méthode appelée par le loop de base sur Arduino. " alt="" coords="504,56,736,83"/>
 </map>

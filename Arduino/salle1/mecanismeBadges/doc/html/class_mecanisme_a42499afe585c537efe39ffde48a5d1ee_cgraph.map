@@ -1,6 +1,5 @@
 <map id="Mecanisme::loopGeneral" name="Mecanisme::loopGeneral">
-<area shape="rect" id="node1" title="Méthode appelée par le loop pour tous les mécanismes." alt="" coords="5,31,172,56"/>
-<area shape="rect" id="node2" href="$class_mecanisme.html#aa69c6639c0825649c257f66d69d0a2e9" title=" " alt="" coords="220,31,380,56"/>
-<area shape="rect" id="node3" href="$class_mecanisme.html#a5d6a43d18c356c42bc0c1fb34dfef993" title="Méthode appelée par le loop pour tous les mécanismes." alt="" coords="428,5,593,31"/>
-<area shape="rect" id="node4" href="$class_mecanisme.html#a07c8e5a4cc3bd4daf90011f7a940e030" title="Méthode appelée par le loop pour tous les mécanismes." alt="" coords="435,55,586,80"/>
+<area shape="rect" id="node2" href="$class_mecanisme.html#aa69c6639c0825649c257f66d69d0a2e9" title="Mecanisme::serialEvent" alt="" coords="220,31,380,57"/>
+<area shape="rect" id="node3" href="$class_mecanisme.html#a07c8e5a4cc3bd4daf90011f7a940e030" title="Méthode appelée par le loop pour tous les mécanismes. " alt="" coords="435,5,586,32"/>
+<area shape="rect" id="node4" href="$class_mecanisme.html#a5d6a43d18c356c42bc0c1fb34dfef993" title="Méthode appelée par le loop pour tous les mécanismes. " alt="" coords="428,56,593,83"/>
 </map>

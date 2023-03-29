@@ -5,13 +5,16 @@
 #include "mecanisme.h"
 #include <HardwareSerial.h>
 #include <Arduino.h>
+#include <Wire.h>
+
+byte Mecanisme::m_data_to_echo = 0;
 
 /**
  * \brief Constructeur de la classe Mecanisme.
  * \param id L'identifiant du mécanisme dans la salle
  */
 Mecanisme::Mecanisme( int id )
-  : m_id( id )
+  : m_id( id ), m_slaveAddress( id + 8 )
 {
   
 }
@@ -49,6 +52,8 @@ void Mecanisme::setupGeneral()
     m_valeurs_voulues[ i ] = LOW;
   }
 
+  setupI2C();
+
   Serial.println( "Mecanisme::setup()" );
   Serial.print( "Mecanisme ");
   Serial.print( m_id );  
@@ -66,6 +71,7 @@ void Mecanisme::loopGeneral()
 /**
  * \brief Méthode appelée par le \b loop pour tous les mécanismes.
  * \param pin Le pin à considérer.
+ * \param valeur La valeur à écrire.
  */
 void Mecanisme::ecrireSortie( int pin, int valeur )
 {
@@ -89,7 +95,6 @@ void Mecanisme::verrouiller( int pin, int valeur )
 /**
  * \brief Méthode appelée par le \b loop pour tous les mécanismes.
  * \param pin Le pin à considérer.
- * \param valeur La valeur à donner.
  */
 void Mecanisme::deverrouiller( int pin )
 {
@@ -118,3 +123,22 @@ void Mecanisme::serialEvent()
     };
   }
 }
+
+void Mecanisme::setupI2C() 
+{
+  Wire.begin(m_slaveAddress);
+  Wire.onReceive(receiveData);
+  Wire.onRequest(sendData);
+}
+
+void Mecanisme::receiveData(int bytecount)
+{
+  for (int i = 0; i < bytecount; i++) {
+    m_data_to_echo = Wire.read();
+  }
+}
+void Mecanisme::sendData()
+{
+  Wire.write(m_data_to_echo);
+}
+

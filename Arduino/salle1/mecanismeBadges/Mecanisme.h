@@ -7,6 +7,8 @@
    \file mecanisme.h
 */
 
+#include <arduino.h>
+
 /**
 *   \class Mecanisme
 *   \author Sebastien Angibaud
@@ -29,6 +31,9 @@ class Mecanisme
     void setupGeneral();
     void loopGeneral();
     void serialEvent();
+    void setupI2C();
+    static void receiveData(int bytecount);
+    static void sendData();
 
     virtual void setupMecanisme() = 0;  
     virtual void loopMecanisme() = 0;  
@@ -42,6 +47,12 @@ class Mecanisme
 
     /** \brief Le tableau indiquant les valeurs souhaitées dans le mode normal. */
     int m_valeurs_voulues[NB_PIN]; 
+
+    /** \brief L'adresse du mécanisme esclave sur le bus I2C. */
+    byte m_slaveAddress;
+
+    /** \brief data_to_echo. */
+    static byte m_data_to_echo;
 };
 
 #endif // __MECANISME__

@@ -1,9 +1,9 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=11"/>
-<meta name="generator" content="Doxygen 1.9.6"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Mecanisme_badges:  Fichier source de MFRC522Daisy.h</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
@@ -19,8 +19,8 @@
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr id="projectrow">
-  <td id="projectalign">
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Mecanisme_badges
    </div>
   </td>
@@ -29,21 +29,17 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Généré par Doxygen 1.9.6 -->
+<!-- Généré par Doxygen 1.8.13 -->
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-var searchBox = new SearchBox("searchBox", "search/",'.html');
-/* @license-end */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 </script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(function() {
   initMenu('',true,false,'search.php','Recherche');
   $(document).ready(function() { init_search(); });
 });
-/* @license-end */
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
@@ -56,69 +52,34 @@ $(function() {
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
-<div id="MSearchResults">
-<div class="SRPage">
-<div id="SRIndex">
-<div id="SRResults"></div>
-<div class="SRStatus" id="Loading">Chargement...</div>
-<div class="SRStatus" id="Searching">Recherche...</div>
-<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
-</div>
-</div>
-</div>
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">MFRC522Daisy.h</div></div>
+  <div class="headertitle">
+<div class="title">MFRC522Daisy.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_m_f_r_c522_daisy_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef __MFRC522DAISY__</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define __MFRC522DAISY__</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;SPI.h&gt;</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;deprecated.h&gt;</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;MFRC522.h&gt;</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;MFRC522Extended.h&gt;</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;require_cpp11.h&gt;</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="_m_f_r_c522_daisy_8h.html#a12f7f5fb913d1332360ad4776f2cebe6">   14</a></span><span class="preprocessor">#define NB_LECTEURS_MAX 10</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="_m_f_r_c522_daisy_8h.html#a86fac98c9b4c98a3e50fc45440878391">   16</a></span><span class="preprocessor">#define SS_PIN 10</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="_m_f_r_c522_daisy_8h.html#a36932b0e869e0114f32e255f61306d6b">   17</a></span><span class="preprocessor">#define RST_PIN 9</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="class_m_f_r_c522_daisy.html">   32</a></span><span class="keyword">class </span><a class="code hl_class" href="class_m_f_r_c522_daisy.html">MFRC522Daisy</a></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>{</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <a class="code hl_class" href="class_m_f_r_c522_daisy.html">MFRC522Daisy</a>( <span class="keywordtype">int</span> nb_lecteurs );</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_m_f_r_c522_daisy.html#a672cc78d1ea0457b622662dd0a4cede7">ajoutLecteur</a>(<span class="keywordtype">int</span> numLecteur, <span class="keywordtype">int</span> rst_pin);</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_m_f_r_c522_daisy.html#a2b046338f2b1a05475e472afe5d0a7f5">read</a>( <span class="keywordtype">int</span> numLecteur );</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_m_f_r_c522_daisy.html#a35b01321ef868dd154a54c7705e367c8">selectLecteur</a>(<span class="keywordtype">int</span> numLecteur);</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_m_f_r_c522_daisy.html#ae422c1e9229e26587a6c9016384857d1">printHex</a>(<span class="keywordtype">byte</span> *buffer, <span class="keywordtype">byte</span> bufferSize);</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="class_m_f_r_c522_daisy.html#a38406a647461463da7bba37e9399a2f4">   45</a></span>    MFRC522Extended <a class="code hl_variable" href="class_m_f_r_c522_daisy.html#a38406a647461463da7bba37e9399a2f4">m_mfrc522</a>; </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="class_m_f_r_c522_daisy.html#a925ea34dbb00a8c04ebae654443740a2">   48</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_m_f_r_c522_daisy.html#a925ea34dbb00a8c04ebae654443740a2">m_rstPinLecteurs</a>[ <a class="code hl_define" href="_m_f_r_c522_daisy_8h.html#a12f7f5fb913d1332360ad4776f2cebe6">NB_LECTEURS_MAX</a> ]; </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="class_m_f_r_c522_daisy.html#a7f217c01e30c19ff65581c8a6951d9d4">   51</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_m_f_r_c522_daisy.html#a7f217c01e30c19ff65581c8a6951d9d4">m_nb_lecteurs</a>;  </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>};</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="preprocessor">#endif </span><span class="comment">// __MFRC522DAISY__</span></div>
-<div class="ttc" id="a_m_f_r_c522_daisy_8h_html_a12f7f5fb913d1332360ad4776f2cebe6"><div class="ttname"><a href="_m_f_r_c522_daisy_8h.html#a12f7f5fb913d1332360ad4776f2cebe6">NB_LECTEURS_MAX</a></div><div class="ttdeci">#define NB_LECTEURS_MAX</div><div class="ttdef"><b>Definition:</b> <a href="_m_f_r_c522_daisy_8h_source.html#l00014">MFRC522Daisy.h:14</a></div></div>
-<div class="ttc" id="aclass_m_f_r_c522_daisy_html"><div class="ttname"><a href="class_m_f_r_c522_daisy.html">MFRC522Daisy</a></div><div class="ttdoc">Déclaration de la classe MFRC522Daisy permettant d'utliser plusieursz lecteur MFRC522 en chainage de ...</div><div class="ttdef"><b>Definition:</b> <a href="_m_f_r_c522_daisy_8h_source.html#l00032">MFRC522Daisy.h:33</a></div></div>
-<div class="ttc" id="aclass_m_f_r_c522_daisy_html_a2b046338f2b1a05475e472afe5d0a7f5"><div class="ttname"><a href="class_m_f_r_c522_daisy.html#a2b046338f2b1a05475e472afe5d0a7f5">MFRC522Daisy::read</a></div><div class="ttdeci">bool read(int numLecteur)</div><div class="ttdoc">Lecture d'un badge.</div><div class="ttdef"><b>Definition:</b> <a href="_m_f_r_c522_daisy_8cpp_source.html#l00032">MFRC522Daisy.cpp:32</a></div></div>
-<div class="ttc" id="aclass_m_f_r_c522_daisy_html_a35b01321ef868dd154a54c7705e367c8"><div class="ttname"><a href="class_m_f_r_c522_daisy.html#a35b01321ef868dd154a54c7705e367c8">MFRC522Daisy::selectLecteur</a></div><div class="ttdeci">void selectLecteur(int numLecteur)</div><div class="ttdoc">Sélectionne un lecteur.</div><div class="ttdef"><b>Definition:</b> <a href="_m_f_r_c522_daisy_8cpp_source.html#l00057">MFRC522Daisy.cpp:57</a></div></div>
-<div class="ttc" id="aclass_m_f_r_c522_daisy_html_a38406a647461463da7bba37e9399a2f4"><div class="ttname"><a href="class_m_f_r_c522_daisy.html#a38406a647461463da7bba37e9399a2f4">MFRC522Daisy::m_mfrc522</a></div><div class="ttdeci">MFRC522Extended m_mfrc522</div><div class="ttdoc">L'interface du Lecteur.</div><div class="ttdef"><b>Definition:</b> <a href="_m_f_r_c522_daisy_8h_source.html#l00045">MFRC522Daisy.h:45</a></div></div>
-<div class="ttc" id="aclass_m_f_r_c522_daisy_html_a672cc78d1ea0457b622662dd0a4cede7"><div class="ttname"><a href="class_m_f_r_c522_daisy.html#a672cc78d1ea0457b622662dd0a4cede7">MFRC522Daisy::ajoutLecteur</a></div><div class="ttdeci">void ajoutLecteur(int numLecteur, int rst_pin)</div><div class="ttdoc">Ajout d'un lecteur.</div><div class="ttdef"><b>Definition:</b> <a href="_m_f_r_c522_daisy_8cpp_source.html#l00021">MFRC522Daisy.cpp:21</a></div></div>
-<div class="ttc" id="aclass_m_f_r_c522_daisy_html_a7f217c01e30c19ff65581c8a6951d9d4"><div class="ttname"><a href="class_m_f_r_c522_daisy.html#a7f217c01e30c19ff65581c8a6951d9d4">MFRC522Daisy::m_nb_lecteurs</a></div><div class="ttdeci">int m_nb_lecteurs</div><div class="ttdoc">Le nombre de lecteurs actuels.</div><div class="ttdef"><b>Definition:</b> <a href="_m_f_r_c522_daisy_8h_source.html#l00051">MFRC522Daisy.h:51</a></div></div>
-<div class="ttc" id="aclass_m_f_r_c522_daisy_html_a925ea34dbb00a8c04ebae654443740a2"><div class="ttname"><a href="class_m_f_r_c522_daisy.html#a925ea34dbb00a8c04ebae654443740a2">MFRC522Daisy::m_rstPinLecteurs</a></div><div class="ttdeci">int m_rstPinLecteurs[NB_LECTEURS_MAX]</div><div class="ttdoc">La liste des PIN RST de chaque lecteurs.</div><div class="ttdef"><b>Definition:</b> <a href="_m_f_r_c522_daisy_8h_source.html#l00048">MFRC522Daisy.h:48</a></div></div>
-<div class="ttc" id="aclass_m_f_r_c522_daisy_html_ae422c1e9229e26587a6c9016384857d1"><div class="ttname"><a href="class_m_f_r_c522_daisy.html#ae422c1e9229e26587a6c9016384857d1">MFRC522Daisy::printHex</a></div><div class="ttdeci">void printHex(byte *buffer, byte bufferSize)</div><div class="ttdoc">Affiche en hexadécimal un tableau.</div><div class="ttdef"><b>Definition:</b> <a href="_m_f_r_c522_daisy_8cpp_source.html#l00072">MFRC522Daisy.cpp:72</a></div></div>
+<a href="_m_f_r_c522_daisy_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef __MFRC522DAISY__</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define __MFRC522DAISY__</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;SPI.h&gt;</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;deprecated.h&gt;</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;MFRC522.h&gt;</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;MFRC522Extended.h&gt;</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;require_cpp11.h&gt;</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="_m_f_r_c522_daisy_8h.html#a12f7f5fb913d1332360ad4776f2cebe6">   14</a></span>&#160;<span class="preprocessor">#define NB_LECTEURS_MAX 10</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="_m_f_r_c522_daisy_8h.html#a86fac98c9b4c98a3e50fc45440878391">   16</a></span>&#160;<span class="preprocessor">#define SS_PIN 10</span></div><div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="_m_f_r_c522_daisy_8h.html#a36932b0e869e0114f32e255f61306d6b">   17</a></span>&#160;<span class="preprocessor">#define RST_PIN 9</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_m_f_r_c522_daisy.html">   32</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_m_f_r_c522_daisy.html">MFRC522Daisy</a></div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keyword">public</span>:</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="class_m_f_r_c522_daisy.html#aa561cfada794a89bf32d10fa6c2e9ab9">MFRC522Daisy</a>( <span class="keywordtype">int</span> nb_lecteurs );</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_m_f_r_c522_daisy.html#aa1febdf5908d5d9a6ff59abc647f767f">ajoutLecteur</a>(<span class="keywordtype">int</span> numLecteur, <span class="keywordtype">int</span> rst_pin, byte uid[4] );</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_m_f_r_c522_daisy.html#a2b046338f2b1a05475e472afe5d0a7f5">read</a>( <span class="keywordtype">int</span> numLecteur );</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keyword">private</span>:</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_m_f_r_c522_daisy.html#a35b01321ef868dd154a54c7705e367c8">selectLecteur</a>(<span class="keywordtype">int</span> numLecteur);</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_m_f_r_c522_daisy.html#ae422c1e9229e26587a6c9016384857d1">printHex</a>(byte *buffer, byte bufferSize);</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_m_f_r_c522_daisy.html#a5f5c5a9941901b9446ccdccf45b76a44">check</a>(<span class="keywordtype">int</span> numLecteur, byte uid[10]);</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keyword">private</span>:</div><div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="class_m_f_r_c522_daisy.html#a38406a647461463da7bba37e9399a2f4">   46</a></span>&#160;    MFRC522Extended <a class="code" href="class_m_f_r_c522_daisy.html#a38406a647461463da7bba37e9399a2f4">m_mfrc522</a>; </div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  </div><div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="class_m_f_r_c522_daisy.html#a925ea34dbb00a8c04ebae654443740a2">   49</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_m_f_r_c522_daisy.html#a925ea34dbb00a8c04ebae654443740a2">m_rstPinLecteurs</a>[ <a class="code" href="_m_f_r_c522_daisy_8h.html#a12f7f5fb913d1332360ad4776f2cebe6">NB_LECTEURS_MAX</a> ]; </div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div><div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="class_m_f_r_c522_daisy.html#a751c8740f07e598fe525dba93cd4e8cf">   52</a></span>&#160;    byte <a class="code" href="class_m_f_r_c522_daisy.html#a751c8740f07e598fe525dba93cd4e8cf">m_uid</a>[ <a class="code" href="_m_f_r_c522_daisy_8h.html#a12f7f5fb913d1332360ad4776f2cebe6">NB_LECTEURS_MAX</a> ][4];</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    </div><div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="class_m_f_r_c522_daisy.html#a7f217c01e30c19ff65581c8a6951d9d4">   55</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_m_f_r_c522_daisy.html#a7f217c01e30c19ff65581c8a6951d9d4">m_nb_lecteurs</a>;  </div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;};</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#endif // __MFRC522DAISY__</span></div><div class="ttc" id="class_m_f_r_c522_daisy_html_a35b01321ef868dd154a54c7705e367c8"><div class="ttname"><a href="class_m_f_r_c522_daisy.html#a35b01321ef868dd154a54c7705e367c8">MFRC522Daisy::selectLecteur</a></div><div class="ttdeci">void selectLecteur(int numLecteur)</div><div class="ttdoc">Sélectionne un lecteur. </div><div class="ttdef"><b>Definition:</b> <a href="_m_f_r_c522_daisy_8cpp_source.html#l00073">MFRC522Daisy.cpp:73</a></div></div>
+<div class="ttc" id="_m_f_r_c522_daisy_8h_html_a12f7f5fb913d1332360ad4776f2cebe6"><div class="ttname"><a href="_m_f_r_c522_daisy_8h.html#a12f7f5fb913d1332360ad4776f2cebe6">NB_LECTEURS_MAX</a></div><div class="ttdeci">#define NB_LECTEURS_MAX</div><div class="ttdef"><b>Definition:</b> <a href="_m_f_r_c522_daisy_8h_source.html#l00014">MFRC522Daisy.h:14</a></div></div>
+<div class="ttc" id="class_m_f_r_c522_daisy_html"><div class="ttname"><a href="class_m_f_r_c522_daisy.html">MFRC522Daisy</a></div><div class="ttdoc">Déclaration de la classe MFRC522Daisy permettant d&amp;#39;utliser plusieursz lecteur MFRC522 en chainage de ...</div><div class="ttdef"><b>Definition:</b> <a href="_m_f_r_c522_daisy_8h_source.html#l00032">MFRC522Daisy.h:32</a></div></div>
+<div class="ttc" id="class_m_f_r_c522_daisy_html_a38406a647461463da7bba37e9399a2f4"><div class="ttname"><a href="class_m_f_r_c522_daisy.html#a38406a647461463da7bba37e9399a2f4">MFRC522Daisy::m_mfrc522</a></div><div class="ttdeci">MFRC522Extended m_mfrc522</div><div class="ttdoc">L&amp;#39;interface du Lecteur. </div><div class="ttdef"><b>Definition:</b> <a href="_m_f_r_c522_daisy_8h_source.html#l00046">MFRC522Daisy.h:46</a></div></div>
+<div class="ttc" id="class_m_f_r_c522_daisy_html_aa1febdf5908d5d9a6ff59abc647f767f"><div class="ttname"><a href="class_m_f_r_c522_daisy.html#aa1febdf5908d5d9a6ff59abc647f767f">MFRC522Daisy::ajoutLecteur</a></div><div class="ttdeci">void ajoutLecteur(int numLecteur, int rst_pin, byte uid[4])</div><div class="ttdoc">Ajout d&amp;#39;un lecteur. </div><div class="ttdef"><b>Definition:</b> <a href="_m_f_r_c522_daisy_8cpp_source.html#l00022">MFRC522Daisy.cpp:22</a></div></div>
+<div class="ttc" id="class_m_f_r_c522_daisy_html_a7f217c01e30c19ff65581c8a6951d9d4"><div class="ttname"><a href="class_m_f_r_c522_daisy.html#a7f217c01e30c19ff65581c8a6951d9d4">MFRC522Daisy::m_nb_lecteurs</a></div><div class="ttdeci">int m_nb_lecteurs</div><div class="ttdoc">Le nombre de lecteurs actuels. </div><div class="ttdef"><b>Definition:</b> <a href="_m_f_r_c522_daisy_8h_source.html#l00055">MFRC522Daisy.h:55</a></div></div>
+<div class="ttc" id="class_m_f_r_c522_daisy_html_a5f5c5a9941901b9446ccdccf45b76a44"><div class="ttname"><a href="class_m_f_r_c522_daisy.html#a5f5c5a9941901b9446ccdccf45b76a44">MFRC522Daisy::check</a></div><div class="ttdeci">bool check(int numLecteur, byte uid[10])</div><div class="ttdoc">Test si l&amp;#39;uid du badge est reconnu. </div><div class="ttdef"><b>Definition:</b> <a href="_m_f_r_c522_daisy_8cpp_source.html#l00104">MFRC522Daisy.cpp:104</a></div></div>
+<div class="ttc" id="class_m_f_r_c522_daisy_html_ae422c1e9229e26587a6c9016384857d1"><div class="ttname"><a href="class_m_f_r_c522_daisy.html#ae422c1e9229e26587a6c9016384857d1">MFRC522Daisy::printHex</a></div><div class="ttdeci">void printHex(byte *buffer, byte bufferSize)</div><div class="ttdoc">Affiche en hexadécimal un tableau. </div><div class="ttdef"><b>Definition:</b> <a href="_m_f_r_c522_daisy_8cpp_source.html#l00088">MFRC522Daisy.cpp:88</a></div></div>
+<div class="ttc" id="class_m_f_r_c522_daisy_html_a925ea34dbb00a8c04ebae654443740a2"><div class="ttname"><a href="class_m_f_r_c522_daisy.html#a925ea34dbb00a8c04ebae654443740a2">MFRC522Daisy::m_rstPinLecteurs</a></div><div class="ttdeci">int m_rstPinLecteurs[NB_LECTEURS_MAX]</div><div class="ttdoc">La liste des PIN RST de chaque lecteurs. </div><div class="ttdef"><b>Definition:</b> <a href="_m_f_r_c522_daisy_8h_source.html#l00049">MFRC522Daisy.h:49</a></div></div>
+<div class="ttc" id="class_m_f_r_c522_daisy_html_aa561cfada794a89bf32d10fa6c2e9ab9"><div class="ttname"><a href="class_m_f_r_c522_daisy.html#aa561cfada794a89bf32d10fa6c2e9ab9">MFRC522Daisy::MFRC522Daisy</a></div><div class="ttdeci">MFRC522Daisy(int nb_lecteurs)</div><div class="ttdoc">Constructeur de la classe MFRC522Daisy. </div><div class="ttdef"><b>Definition:</b> <a href="_m_f_r_c522_daisy_8cpp_source.html#l00011">MFRC522Daisy.cpp:11</a></div></div>
+<div class="ttc" id="class_m_f_r_c522_daisy_html_a751c8740f07e598fe525dba93cd4e8cf"><div class="ttname"><a href="class_m_f_r_c522_daisy.html#a751c8740f07e598fe525dba93cd4e8cf">MFRC522Daisy::m_uid</a></div><div class="ttdeci">byte m_uid[NB_LECTEURS_MAX][4]</div><div class="ttdoc">L&amp;#39;uid du badge à lire pour chaque lecteurs. </div><div class="ttdef"><b>Definition:</b> <a href="_m_f_r_c522_daisy_8h_source.html#l00052">MFRC522Daisy.h:52</a></div></div>
+<div class="ttc" id="class_m_f_r_c522_daisy_html_a2b046338f2b1a05475e472afe5d0a7f5"><div class="ttname"><a href="class_m_f_r_c522_daisy.html#a2b046338f2b1a05475e472afe5d0a7f5">MFRC522Daisy::read</a></div><div class="ttdeci">bool read(int numLecteur)</div><div class="ttdoc">Lecture d&amp;#39;un badge. </div><div class="ttdef"><b>Definition:</b> <a href="_m_f_r_c522_daisy_8cpp_source.html#l00039">MFRC522Daisy.cpp:39</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Généré le Mardi 28 Mars 2023 16:40:59 pour Mecanisme_badges par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Généré le Mercredi 29 Mars 2023 13:10:41 pour Mecanisme_badges par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
 </small></address>
 </body>
 </html>

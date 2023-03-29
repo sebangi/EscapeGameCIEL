@@ -19,14 +19,19 @@ const byte UID_LECTEUR4[4] = {0xFF, 0xFF, 0xFF, 0xFF};
 #define LED2_GREEN_PIN 16
 #define LED2_RED_PIN 17
 
-#define LED3_GREEN_PIN 18
-#define LED3_RED_PIN 19
+#define LED3_GREEN_PIN 20
+#define LED3_RED_PIN 21
 
-#define LED4_GREEN_PIN 20
-#define LED4_RED_PIN 21
+#define LED4_GREEN_PIN 2
+#define LED4_RED_PIN 3
 
 #define GACHE_PIN 4
 
+//----- POUR I2C : ------
+// SDA A4 = 18
+// SCL A5 = 20
+
+//----- POUR SPI : ------
 // MISO_PIN 12
 // MOSI_PIN 11
 // SCK_PIN 13

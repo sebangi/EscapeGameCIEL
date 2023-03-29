@@ -1,5 +1,4 @@
 <map id="Mecanisme::serialEvent" name="Mecanisme::serialEvent">
-<area shape="rect" id="node1" title=" " alt="" coords="389,5,549,31"/>
-<area shape="rect" id="node2" href="$class_mecanisme.html#a42499afe585c537efe39ffde48a5d1ee" title="Méthode appelée par le loop pour tous les mécanismes." alt="" coords="175,5,341,31"/>
-<area shape="rect" id="node3" href="$class_mecanisme.html#a635bb11d93060a089b8257d0b5adfdae" title="Méthode appelée par le loop de base sur Arduino." alt="" coords="5,5,127,31"/>
+<area shape="rect" id="node2" href="$class_mecanisme.html#a42499afe585c537efe39ffde48a5d1ee" title="Méthode appelée par le loop pour tous les mécanismes. " alt="" coords="213,5,380,32"/>
+<area shape="rect" id="node3" href="$class_mecanisme.html#a635bb11d93060a089b8257d0b5adfdae" title="Méthode appelée par le loop de base sur Arduino. " alt="" coords="428,5,549,32"/>
 </map>
