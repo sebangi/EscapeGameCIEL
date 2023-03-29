@@ -33,12 +33,13 @@ class MFRC522Daisy
 {
   public:
     MFRC522Daisy( int nb_lecteurs );
-    void ajoutLecteur(int numLecteur, int rst_pin);
+    void ajoutLecteur(int numLecteur, int rst_pin, byte uid[4] );
     bool read( int numLecteur );
 
   private:
     void selectLecteur(int numLecteur);
     void printHex(byte *buffer, byte bufferSize);
+    bool check(int numLecteur, byte uid[10]);
 
   private:
     /** \brief L'interface du Lecteur. */
@@ -46,6 +47,9 @@ class MFRC522Daisy
   
     /** \brief  La liste des PIN RST de chaque lecteurs. */
     int m_rstPinLecteurs[ NB_LECTEURS_MAX ]; 
+
+    /** \brief  L'uid du badge à lire pour chaque lecteurs. */
+    byte m_uid[ NB_LECTEURS_MAX ][4];
     
     /** \brief Le nombre de lecteurs actuels. */
     int m_nb_lecteurs;  

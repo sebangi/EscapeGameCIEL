@@ -1,6 +1,9 @@
 #ifndef __DEFINES__
 #define __DEFINES__
 
+//############## UID #####################
+const byte UID_LECTEUR1[4] = {0x6C, 0x5B, 0x7B, 0x6E};
+const byte UID_LECTEUR2[4] = {0x43, 0x36, 0x17, 0xD3};
 
 //############## PIN #####################
 #define RST1_PIN 5

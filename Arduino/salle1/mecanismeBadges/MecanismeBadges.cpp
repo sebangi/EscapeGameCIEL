@@ -22,8 +22,8 @@ void MecanismeBadges::setupMecanisme()
   Serial.println( "MecanismeBadges::setupMecanisme()" );
   pinMode(LED1_GREEN_PIN, OUTPUT);
 
-  m_monMFRC522.ajoutLecteur(1, RST1_PIN);
-  m_monMFRC522.ajoutLecteur(2, RST2_PIN);
+  m_monMFRC522.ajoutLecteur(1, RST1_PIN, UID_LECTEUR1);
+  m_monMFRC522.ajoutLecteur(2, RST2_PIN, UID_LECTEUR2);
 
   SPI.begin();
   

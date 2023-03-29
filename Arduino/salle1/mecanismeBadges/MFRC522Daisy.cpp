@@ -18,19 +18,28 @@ MFRC522Daisy::MFRC522Daisy( int nb_lecteurs )
  * \param numLecteur Le numéro du lecteur.
  * \param rst_pin Le pin reset utilisé pour ce lecteur.
  */
-void MFRC522Daisy::ajoutLecteur(int numLecteur, int rst_pin)
+void MFRC522Daisy::ajoutLecteur(int numLecteur, int rst_pin, byte uid[4])
 {
+  if ( numLecteur > NB_LECTEURS_MAX )
+    return;
+
   pinMode(rst_pin, OUTPUT);
   m_rstPinLecteurs[numLecteur - 1] = rst_pin;
+  
+  for( int i = 0; i != 4; ++i )
+    m_uid[numLecteur - 1][i] = uid[i];
 }
 
 /**
  * \brief Lecture d'un badge.
  * \param numLecteur Numero du lecteur sur lequel lire.
- * \return Retourne \b true si un badge est correctement détecté, \b false sinon
+ * \return Retourne \b true si un badge est correctement détecté et reconnu, \b false sinon
  */
 bool MFRC522Daisy::read( int numLecteur )
 {
+  if ( numLecteur > NB_LECTEURS_MAX )
+    return false;
+  
   selectLecteur(numLecteur);
 
   // attente d'une carte RFID
@@ -44,7 +53,13 @@ bool MFRC522Daisy::read( int numLecteur )
       //m_mfrc522.PICC_DumpToSerial( &(m_mfrc522.tag) );
       printHex(m_mfrc522.uid.uidByte, m_mfrc522.uid.size);
       
-      return true;
+      if( check(numLecteur, m_mfrc522.uid.uidByte) )
+        {
+          Serial.println("Badge reconnu");
+          return true;
+        }
+      else
+        return false;
     }
 
   return false;
@@ -78,4 +93,18 @@ void MFRC522Daisy::printHex(byte *buffer, byte bufferSize)
   }
 
   Serial.println("");
+}
+
+/**
+ * \brief Test si l'uid du badge est reconnu.
+ * \param numLecteur Le lecteur utilisé.
+ * \param uid L'uid lu..
+ */
+bool MFRC522Daisy::check(int numLecteur, byte uid[10])
+{
+  for ( int i = 0; i != 4; ++i )
+    if ( m_uid[ numLecteur - 1 ][i] != uid[i] )
+      return false;
+
+  return true;
 }
