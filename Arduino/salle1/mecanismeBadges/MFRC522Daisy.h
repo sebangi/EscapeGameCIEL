@@ -33,6 +33,7 @@ class MFRC522Daisy
 {
   public:
     MFRC522Daisy( int nb_lecteurs );
+    
     void ajoutLecteur(int numLecteur, int rst_pin, byte uid[4] );
     bool read( int numLecteur );
 

@@ -13,6 +13,7 @@ MFRC522Daisy::MFRC522Daisy( int nb_lecteurs )
   m_nb_lecteurs = nb_lecteurs;
 }
 
+
 /**
  * \brief Ajout d'un lecteur.
  * \param numLecteur Le numéro du lecteur.
@@ -71,12 +72,12 @@ bool MFRC522Daisy::read( int numLecteur )
  * \param numLecteur Le numero de lecteur à sélectionner.
  */
 void MFRC522Daisy::selectLecteur(int numLecteur)
-{
+{  
   m_mfrc522.PCD_Reset();
 
   for (  int i = 0; i != m_nb_lecteurs; ++i )
-    digitalWrite( m_rstPinLecteurs[i], (i == numLecteur - 1) );
-
+    digitalWrite( m_rstPinLecteurs[i], (i == numLecteur - 1) );      
+  
   m_mfrc522.PCD_Init(SS_PIN, RST_PIN);
 }
 

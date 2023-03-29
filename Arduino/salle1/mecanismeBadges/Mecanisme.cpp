@@ -102,6 +102,9 @@ void Mecanisme::deverrouiller( int pin )
   digitalWrite( pin, m_valeurs_voulues[ pin ] );
 }
 
+/**
+ * \brief Méthode appelée automatiquement lorsque l'on recoit un message sur le port série.
+ */
 void Mecanisme::serialEvent() 
 {
   char c = 0; // for incoming serial data
@@ -134,6 +137,9 @@ void Mecanisme::serialEvent()
   }    
 }
 
+/**
+ * \brief Méthode aintialisant le bus I2C.
+ */
 void Mecanisme::setupI2C() 
 {
   Wire.begin(m_slaveAddress);
@@ -141,6 +147,10 @@ void Mecanisme::setupI2C()
   Wire.onRequest(sendData);
 }
 
+/**
+ * \brief Méthode appelée quand on reçoit un message depuis le bus I2C.
+ * \param bytecount Le nombre de bytes reçus.
+ */
 void Mecanisme::receiveData(int bytecount)
 {
   int i;
@@ -160,6 +170,9 @@ void Mecanisme::receiveData(int bytecount)
     Serial.println( "" );
 }
 
+/**
+ * \brief Méthode appelée automatiquement après avoir lu un message depuis le bus I2C.
+ */
 void Mecanisme::sendData()
 {
   Serial.println("Envoi sur I2C : RETOUR");

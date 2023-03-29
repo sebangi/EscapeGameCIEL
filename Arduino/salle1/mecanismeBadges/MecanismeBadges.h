@@ -18,7 +18,7 @@ class MecanismeBadges : public Mecanisme
 {
   public:  
     MecanismeBadges( int id );
-
+    
   private:
     void setupMecanisme();
     void loopMecanisme();

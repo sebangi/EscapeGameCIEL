@@ -46,14 +46,14 @@ void MecanismeBadges::setupMecanisme()
 void MecanismeBadges::loopMecanisme() 
 {
   int nb_lu = 0;
-
-  nb_lu = nb_lu + (int)gererLecteur( 1, LED1_GREEN_PIN, LED1_RED_PIN );
-  nb_lu = nb_lu + (int)gererLecteur( 2, LED2_GREEN_PIN, LED2_RED_PIN );
-  nb_lu = nb_lu + (int)gererLecteur( 3, LED3_GREEN_PIN, LED3_RED_PIN );
-  nb_lu = nb_lu + (int)gererLecteur( 4, LED4_GREEN_PIN, LED4_RED_PIN );
-
-  //Serial.print("\t\tNb lu = ");
-  //Serial.println( nb_lu );
+  
+  nb_lu = nb_lu + gererLecteur( 1, LED1_GREEN_PIN, LED1_RED_PIN );
+  nb_lu = nb_lu + gererLecteur( 2, LED2_GREEN_PIN, LED2_RED_PIN );
+  nb_lu = nb_lu + gererLecteur( 3, LED3_GREEN_PIN, LED3_RED_PIN );
+  nb_lu = nb_lu + gererLecteur( 4, LED4_GREEN_PIN, LED4_RED_PIN );
+   
+  Serial.print("\t\tNb lu = ");
+  Serial.println( nb_lu );
 }
 
 /**
