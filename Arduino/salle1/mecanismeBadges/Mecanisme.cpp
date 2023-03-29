@@ -105,23 +105,33 @@ void Mecanisme::deverrouiller( int pin )
 void Mecanisme::serialEvent() 
 {
   char c = 0; // for incoming serial data
-  
+  char last = 0;
+
   if (Serial.available() > 0) {
     // read the incoming byte:
     c = Serial.read();
     
-    switch ( c  )
+    switch ( c )
     {
       case 'V' : verrouiller(14, LOW);
+            last = c;
             break;
      
       case 'W' : verrouiller(14, HIGH);
+            last = c;
             break;
 
       case 'D' : deverrouiller(14);
+            last = c;
             break;
     };
   }
+
+  if ( last != 0 )
+  {
+    Serial.print("Ordre par port série : ");
+    Serial.println((char)last);
+  }    
 }
 
 void Mecanisme::setupI2C() 
@@ -133,12 +143,16 @@ void Mecanisme::setupI2C()
 
 void Mecanisme::receiveData(int bytecount)
 {
+  Serial.println("Reception sur I2C : ");
+
   for (int i = 0; i < bytecount; i++) {
     m_data_to_echo = Wire.read();
+    Serial.println( (char)m_data_to_echo );
   }
 }
 void Mecanisme::sendData()
 {
-  Wire.write(m_data_to_echo);
+  Serial.println("Envoi sur I2C : ");
+  Wire.write('O');
 }
 
