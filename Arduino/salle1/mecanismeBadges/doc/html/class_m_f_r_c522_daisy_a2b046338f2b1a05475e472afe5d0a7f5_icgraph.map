@@ -1,4 +1,0 @@
-<map id="MFRC522Daisy::read" name="MFRC522Daisy::read">
-<area shape="rect" id="node2" href="$class_mecanisme_badges.html#afa31a83411ea0e23043fb0081f920e64" title="Gestion d&#39;une lecture et mise à jour des leds. " alt="" coords="200,5,413,32"/>
-<area shape="rect" id="node3" href="$class_mecanisme_badges.html#a83e03e766fd0ce21349a58c16271afa9" title="Méthode appelée par le loop de base sur Arduino. " alt="" coords="461,5,693,32"/>
-</map>

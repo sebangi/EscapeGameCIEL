@@ -1,0 +1,5 @@
+<map id="Mecanisme::setupI2C" name="Mecanisme::setupI2C">
+<area shape="rect" id="node1" title="Méthode aintialisant le bus I2C." alt="" coords="5,31,153,56"/>
+<area shape="rect" id="node2" href="$class_mecanisme.html#a91e0838445abe6068170ee827d9ba50f" title="Méthode appelée quand on reçoit un message depuis le bus I2C." alt="" coords="201,5,365,31"/>
+<area shape="rect" id="node3" href="$class_mecanisme.html#afcfec8cf53e2e178039052065cac59b2" title="Méthode appelée automatiquement après avoir lu un message depuis le bus I2C." alt="" coords="207,55,359,80"/>
+</map>

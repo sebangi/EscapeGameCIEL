@@ -1,0 +1,8 @@
+<map id="MFRC522::PCD_Init" name="MFRC522::PCD_Init">
+<area shape="rect" id="node1" title=" " alt="" coords="988,31,1127,56"/>
+<area shape="rect" id="node2" href="$class_m_f_r_c522.html#a50a743c6c0c3ced652cb7fdca61949ab" title=" " alt="" coords="771,5,910,31"/>
+<area shape="rect" id="node3" href="$class_m_f_r_c522_daisy.html#a35b01321ef868dd154a54c7705e367c8" title="Sélectionne un lecteur." alt="" coords="741,55,940,80"/>
+<area shape="rect" id="node4" href="$class_m_f_r_c522_daisy.html#a2b046338f2b1a05475e472afe5d0a7f5" title="Lecture d&#39;un badge." alt="" coords="547,55,693,80"/>
+<area shape="rect" id="node5" href="$class_mecanisme_badges.html#afa31a83411ea0e23043fb0081f920e64" title="Gestion d&#39;une lecture et mise à jour des leds." alt="" coords="285,55,499,80"/>
+<area shape="rect" id="node6" href="$class_mecanisme_badges.html#a83e03e766fd0ce21349a58c16271afa9" title="Méthode appelée par le loop de base sur Arduino." alt="" coords="5,55,237,80"/>
+</map>
