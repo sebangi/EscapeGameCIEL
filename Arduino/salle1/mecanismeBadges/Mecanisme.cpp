@@ -143,16 +143,26 @@ void Mecanisme::setupI2C()
 
 void Mecanisme::receiveData(int bytecount)
 {
-  Serial.println("Reception sur I2C : ");
+  int i;
 
-  for (int i = 0; i < bytecount; i++) {
+  for (i = 0; i < bytecount; i++)
+  {
     m_data_to_echo = Wire.read();
-    Serial.println( (char)m_data_to_echo );
+
+    if ( i == 1 )
+      Serial.println("Reception sur I2C : ");
+    
+    if ( i != 0 )
+      Serial.print( (char)m_data_to_echo );
   }
+  
+  if ( i > 1 ) 
+    Serial.println( "" );
 }
+
 void Mecanisme::sendData()
 {
-  Serial.println("Envoi sur I2C : ");
-  Wire.write('O');
+  Serial.println("Envoi sur I2C : RETOUR");
+  Wire.write("PARFAIT, cela marche bien !");
 }
 
