@@ -16,16 +16,36 @@ byte Mecanisme::m_data_to_echo = 0;
 Mecanisme::Mecanisme( int id )
   : m_id( id ), m_slaveAddress( id + 8 )
 {
-  
+	for ( int i = 0; i != NB_VDC_MAX; ++i )
+		m_vdc[i] = NULL;
 }
+
+/**
+ * \brief Destructeur de la classe Mecanisme.
+ */
+Mecanisme::~Mecanisme()
+{
+	for ( int i = 0; i != NB_VDC_MAX; ++i )
+		if ( m_vdc[i] != NULL )
+			delete m_vdc[i];
+}
+
 
 /**
  * \brief Méthode appelée par le \b setup de base sur Arduino.
  */
 void Mecanisme::setup() 
 {
-  setupGeneral();
-  setupMecanisme();
+	Serial.println( "Mecanisme::setup()" );
+  	
+	setupGeneral();
+	setupMecanisme();
+	
+	updateSorties();
+   
+	Serial.print( "Mecanisme ");
+	Serial.print( m_id );  
+	Serial.println( " pret." );
 }
 
 /**
@@ -35,7 +55,21 @@ void Mecanisme::loop()
 {
     loopGeneral();
     loopMecanisme();
+	updateSorties();
 }
+
+/**
+ * \brief Ajoute une variable de controle.
+ * \brief id L'identifiant de la variable de controle (nombre entre 0 et NB_VDC_MAX).
+ * \brief t Le type de la variable(entrée ou sortie).
+ * \brief s Le type de signal (digital ou analog).
+ * \brief pin Le pin à utiliser pour l'écriture.
+ */
+ void Mecanisme::ajouterVDC(int id, VariableDeControle::VDCType t, VariableDeControle::VDCSignal s, int pin)
+{
+	if ( id >= 0 && id < NB_VDC_MAX )
+		m_vdc[ id ] = new VariableDeControle(t, s, pin);
+}    
 
 /**
  * \brief Méthode appelée par le \b setup pour tous les mécanismes.
@@ -46,18 +80,7 @@ void Mecanisme::setupGeneral()
   while( ! Serial )
     ;
 
-  for ( int i = 0; i != NB_PIN; ++i )
-  {
-    m_verrous[ i ] = false;
-    m_valeurs_voulues[ i ] = LOW;
-  }
-
   setupI2C();
-
-  Serial.println( "Mecanisme::setup()" );
-  Serial.print( "Mecanisme ");
-  Serial.print( m_id );  
-  Serial.println( " pret." );
 }
 
 /**
@@ -69,37 +92,48 @@ void Mecanisme::loopGeneral()
 }
 
 /**
- * \brief Méthode appelée par le \b loop pour tous les mécanismes.
+ * \brief Accesseur d'une valeur d'une variable de controle.
  * \param pin Le pin à considérer.
- * \param valeur La valeur à écrire.
+ * \return La valeur actuelle (celle du sytème en mode nomrla ou celle imposée en mode verrouillage).
  */
-void Mecanisme::ecrireSortie( int pin, int valeur )
+byte Mecanisme::getValeurVDC( int id ) const
 {
-  m_valeurs_voulues[ pin ] = valeur;
-  
-  if ( ! m_verrous[ pin ] )
-    digitalWrite( pin, valeur );
+	if ( m_vdc[ id ] != NULL  )
+		return m_vdc[ id ]->getValeur();
+	else
+		return 0;
 }
 
 /**
- * \brief Méthode appelée par le \b loop pour tous les mécanismes.
- * \param pin Le pin à considérer.
+ * \brief Initialise une variable de controle.
+ * \param id L'id de la variable à considérer.
+ * \param valeur La valeur à écrire.
+ */
+void Mecanisme::setValeurVDC( int id, int valeur )
+{
+	if ( m_vdc[ id ] != NULL  )
+		m_vdc[ id ]->setValeur( valeur );
+}
+
+/**
+ * \brief Vérouille une variable de controle.
+ * \param id L'id de la variable à considérer.
  * \param valeur La valeur à donner.
  */
-void Mecanisme::verrouiller( int pin, int valeur )
+void Mecanisme::verrouiller( int id, int valeur )
 {
-  m_verrous[ pin ] = true;
-  digitalWrite( pin, valeur );    
+	if ( m_vdc[ id ] != NULL  )
+		m_vdc[ id ]->verrouiller( valeur );
 }
    
 /**
- * \brief Méthode appelée par le \b loop pour tous les mécanismes.
- * \param pin Le pin à considérer.
+ * \brief Déverouille un variable de controle.
+ * \param id L'id de la variable à considérer.
  */
-void Mecanisme::deverrouiller( int pin )
+void Mecanisme::deverrouiller( int id )
 {
-  m_verrous[ pin ] = false;
-  digitalWrite( pin, m_valeurs_voulues[ pin ] );
+	if ( m_vdc[ id ] != NULL  )
+		m_vdc[ id ]->deverrouiller();
 }
 
 /**

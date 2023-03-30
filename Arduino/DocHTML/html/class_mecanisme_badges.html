@@ -81,7 +81,7 @@ $(function() {
 <p>Déclaration de la classe pour gérer le mécanisme des badges RFID.  
  <a href="class_mecanisme_badges.html#details">Plus de détails...</a></p>
 
-<p><code>#include &lt;<a class="el" href="_mecanisme_badges_8h_source.html">MecanismeBadges.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="mecanisme_badges_8h_source.html">mecanismeBadges.h</a>&gt;</code></p>
 <div class="dynheader">
 Graphe d'héritage de MecanismeBadges:</div>
 <div class="dyncontent">
@@ -101,6 +101,9 @@ Fonctions membres publiques</h2></td></tr>
 <tr class="memitem:ae4b59c10bb3227fb96ed6ef065a3dc2e inherit pub_methods_class_mecanisme"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mecanisme.html#ae4b59c10bb3227fb96ed6ef065a3dc2e">Mecanisme</a> (int id)</td></tr>
 <tr class="memdesc:ae4b59c10bb3227fb96ed6ef065a3dc2e inherit pub_methods_class_mecanisme"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur de la classe <a class="el" href="class_mecanisme.html" title="Déclaration de la classe Mecanisme décrivant le fonctionnement commun à tous les mécanismes.">Mecanisme</a>.  <br /></td></tr>
 <tr class="separator:ae4b59c10bb3227fb96ed6ef065a3dc2e inherit pub_methods_class_mecanisme"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83642d18aae65af360cfe0ac4471ea6d inherit pub_methods_class_mecanisme"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mecanisme.html#a83642d18aae65af360cfe0ac4471ea6d">~Mecanisme</a> ()</td></tr>
+<tr class="memdesc:a83642d18aae65af360cfe0ac4471ea6d inherit pub_methods_class_mecanisme"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructeur de la classe <a class="el" href="class_mecanisme.html" title="Déclaration de la classe Mecanisme décrivant le fonctionnement commun à tous les mécanismes.">Mecanisme</a>.  <br /></td></tr>
+<tr class="separator:a83642d18aae65af360cfe0ac4471ea6d inherit pub_methods_class_mecanisme"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6b9f5302039902ab0d644caf4570ecb inherit pub_methods_class_mecanisme"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mecanisme.html#ab6b9f5302039902ab0d644caf4570ecb">setup</a> ()</td></tr>
 <tr class="memdesc:ab6b9f5302039902ab0d644caf4570ecb inherit pub_methods_class_mecanisme"><td class="mdescLeft">&#160;</td><td class="mdescRight">Méthode appelée par le <b>setup</b> de base sur Arduino.  <br /></td></tr>
 <tr class="separator:ab6b9f5302039902ab0d644caf4570ecb inherit pub_methods_class_mecanisme"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -116,9 +119,12 @@ Fonctions membres privées</h2></td></tr>
 <tr class="memitem:a83e03e766fd0ce21349a58c16271afa9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mecanisme_badges.html#a83e03e766fd0ce21349a58c16271afa9">loopMecanisme</a> ()</td></tr>
 <tr class="memdesc:a83e03e766fd0ce21349a58c16271afa9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Méthode appelée par le <b>loop</b> de base sur Arduino.  <br /></td></tr>
 <tr class="separator:a83e03e766fd0ce21349a58c16271afa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa31a83411ea0e23043fb0081f920e64"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mecanisme_badges.html#afa31a83411ea0e23043fb0081f920e64">gererLecteur</a> (int numLecteur, int pin_green, int pin_red)</td></tr>
-<tr class="memdesc:afa31a83411ea0e23043fb0081f920e64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gestion d'une lecture et mise à jour des leds.  <br /></td></tr>
-<tr class="separator:afa31a83411ea0e23043fb0081f920e64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4690ba5effb3c65139c99695157f1aa9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mecanisme_badges.html#a4690ba5effb3c65139c99695157f1aa9">updateSorties</a> ()</td></tr>
+<tr class="memdesc:a4690ba5effb3c65139c99695157f1aa9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mise à jour des sorties.  <br /></td></tr>
+<tr class="separator:a4690ba5effb3c65139c99695157f1aa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15ea4715472a76b462262063f5d4e16c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mecanisme_badges.html#a15ea4715472a76b462262063f5d4e16c">updateLed</a> (int id_vdc, int pin_green, int pin_red)</td></tr>
+<tr class="memdesc:a15ea4715472a76b462262063f5d4e16c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gestion d'une lecture et mise à jour des leds.  <br /></td></tr>
+<tr class="separator:a15ea4715472a76b462262063f5d4e16c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Attributs privés</h2></td></tr>
@@ -129,21 +135,27 @@ Attributs privés</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Membres hérités additionnels</h2></td></tr>
 <tr class="inherit_header pro_methods_class_mecanisme"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_mecanisme')"><img src="closed.png" alt="-"/>&#160;Fonctions membres protégées hérités de <a class="el" href="class_mecanisme.html">Mecanisme</a></td></tr>
-<tr class="memitem:a21335950943575de47861441cfab8b97 inherit pro_methods_class_mecanisme"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mecanisme.html#a21335950943575de47861441cfab8b97">ecrireSortie</a> (int pin, int valeur)</td></tr>
-<tr class="memdesc:a21335950943575de47861441cfab8b97 inherit pro_methods_class_mecanisme"><td class="mdescLeft">&#160;</td><td class="mdescRight">Méthode appelée par le <b>loop</b> pour tous les mécanismes.  <br /></td></tr>
-<tr class="separator:a21335950943575de47861441cfab8b97 inherit pro_methods_class_mecanisme"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee4802d8d66d163203aba27568df5c27 inherit pro_methods_class_mecanisme"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mecanisme.html#aee4802d8d66d163203aba27568df5c27">ajouterVDC</a> (int id, <a class="el" href="class_variable_de_controle.html#a5b18a50f5fdd976b406c35f9f9530d53">VariableDeControle::VDCType</a> t, <a class="el" href="class_variable_de_controle.html#af7076d02110216c3f346f5e7bb68204c">VariableDeControle::VDCSignal</a> s, int pin=<a class="el" href="variable_de_controle_8h.html#a21836618490e689c6a3cbbd358eee6a2">VDC_NO_PIN</a>)</td></tr>
+<tr class="memdesc:aee4802d8d66d163203aba27568df5c27 inherit pro_methods_class_mecanisme"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ajoute une variable de controle.  <br /></td></tr>
+<tr class="separator:aee4802d8d66d163203aba27568df5c27 inherit pro_methods_class_mecanisme"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a443dda6b953f4722abb7a76c80cfcb77 inherit pro_methods_class_mecanisme"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mecanisme.html#a443dda6b953f4722abb7a76c80cfcb77">getValeurVDC</a> (int id) const</td></tr>
+<tr class="memdesc:a443dda6b953f4722abb7a76c80cfcb77 inherit pro_methods_class_mecanisme"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accesseur d'une valeur d'une variable de controle.  <br /></td></tr>
+<tr class="separator:a443dda6b953f4722abb7a76c80cfcb77 inherit pro_methods_class_mecanisme"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac25812bd5148b0171723ffb981e89176 inherit pro_methods_class_mecanisme"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mecanisme.html#ac25812bd5148b0171723ffb981e89176">setValeurVDC</a> (int pin, int valeur)</td></tr>
+<tr class="memdesc:ac25812bd5148b0171723ffb981e89176 inherit pro_methods_class_mecanisme"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise une variable de controle.  <br /></td></tr>
+<tr class="separator:ac25812bd5148b0171723ffb981e89176 inherit pro_methods_class_mecanisme"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07c8e5a4cc3bd4daf90011f7a940e030 inherit pro_methods_class_mecanisme"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mecanisme.html#a07c8e5a4cc3bd4daf90011f7a940e030">verrouiller</a> (int pin, int valeur)</td></tr>
-<tr class="memdesc:a07c8e5a4cc3bd4daf90011f7a940e030 inherit pro_methods_class_mecanisme"><td class="mdescLeft">&#160;</td><td class="mdescRight">Méthode appelée par le <b>loop</b> pour tous les mécanismes.  <br /></td></tr>
+<tr class="memdesc:a07c8e5a4cc3bd4daf90011f7a940e030 inherit pro_methods_class_mecanisme"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vérouille une variable de controle.  <br /></td></tr>
 <tr class="separator:a07c8e5a4cc3bd4daf90011f7a940e030 inherit pro_methods_class_mecanisme"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d6a43d18c356c42bc0c1fb34dfef993 inherit pro_methods_class_mecanisme"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mecanisme.html#a5d6a43d18c356c42bc0c1fb34dfef993">deverrouiller</a> (int pin)</td></tr>
-<tr class="memdesc:a5d6a43d18c356c42bc0c1fb34dfef993 inherit pro_methods_class_mecanisme"><td class="mdescLeft">&#160;</td><td class="mdescRight">Méthode appelée par le <b>loop</b> pour tous les mécanismes.  <br /></td></tr>
+<tr class="memdesc:a5d6a43d18c356c42bc0c1fb34dfef993 inherit pro_methods_class_mecanisme"><td class="mdescLeft">&#160;</td><td class="mdescRight">Déverouille un variable de controle.  <br /></td></tr>
 <tr class="separator:a5d6a43d18c356c42bc0c1fb34dfef993 inherit pro_methods_class_mecanisme"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
 <div class="textblock"><p>Déclaration de la classe pour gérer le mécanisme des badges RFID. </p>
 <dl class="section author"><dt>Auteur</dt><dd>Sebastien Angibaud </dd></dl>
 
-<p class="definition">Définition à la ligne <a class="el" href="_mecanisme_badges_8h_source.html#l00018">18</a> du fichier <a class="el" href="_mecanisme_badges_8h_source.html">MecanismeBadges.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="mecanisme_badges_8h_source.html#l00018">18</a> du fichier <a class="el" href="mecanisme_badges_8h_source.html">mecanismeBadges.h</a>.</p>
 </div><h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
 <a id="a03008a47f9e0bf4fb38e4525bc8a71d3" name="a03008a47f9e0bf4fb38e4525bc8a71d3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a03008a47f9e0bf4fb38e4525bc8a71d3">&#9670;&#160;</a></span>MecanismeBadges()</h2>
@@ -163,88 +175,11 @@ Membres hérités additionnels</h2></td></tr>
 
 <p>Constructeur de la classe <a class="el" href="class_mecanisme_badges.html" title="Déclaration de la classe pour gérer le mécanisme des badges RFID.">MecanismeBadges</a>. </p>
 
-<p class="definition">Définition à la ligne <a class="el" href="_mecanisme_badges_8cpp_source.html#l00011">11</a> du fichier <a class="el" href="_mecanisme_badges_8cpp_source.html">MecanismeBadges.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="mecanisme_badges_8cpp_source.html#l00011">11</a> du fichier <a class="el" href="mecanisme_badges_8cpp_source.html">mecanismeBadges.cpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Documentation des fonctions membres</h2>
-<a id="afa31a83411ea0e23043fb0081f920e64" name="afa31a83411ea0e23043fb0081f920e64"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afa31a83411ea0e23043fb0081f920e64">&#9670;&#160;</a></span>gererLecteur()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool MecanismeBadges::gererLecteur </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>numLecteur</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>pin_green</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>pin_red</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Gestion d'une lecture et mise à jour des leds. </p>
-<dl class="params"><dt>Paramètres</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">numLecteur</td><td>Le numéro du lecteur à lire. </td></tr>
-    <tr><td class="paramname">pin_green</td><td>Le pin de la led verte à utiliser. </td></tr>
-    <tr><td class="paramname">pin_red</td><td>Le pin de la led rouge à utiliser. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Renvoie</dt><dd>Return <b>true</b> si le lecteur a reconnu le bon badge. </dd></dl>
-
-<p class="definition">Définition à la ligne <a class="el" href="_mecanisme_badges_8cpp_source.html#l00066">66</a> du fichier <a class="el" href="_mecanisme_badges_8cpp_source.html">MecanismeBadges.cpp</a>.</p>
-<div class="dynheader">
-Voici le graphe d'appel pour cette fonction :</div>
-<div class="dyncontent">
-<div class="center"><img src="class_mecanisme_badges_afa31a83411ea0e23043fb0081f920e64_cgraph.png" border="0" usemap="#aclass_mecanisme_badges_afa31a83411ea0e23043fb0081f920e64_cgraph" alt=""/></div>
-<map name="aclass_mecanisme_badges_afa31a83411ea0e23043fb0081f920e64_cgraph" id="aclass_mecanisme_badges_afa31a83411ea0e23043fb0081f920e64_cgraph">
-<area shape="rect" title="Gestion d&#39;une lecture et mise à jour des leds." alt="" coords="5,31,219,56"/>
-<area shape="rect" href="class_mecanisme.html#a21335950943575de47861441cfab8b97" title="Méthode appelée par le loop pour tous les mécanismes." alt="" coords="267,5,429,31"/>
-<area shape="rect" href="class_m_f_r_c522_daisy.html#a2b046338f2b1a05475e472afe5d0a7f5" title="Lecture d&#39;un badge." alt="" coords="275,55,421,80"/>
-<area shape="rect" href="class_m_f_r_c522_daisy.html#a5f5c5a9941901b9446ccdccf45b76a44" title="Test si l&#39;uid du badge est reconnu." alt="" coords="499,5,655,31"/>
-<area shape="rect" href="class_m_f_r_c522_daisy.html#ae422c1e9229e26587a6c9016384857d1" title="Affiche en hexadécimal un tableau." alt="" coords="492,55,661,80"/>
-<area shape="rect" href="class_m_f_r_c522_daisy.html#a35b01321ef868dd154a54c7705e367c8" title="Sélectionne un lecteur." alt="" coords="477,104,676,129"/>
-</map>
-</div>
-<div class="dynheader">
-Voici le graphe des appelants de cette fonction :</div>
-<div class="dyncontent">
-<div class="center"><img src="class_mecanisme_badges_afa31a83411ea0e23043fb0081f920e64_icgraph.png" border="0" usemap="#aclass_mecanisme_badges_afa31a83411ea0e23043fb0081f920e64_icgraph" alt=""/></div>
-<map name="aclass_mecanisme_badges_afa31a83411ea0e23043fb0081f920e64_icgraph" id="aclass_mecanisme_badges_afa31a83411ea0e23043fb0081f920e64_icgraph">
-<area shape="rect" title="Gestion d&#39;une lecture et mise à jour des leds." alt="" coords="285,5,499,31"/>
-<area shape="rect" href="class_mecanisme_badges.html#a83e03e766fd0ce21349a58c16271afa9" title="Méthode appelée par le loop de base sur Arduino." alt="" coords="5,5,237,31"/>
-</map>
-</div>
-
-</div>
-</div>
 <a id="a83e03e766fd0ce21349a58c16271afa9" name="a83e03e766fd0ce21349a58c16271afa9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a83e03e766fd0ce21349a58c16271afa9">&#9670;&#160;</a></span>loopMecanisme()</h2>
 
@@ -272,19 +207,20 @@ Voici le graphe des appelants de cette fonction :</div>
 
 <p>Implémente <a class="el" href="class_mecanisme.html#afcf3112c910eef6d3cc03a286b47f425">Mecanisme</a>.</p>
 
-<p class="definition">Définition à la ligne <a class="el" href="_mecanisme_badges_8cpp_source.html#l00046">46</a> du fichier <a class="el" href="_mecanisme_badges_8cpp_source.html">MecanismeBadges.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="mecanisme_badges_8cpp_source.html#l00053">53</a> du fichier <a class="el" href="mecanisme_badges_8cpp_source.html">mecanismeBadges.cpp</a>.</p>
 <div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dyncontent">
 <div class="center"><img src="class_mecanisme_badges_a83e03e766fd0ce21349a58c16271afa9_cgraph.png" border="0" usemap="#aclass_mecanisme_badges_a83e03e766fd0ce21349a58c16271afa9_cgraph" alt=""/></div>
 <map name="aclass_mecanisme_badges_a83e03e766fd0ce21349a58c16271afa9_cgraph" id="aclass_mecanisme_badges_a83e03e766fd0ce21349a58c16271afa9_cgraph">
-<area shape="rect" title="Méthode appelée par le loop de base sur Arduino." alt="" coords="5,31,237,56"/>
-<area shape="rect" href="class_mecanisme_badges.html#afa31a83411ea0e23043fb0081f920e64" title="Gestion d&#39;une lecture et mise à jour des leds." alt="" coords="285,31,499,56"/>
-<area shape="rect" href="class_mecanisme.html#a21335950943575de47861441cfab8b97" title="Méthode appelée par le loop pour tous les mécanismes." alt="" coords="547,5,709,31"/>
-<area shape="rect" href="class_m_f_r_c522_daisy.html#a2b046338f2b1a05475e472afe5d0a7f5" title="Lecture d&#39;un badge." alt="" coords="555,55,701,80"/>
-<area shape="rect" href="class_m_f_r_c522_daisy.html#a5f5c5a9941901b9446ccdccf45b76a44" title="Test si l&#39;uid du badge est reconnu." alt="" coords="779,5,935,31"/>
-<area shape="rect" href="class_m_f_r_c522_daisy.html#ae422c1e9229e26587a6c9016384857d1" title="Affiche en hexadécimal un tableau." alt="" coords="772,55,941,80"/>
-<area shape="rect" href="class_m_f_r_c522_daisy.html#a35b01321ef868dd154a54c7705e367c8" title="Sélectionne un lecteur." alt="" coords="757,104,956,129"/>
+<area shape="rect" title="Méthode appelée par le loop de base sur Arduino." alt="" coords="5,109,237,135"/>
+<area shape="rect" href="class_m_f_r_c522_daisy.html#a2b046338f2b1a05475e472afe5d0a7f5" title="Lecture d&#39;un badge." alt="" coords="301,80,448,105"/>
+<area shape="rect" href="class_mecanisme.html#ac25812bd5148b0171723ffb981e89176" title="Initialise une variable de controle." alt="" coords="285,133,464,159"/>
+<area shape="rect" href="class_m_f_r_c522_daisy.html#a5f5c5a9941901b9446ccdccf45b76a44" title="Test si l&#39;uid du badge est reconnu." alt="" coords="533,5,689,31"/>
+<area shape="rect" href="class_m_f_r_c522_daisy.html#ae422c1e9229e26587a6c9016384857d1" title="Affiche en hexadécimal un tableau." alt="" coords="527,55,696,80"/>
+<area shape="rect" href="class_m_f_r_c522_daisy.html#a35b01321ef868dd154a54c7705e367c8" title="Sélectionne un lecteur." alt="" coords="512,104,711,129"/>
+<area shape="rect" href="class_variable_de_controle.html#af253eac98c745d1ffb6acae3d7af942c" title="Initialise la valeur du mode normal." alt="" coords="545,154,678,194"/>
+<area shape="rect" href="class_variable_de_controle.html#a752fa7c1e190c36b32725678a4f95cb8" title="Mise à jour de la sortie." alt="" coords="759,154,892,194"/>
 </map>
 </div>
 
@@ -317,15 +253,133 @@ Voici le graphe d'appel pour cette fonction :</div>
 
 <p>Implémente <a class="el" href="class_mecanisme.html#a272b0d7933c4f968347b97fa629c6959">Mecanisme</a>.</p>
 
-<p class="definition">Définition à la ligne <a class="el" href="_mecanisme_badges_8cpp_source.html#l00020">20</a> du fichier <a class="el" href="_mecanisme_badges_8cpp_source.html">MecanismeBadges.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="mecanisme_badges_8cpp_source.html#l00020">20</a> du fichier <a class="el" href="mecanisme_badges_8cpp_source.html">mecanismeBadges.cpp</a>.</p>
 <div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dyncontent">
 <div class="center"><img src="class_mecanisme_badges_a1109a09dec29b65931dbd39fad39d268_cgraph.png" border="0" usemap="#aclass_mecanisme_badges_a1109a09dec29b65931dbd39fad39d268_cgraph" alt=""/></div>
 <map name="aclass_mecanisme_badges_a1109a09dec29b65931dbd39fad39d268_cgraph" id="aclass_mecanisme_badges_a1109a09dec29b65931dbd39fad39d268_cgraph">
 <area shape="rect" title="Méthode appelée par le setup de base sur Arduino." alt="" coords="5,31,245,56"/>
-<area shape="rect" href="class_m_f_r_c522_daisy.html#aa1febdf5908d5d9a6ff59abc647f767f" title="Ajout d&#39;un lecteur." alt="" coords="293,5,485,31"/>
-<area shape="rect" href="class_mecanisme.html#a21335950943575de47861441cfab8b97" title="Méthode appelée par le loop pour tous les mécanismes." alt="" coords="308,55,471,80"/>
+<area shape="rect" href="class_mecanisme.html#aee4802d8d66d163203aba27568df5c27" title="Ajoute une variable de controle." alt="" coords="308,5,471,31"/>
+<area shape="rect" href="class_m_f_r_c522_daisy.html#aa1febdf5908d5d9a6ff59abc647f767f" title="Ajout d&#39;un lecteur." alt="" coords="293,55,485,80"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a15ea4715472a76b462262063f5d4e16c" name="a15ea4715472a76b462262063f5d4e16c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15ea4715472a76b462262063f5d4e16c">&#9670;&#160;</a></span>updateLed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MecanismeBadges::updateLed </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id_vdc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pin_green</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pin_red</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gestion d'une lecture et mise à jour des leds. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id_vdc</td><td>L'identifiant de la variable de controle (VDC). </td></tr>
+    <tr><td class="paramname">pin_green</td><td>Le pin de la led verte à considérer. </td></tr>
+    <tr><td class="paramname">pin_red</td><td>Le pin de la led verte à considérer. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="mecanisme_badges_8cpp_source.html#l00087">87</a> du fichier <a class="el" href="mecanisme_badges_8cpp_source.html">mecanismeBadges.cpp</a>.</p>
+<div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="class_mecanisme_badges_a15ea4715472a76b462262063f5d4e16c_cgraph.png" border="0" usemap="#aclass_mecanisme_badges_a15ea4715472a76b462262063f5d4e16c_cgraph" alt=""/></div>
+<map name="aclass_mecanisme_badges_a15ea4715472a76b462262063f5d4e16c_cgraph" id="aclass_mecanisme_badges_a15ea4715472a76b462262063f5d4e16c_cgraph">
+<area shape="rect" title="Gestion d&#39;une lecture et mise à jour des leds." alt="" coords="5,13,207,38"/>
+<area shape="rect" href="class_mecanisme.html#a443dda6b953f4722abb7a76c80cfcb77" title="Accesseur d&#39;une valeur d&#39;une variable de controle." alt="" coords="255,13,433,38"/>
+<area shape="rect" href="class_variable_de_controle.html#a74d2245b0b2494e76c75c025d2e8395f" title="Accesseur de la valeur." alt="" coords="481,5,615,45"/>
+</map>
+</div>
+<div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="class_mecanisme_badges_a15ea4715472a76b462262063f5d4e16c_icgraph.png" border="0" usemap="#aclass_mecanisme_badges_a15ea4715472a76b462262063f5d4e16c_icgraph" alt=""/></div>
+<map name="aclass_mecanisme_badges_a15ea4715472a76b462262063f5d4e16c_icgraph" id="aclass_mecanisme_badges_a15ea4715472a76b462262063f5d4e16c_icgraph">
+<area shape="rect" title="Gestion d&#39;une lecture et mise à jour des leds." alt="" coords="275,5,476,31"/>
+<area shape="rect" href="class_mecanisme_badges.html#a4690ba5effb3c65139c99695157f1aa9" title="Mise à jour des sorties." alt="" coords="5,5,227,31"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4690ba5effb3c65139c99695157f1aa9" name="a4690ba5effb3c65139c99695157f1aa9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4690ba5effb3c65139c99695157f1aa9">&#9670;&#160;</a></span>updateSorties()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MecanismeBadges::updateSorties </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Mise à jour des sorties. </p>
+
+<p>Implémente <a class="el" href="class_mecanisme.html#acda653c93d67f7863000c4d79bc422d5">Mecanisme</a>.</p>
+
+<p class="definition">Définition à la ligne <a class="el" href="mecanisme_badges_8cpp_source.html#l00064">64</a> du fichier <a class="el" href="mecanisme_badges_8cpp_source.html">mecanismeBadges.cpp</a>.</p>
+<div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="class_mecanisme_badges_a4690ba5effb3c65139c99695157f1aa9_cgraph.png" border="0" usemap="#aclass_mecanisme_badges_a4690ba5effb3c65139c99695157f1aa9_cgraph" alt=""/></div>
+<map name="aclass_mecanisme_badges_a4690ba5effb3c65139c99695157f1aa9_cgraph" id="aclass_mecanisme_badges_a4690ba5effb3c65139c99695157f1aa9_cgraph">
+<area shape="rect" title="Mise à jour des sorties." alt="" coords="5,45,227,70"/>
+<area shape="rect" href="class_mecanisme.html#a443dda6b953f4722abb7a76c80cfcb77" title="Accesseur d&#39;une valeur d&#39;une variable de controle." alt="" coords="524,13,703,38"/>
+<area shape="rect" href="class_mecanisme.html#ac25812bd5148b0171723ffb981e89176" title="Initialise une variable de controle." alt="" coords="286,94,465,119"/>
+<area shape="rect" href="class_mecanisme_badges.html#a15ea4715472a76b462262063f5d4e16c" title="Gestion d&#39;une lecture et mise à jour des leds." alt="" coords="275,45,476,70"/>
+<area shape="rect" href="class_variable_de_controle.html#a74d2245b0b2494e76c75c025d2e8395f" title="Accesseur de la valeur." alt="" coords="751,5,884,45"/>
+<area shape="rect" href="class_variable_de_controle.html#af253eac98c745d1ffb6acae3d7af942c" title="Initialise la valeur du mode normal." alt="" coords="547,87,680,127"/>
+<area shape="rect" href="class_variable_de_controle.html#a752fa7c1e190c36b32725678a4f95cb8" title="Mise à jour de la sortie." alt="" coords="751,87,884,127"/>
 </map>
 </div>
 
@@ -354,18 +408,18 @@ Voici le graphe d'appel pour cette fonction :</div>
 
 <p>Interface de l'ensemble des lecteurs MFRC522 en mode Daisy. </p>
 
-<p class="definition">Définition à la ligne <a class="el" href="_mecanisme_badges_8h_source.html#l00030">30</a> du fichier <a class="el" href="_mecanisme_badges_8h_source.html">MecanismeBadges.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="mecanisme_badges_8h_source.html#l00032">32</a> du fichier <a class="el" href="mecanisme_badges_8h_source.html">mecanismeBadges.h</a>.</p>
 
 </div>
 </div>
 <hr/>La documentation de cette classe a été générée à partir des fichiers suivants :<ul>
-<li>Salles/salle1/mecanismeBadges/<a class="el" href="_mecanisme_badges_8h_source.html">MecanismeBadges.h</a></li>
-<li>Salles/salle1/mecanismeBadges/<a class="el" href="_mecanisme_badges_8cpp_source.html">MecanismeBadges.cpp</a></li>
+<li>Salles/Salle1/mecanismeBadges/<a class="el" href="mecanisme_badges_8h_source.html">mecanismeBadges.h</a></li>
+<li>Salles/Salle1/mecanismeBadges/<a class="el" href="mecanisme_badges_8cpp_source.html">mecanismeBadges.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Généré le Jeudi 30 Mars 2023 10:28:59 pour Gestion de salle Escape Game par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Généré le Jeudi 30 Mars 2023 14:21:55 pour Gestion de salle Escape Game par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

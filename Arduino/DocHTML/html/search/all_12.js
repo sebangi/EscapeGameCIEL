@@ -1,11 +1,23 @@
 var searchData=
 [
-  ['uid_0',['Uid',['../struct_m_f_r_c522_1_1_uid.html',1,'MFRC522']]],
-  ['uid_1',['uid',['../class_m_f_r_c522.html#ad456545d41962dd7f8bd4210f5618498',1,'MFRC522::uid()'],['../struct_m_f_r_c522_extended_1_1_tag_info.html#a3c5c2e94d314ed52215b6e44f6384f61',1,'MFRC522Extended::TagInfo::uid()']]],
-  ['uid_5flecteur1_2',['UID_LECTEUR1',['../defines_badges_8h.html#acb173df61afb35b86ac6cfcee40fdcd9',1,'definesBadges.h']]],
-  ['uid_5flecteur2_3',['UID_LECTEUR2',['../defines_badges_8h.html#a123adeef8ecc5869b7617a82c8826327',1,'definesBadges.h']]],
-  ['uid_5flecteur3_4',['UID_LECTEUR3',['../defines_badges_8h.html#a96cbad455ba528922d5369e1dc3b875b',1,'definesBadges.h']]],
-  ['uid_5flecteur4_5',['UID_LECTEUR4',['../defines_badges_8h.html#ab7a46b61c1e3b6edfda908e1135e7577',1,'definesBadges.h']]],
-  ['uidbyte_6',['uidByte',['../struct_m_f_r_c522_1_1_uid.html#a5581167c1e1c8beb98c44ff86f4fbc52',1,'MFRC522::Uid']]],
-  ['unused_5fpin_7',['UNUSED_PIN',['../class_m_f_r_c522.html#a41313d0e4a8a674271e64362d24e1d6b',1,'MFRC522']]]
+  ['var_5fctrl_5fgache_0',['VAR_CTRL_GACHE',['../defines_badges_8h.html#ac6bc5612b1042fc0ddb024be2ff93aa3',1,'definesBadges.h']]],
+  ['var_5fctrl_5flecteur1_1',['VAR_CTRL_LECTEUR1',['../defines_badges_8h.html#a3ab4c74b2b2bcce0525755961e74e2d3',1,'definesBadges.h']]],
+  ['var_5fctrl_5flecteur2_2',['VAR_CTRL_LECTEUR2',['../defines_badges_8h.html#aace37a852fd44b8631d6b67bc11fb610',1,'definesBadges.h']]],
+  ['var_5fctrl_5flecteur3_3',['VAR_CTRL_LECTEUR3',['../defines_badges_8h.html#a3dcd5240ea7b9172352227f2bb51b364',1,'definesBadges.h']]],
+  ['var_5fctrl_5flecteur4_4',['VAR_CTRL_LECTEUR4',['../defines_badges_8h.html#a3c1936b679d29300701f95552d1a4670',1,'definesBadges.h']]],
+  ['variabledecontrole_5',['VariableDeControle',['../class_variable_de_controle.html',1,'VariableDeControle'],['../class_variable_de_controle.html#afbb0f2fc4eaa8a372c678088f3c44268',1,'VariableDeControle::VariableDeControle()']]],
+  ['variabledecontrole_2ecpp_6',['variableDeControle.cpp',['../variable_de_controle_8cpp.html',1,'']]],
+  ['variabledecontrole_2eh_7',['variableDeControle.h',['../variable_de_controle_8h.html',1,'']]],
+  ['vdc_5fanalog_8',['VDC_ANALOG',['../class_variable_de_controle.html#af7076d02110216c3f346f5e7bb68204cadd159f2c6848f22ac199b41f852b480b',1,'VariableDeControle']]],
+  ['vdc_5fdigital_9',['VDC_DIGITAL',['../class_variable_de_controle.html#af7076d02110216c3f346f5e7bb68204ca86676f1035a02ee483aac410b2496813',1,'VariableDeControle']]],
+  ['vdc_5fin_10',['VDC_IN',['../class_variable_de_controle.html#a5b18a50f5fdd976b406c35f9f9530d53a9ba49b83205755355cfe37b8fe4ccf78',1,'VariableDeControle']]],
+  ['vdc_5fno_5fpin_11',['VDC_NO_PIN',['../variable_de_controle_8h.html#a21836618490e689c6a3cbbd358eee6a2',1,'variableDeControle.h']]],
+  ['vdc_5fnormal_12',['VDC_NORMAL',['../class_variable_de_controle.html#a8f48b29be50778c7768266392bf46dc7a79a26e82128f5efa33084665bfa539a6',1,'VariableDeControle']]],
+  ['vdc_5fout_13',['VDC_OUT',['../class_variable_de_controle.html#a5b18a50f5fdd976b406c35f9f9530d53a1635bf6eae0e000832b743a62defc0e2',1,'VariableDeControle']]],
+  ['vdc_5fverrouille_14',['VDC_VERROUILLE',['../class_variable_de_controle.html#a8f48b29be50778c7768266392bf46dc7a4f37aad69c3d7800aa80ca3ac1625744',1,'VariableDeControle']]],
+  ['vdcmode_15',['VDCMode',['../class_variable_de_controle.html#a8f48b29be50778c7768266392bf46dc7',1,'VariableDeControle']]],
+  ['vdcsignal_16',['VDCSignal',['../class_variable_de_controle.html#af7076d02110216c3f346f5e7bb68204c',1,'VariableDeControle']]],
+  ['vdctype_17',['VDCType',['../class_variable_de_controle.html#a5b18a50f5fdd976b406c35f9f9530d53',1,'VariableDeControle']]],
+  ['verrouiller_18',['verrouiller',['../class_mecanisme.html#a07c8e5a4cc3bd4daf90011f7a940e030',1,'Mecanisme::verrouiller()'],['../class_variable_de_controle.html#aa1fbf764915af6519137b5c19fc30b01',1,'VariableDeControle::verrouiller()']]],
+  ['versionreg_19',['VersionReg',['../class_m_f_r_c522.html#a3f25eb3421a80d3aeca247c9640f0669a4281c25cf6743163ed2e2f903cf17ba9',1,'MFRC522']]]
 ];

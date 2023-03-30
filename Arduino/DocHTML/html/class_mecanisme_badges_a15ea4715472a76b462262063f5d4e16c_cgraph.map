@@ -1,0 +1,5 @@
+<map id="MecanismeBadges::updateLed" name="MecanismeBadges::updateLed">
+<area shape="rect" id="node1" title="Gestion d&#39;une lecture et mise à jour des leds." alt="" coords="5,13,207,38"/>
+<area shape="rect" id="node2" href="$class_mecanisme.html#a443dda6b953f4722abb7a76c80cfcb77" title="Accesseur d&#39;une valeur d&#39;une variable de controle." alt="" coords="255,13,433,38"/>
+<area shape="rect" id="node3" href="$class_variable_de_controle.html#a74d2245b0b2494e76c75c025d2e8395f" title="Accesseur de la valeur." alt="" coords="481,5,615,45"/>
+</map>

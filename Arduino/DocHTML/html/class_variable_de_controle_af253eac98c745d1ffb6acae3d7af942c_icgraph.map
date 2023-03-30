@@ -1,0 +1,6 @@
+<map id="VariableDeControle::setValeur" name="VariableDeControle::setValeur">
+<area shape="rect" id="node1" title="Initialise la valeur du mode normal." alt="" coords="512,23,645,63"/>
+<area shape="rect" id="node2" href="$class_mecanisme.html#ac25812bd5148b0171723ffb981e89176" title="Initialise une variable de controle." alt="" coords="285,31,464,56"/>
+<area shape="rect" id="node3" href="$class_mecanisme_badges.html#a83e03e766fd0ce21349a58c16271afa9" title="Méthode appelée par le loop de base sur Arduino." alt="" coords="5,5,237,31"/>
+<area shape="rect" id="node4" href="$class_mecanisme_badges.html#a4690ba5effb3c65139c99695157f1aa9" title="Mise à jour des sorties." alt="" coords="11,55,232,80"/>
+</map>

@@ -1,9 +1,8 @@
 <map id="MFRC522::PICC_RequestA" name="MFRC522::PICC_RequestA">
-<area shape="rect" id="node1" title=" " alt="" coords="1057,35,1240,60"/>
-<area shape="rect" id="node2" href="$class_m_f_r_c522.html#a3adca9d3b455c680ebcde3b74c4e567b" title=" " alt="" coords="777,5,1009,31"/>
-<area shape="rect" id="node4" href="$class_m_f_r_c522_extended.html#afaa1289052274755acec885017507b64" title=" " alt="" coords="807,55,980,95"/>
-<area shape="rect" id="node3" href="$class_m_f_r_c522.html#a2bdc18af4952ce99099607c84139b51c" title=" " alt="" coords="547,5,729,31"/>
-<area shape="rect" id="node5" href="$class_m_f_r_c522_daisy.html#a2b046338f2b1a05475e472afe5d0a7f5" title="Lecture d&#39;un badge." alt="" coords="565,63,711,88"/>
-<area shape="rect" id="node6" href="$class_mecanisme_badges.html#afa31a83411ea0e23043fb0081f920e64" title="Gestion d&#39;une lecture et mise à jour des leds." alt="" coords="285,63,499,88"/>
-<area shape="rect" id="node7" href="$class_mecanisme_badges.html#a83e03e766fd0ce21349a58c16271afa9" title="Méthode appelée par le loop de base sur Arduino." alt="" coords="5,63,237,88"/>
+<area shape="rect" id="node1" title=" " alt="" coords="796,35,979,60"/>
+<area shape="rect" id="node2" href="$class_m_f_r_c522.html#a3adca9d3b455c680ebcde3b74c4e567b" title=" " alt="" coords="516,5,748,31"/>
+<area shape="rect" id="node4" href="$class_m_f_r_c522_extended.html#afaa1289052274755acec885017507b64" title=" " alt="" coords="545,55,719,95"/>
+<area shape="rect" id="node3" href="$class_m_f_r_c522.html#a2bdc18af4952ce99099607c84139b51c" title=" " alt="" coords="285,5,468,31"/>
+<area shape="rect" id="node5" href="$class_m_f_r_c522_daisy.html#a2b046338f2b1a05475e472afe5d0a7f5" title="Lecture d&#39;un badge." alt="" coords="303,63,450,88"/>
+<area shape="rect" id="node6" href="$class_mecanisme_badges.html#a83e03e766fd0ce21349a58c16271afa9" title="Méthode appelée par le loop de base sur Arduino." alt="" coords="5,63,237,88"/>
 </map>

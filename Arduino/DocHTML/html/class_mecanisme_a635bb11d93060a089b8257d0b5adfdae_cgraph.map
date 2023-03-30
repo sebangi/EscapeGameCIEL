@@ -1,8 +1,12 @@
 <map id="Mecanisme::loop" name="Mecanisme::loop">
-<area shape="rect" id="node1" title="Méthode appelée par le loop de base sur Arduino." alt="" coords="5,56,127,81"/>
-<area shape="rect" id="node2" href="$class_mecanisme.html#a42499afe585c537efe39ffde48a5d1ee" title="Méthode appelée par le loop pour tous les mécanismes." alt="" coords="185,31,352,56"/>
-<area shape="rect" id="node6" href="$class_mecanisme.html#afcf3112c910eef6d3cc03a286b47f425" title=" " alt="" coords="175,80,363,105"/>
-<area shape="rect" id="node3" href="$class_mecanisme.html#aa69c6639c0825649c257f66d69d0a2e9" title="Méthode appelée automatiquement lorsque l&#39;on recoit un message sur le port série." alt="" coords="411,31,571,56"/>
-<area shape="rect" id="node4" href="$class_mecanisme.html#a5d6a43d18c356c42bc0c1fb34dfef993" title="Méthode appelée par le loop pour tous les mécanismes." alt="" coords="619,5,784,31"/>
-<area shape="rect" id="node5" href="$class_mecanisme.html#a07c8e5a4cc3bd4daf90011f7a940e030" title="Méthode appelée par le loop pour tous les mécanismes." alt="" coords="626,55,777,80"/>
+<area shape="rect" id="node1" title="Méthode appelée par le loop de base sur Arduino." alt="" coords="5,95,127,121"/>
+<area shape="rect" id="node2" href="$class_mecanisme.html#a42499afe585c537efe39ffde48a5d1ee" title="Méthode appelée par le loop pour tous les mécanismes." alt="" coords="185,46,352,71"/>
+<area shape="rect" id="node9" href="$class_mecanisme.html#afcf3112c910eef6d3cc03a286b47f425" title=" " alt="" coords="175,95,363,121"/>
+<area shape="rect" id="node10" href="$class_mecanisme.html#acda653c93d67f7863000c4d79bc422d5" title=" " alt="" coords="180,145,357,170"/>
+<area shape="rect" id="node3" href="$class_mecanisme.html#aa69c6639c0825649c257f66d69d0a2e9" title="Méthode appelée automatiquement lorsque l&#39;on recoit un message sur le port série." alt="" coords="411,46,571,71"/>
+<area shape="rect" id="node4" href="$class_mecanisme.html#a5d6a43d18c356c42bc0c1fb34dfef993" title="Déverouille un variable de controle." alt="" coords="619,17,784,42"/>
+<area shape="rect" id="node7" href="$class_mecanisme.html#a07c8e5a4cc3bd4daf90011f7a940e030" title="Vérouille une variable de controle." alt="" coords="626,70,777,95"/>
+<area shape="rect" id="node5" href="$class_variable_de_controle.html#a23db5a4a3efcc9bc0e7044d7f8fe7891" title="Méthode appelée par le loop pour tous les mécanismes." alt="" coords="832,5,965,45"/>
+<area shape="rect" id="node6" href="$class_variable_de_controle.html#a752fa7c1e190c36b32725678a4f95cb8" title="Mise à jour de la sortie." alt="" coords="1013,37,1147,77"/>
+<area shape="rect" id="node8" href="$class_variable_de_controle.html#aa1fbf764915af6519137b5c19fc30b01" title="Méthode appelée par le loop pour tous les mécanismes." alt="" coords="832,69,965,109"/>
 </map>

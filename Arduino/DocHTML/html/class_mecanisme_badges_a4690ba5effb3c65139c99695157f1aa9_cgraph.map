@@ -1,0 +1,9 @@
+<map id="MecanismeBadges::updateSorties" name="MecanismeBadges::updateSorties">
+<area shape="rect" id="node1" title="Mise à jour des sorties." alt="" coords="5,45,227,70"/>
+<area shape="rect" id="node2" href="$class_mecanisme.html#a443dda6b953f4722abb7a76c80cfcb77" title="Accesseur d&#39;une valeur d&#39;une variable de controle." alt="" coords="524,13,703,38"/>
+<area shape="rect" id="node4" href="$class_mecanisme.html#ac25812bd5148b0171723ffb981e89176" title="Initialise une variable de controle." alt="" coords="286,94,465,119"/>
+<area shape="rect" id="node7" href="$class_mecanisme_badges.html#a15ea4715472a76b462262063f5d4e16c" title="Gestion d&#39;une lecture et mise à jour des leds." alt="" coords="275,45,476,70"/>
+<area shape="rect" id="node3" href="$class_variable_de_controle.html#a74d2245b0b2494e76c75c025d2e8395f" title="Accesseur de la valeur." alt="" coords="751,5,884,45"/>
+<area shape="rect" id="node5" href="$class_variable_de_controle.html#af253eac98c745d1ffb6acae3d7af942c" title="Initialise la valeur du mode normal." alt="" coords="547,87,680,127"/>
+<area shape="rect" id="node6" href="$class_variable_de_controle.html#a752fa7c1e190c36b32725678a4f95cb8" title="Mise à jour de la sortie." alt="" coords="751,87,884,127"/>
+</map>

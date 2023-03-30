@@ -1,13 +1,15 @@
 #ifndef __MECANISME__
 #define __MECANISME__
 
-#define NB_PIN 22
+/** Nombre maximum de variable de controle. */
+#define NB_VDC_MAX 32
 
 /**
    \file mecanisme.h
 */
 
 #include <arduino.h>
+#include "variableDeControle.h"
 
 /**
 *   \class Mecanisme
@@ -18,12 +20,15 @@ class Mecanisme
 {
   public:  
     Mecanisme(int id);
+    ~Mecanisme();
       
     void setup();
     void loop();
 
   protected:
-    void ecrireSortie( int pin, int valeur );
+	void ajouterVDC(int id, VariableDeControle::VDCType t, VariableDeControle::VDCSignal s, int pin = VDC_NO_PIN);
+    byte getValeurVDC( int id ) const;
+	void setValeurVDC( int pin, int valeur );
     void verrouiller( int pin, int valeur );
     void deverrouiller( int pin );
     
@@ -36,17 +41,15 @@ class Mecanisme
     static void sendData();
 
     virtual void setupMecanisme() = 0;  
-    virtual void loopMecanisme() = 0;  
-
+    virtual void loopMecanisme() = 0;   
+    virtual void updateSorties() = 0; 
+	
   private:
     /** \brief L'identifiant du mécanisme. */
     int m_id; 
-
-    /** \brief Le tableau indiquant quels pins sont verouillées. */
-    bool m_verrous[NB_PIN]; 
-
-    /** \brief Le tableau indiquant les valeurs souhaitées dans le mode normal. */
-    int m_valeurs_voulues[NB_PIN]; 
+	
+    /** \brief Le tableau des variables de controle. */
+	VariableDeControle * m_vdc[NB_VDC_MAX];
 
     /** \brief L'adresse du mécanisme esclave sur le bus I2C. */
     byte m_slaveAddress;

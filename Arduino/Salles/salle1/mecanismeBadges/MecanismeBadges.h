@@ -6,7 +6,7 @@
 */
 #include "MFRC522.h"
 
-#include "Mecanisme.h"
+#include "mecanisme.h"
 #include "MFRC522Daisy.h"
 #include "definesBadges.h"
 
@@ -23,7 +23,9 @@ class MecanismeBadges : public Mecanisme
   private:
     void setupMecanisme();
     void loopMecanisme();
-    bool gererLecteur( int numLecteur, int pin_green, int pin_red ) ;
+    void updateSorties();
+
+    void updateLed( int id_vdc, int pin_green, int pin_red ) ;
 
   private:
     /** \brief Interface de l'ensemble des lecteurs MFRC522 en mode Daisy. */
