@@ -7,7 +7,10 @@
 #include <Arduino.h>
 #include <Wire.h>
 
-byte Mecanisme::m_data_to_echo = 0;
+// Variables statiques
+byte Mecanisme::s_data_I2C[TAILLE_BUFFER_I2C];
+bool Mecanisme::s_data_I2C_ok = false;
+byte Mecanisme::s_etat = 0;
 
 /**
  * \brief Constructeur de la classe Mecanisme.
@@ -89,6 +92,7 @@ void Mecanisme::setupGeneral()
 void Mecanisme::loopGeneral() 
 {
   serialEvent();
+  traiterMessageI2C();
 }
 
 /**
@@ -186,22 +190,34 @@ void Mecanisme::setupI2C()
  * \param bytecount Le nombre de bytes reçus.
  */
 void Mecanisme::receiveData(int bytecount)
-{
-  int i;
+{	
+	//if ( bytecount > 1 )
+	{
+		int i;
+		Serial.print("bytecount = ");
+		Serial.println(bytecount);
+	
+		for (i = 0; i < bytecount; i++)
+		{
+			byte b = Wire.read();
+			
+			if ( i < TAILLE_BUFFER_I2C && bytecount > 1 )
+				s_data_I2C[i] = b;
+		} 
+	
+		if ( bytecount > 1 )
+			for ( ; i!= TAILLE_BUFFER_I2C; ++i)
+				s_data_I2C[i] = 0;	
 
-  for (i = 0; i < bytecount; i++)
-  {
-    m_data_to_echo = Wire.read();
-
-    if ( i == 1 )
-      Serial.println("Reception sur I2C : ");
-    
-    if ( i != 0 )
-      Serial.print( (char)m_data_to_echo );
-  }
-  
-  if ( i > 1 ) 
-    Serial.println( "" );
+		for ( i = 0; i!= TAILLE_BUFFER_I2C; ++i)
+		{
+			Serial.print(s_data_I2C[i]);
+			Serial.print(" ");
+		}
+		Serial.println("");
+		
+		s_data_I2C_ok = true;
+	}
 }
 
 /**
@@ -209,7 +225,51 @@ void Mecanisme::receiveData(int bytecount)
  */
 void Mecanisme::sendData()
 {
-  Serial.println("Envoi sur I2C : RETOUR");
-  Wire.write("PARFAIT, cela marche bien !");
+	Serial.println("Envoi sur I2C : A");
+  	Wire.write( s_etat );
+}
+/**
+ * \brief Traitement d'un message depuis le bus I2C.
+ */
+void Mecanisme::traiterMessageI2C()
+{
+	if ( s_data_I2C_ok )
+	{
+		Serial.print("traiterMessageI2C()");
+		for ( int i = 0; i!= TAILLE_BUFFER_I2C; ++i)
+		{
+			Serial.print(s_data_I2C[i]);
+			Serial.print(" ");
+		}
+		Serial.println("");
+		
+		Serial.print("TRAITEMENT : ");
+		Serial.print(s_data_I2C[1]);
+		Serial.print(" : ");		
+		
+		switch ( s_data_I2C[1] )
+		{
+			case 1: 
+				Serial.println("GET ETATS");
+				break;
+			case 2: 
+				Serial.print("VERROUILLER ");
+				Serial.print( s_data_I2C[2] );
+				Serial.print( " val = " );
+				Serial.println( s_data_I2C[3] );
+				
+				verrouiller(s_data_I2C[2], s_data_I2C[3]);
+				break;
+			case 3: 
+				Serial.print("DEVERROUILLER ");
+				Serial.println( s_data_I2C[2] );
+				
+				deverrouiller(s_data_I2C[2]);
+				break;
+		};
+		
+		s_etat = getValeurVDC(5);
+		s_data_I2C_ok = false;
+	}
 }
 

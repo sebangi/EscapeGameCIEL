@@ -37,12 +37,12 @@ void MecanismeBadges::setupMecanisme()
 
   SPI.begin();
     
-  ajouterVDC( VAR_CTRL_LECTEUR1, VariableDeControle::VDC_IN, VariableDeControle::VDC_DIGITAL );
-  ajouterVDC( VAR_CTRL_LECTEUR2, VariableDeControle::VDC_IN, VariableDeControle::VDC_DIGITAL );
-  ajouterVDC( VAR_CTRL_LECTEUR3, VariableDeControle::VDC_IN, VariableDeControle::VDC_DIGITAL );
-  ajouterVDC( VAR_CTRL_LECTEUR4, VariableDeControle::VDC_IN, VariableDeControle::VDC_DIGITAL );
+  ajouterVDC( ID_VDC_LECTEUR1, VariableDeControle::VDC_IN, VariableDeControle::VDC_DIGITAL );
+  ajouterVDC( ID_VDC_LECTEUR2, VariableDeControle::VDC_IN, VariableDeControle::VDC_DIGITAL );
+  ajouterVDC( ID_VDC_LECTEUR3, VariableDeControle::VDC_IN, VariableDeControle::VDC_DIGITAL );
+  ajouterVDC( ID_VDC_LECTEUR4, VariableDeControle::VDC_IN, VariableDeControle::VDC_DIGITAL );
 
-  ajouterVDC( VAR_CTRL_GACHE, VariableDeControle::VDC_OUT, VariableDeControle::VDC_DIGITAL, GACHE_PIN );
+  ajouterVDC( ID_VDC_GACHE, VariableDeControle::VDC_OUT, VariableDeControle::VDC_DIGITAL, GACHE_PIN );
 
   Serial.println( F("Scan des lecteurs...")); 
 }
@@ -52,10 +52,10 @@ void MecanismeBadges::setupMecanisme()
  */
 void MecanismeBadges::loopMecanisme() 
 {
-  setValeurVDC(VAR_CTRL_LECTEUR1, m_monMFRC522.read(1) );
-  setValeurVDC(VAR_CTRL_LECTEUR2, m_monMFRC522.read(2) );
-  setValeurVDC(VAR_CTRL_LECTEUR3, m_monMFRC522.read(3) );
-  setValeurVDC(VAR_CTRL_LECTEUR4, m_monMFRC522.read(4) );
+  setValeurVDC(ID_VDC_LECTEUR1, m_monMFRC522.read(1) );
+  setValeurVDC(ID_VDC_LECTEUR2, m_monMFRC522.read(2) );
+  setValeurVDC(ID_VDC_LECTEUR3, m_monMFRC522.read(3) );
+  setValeurVDC(ID_VDC_LECTEUR4, m_monMFRC522.read(4) );
 }
 
 /**
@@ -63,19 +63,19 @@ void MecanismeBadges::loopMecanisme()
  */
 void MecanismeBadges::updateSorties()
 {
-  updateLed(VAR_CTRL_LECTEUR1, LED1_GREEN_PIN, LED1_RED_PIN);
-  updateLed(VAR_CTRL_LECTEUR2, LED2_GREEN_PIN, LED2_RED_PIN);
-  updateLed(VAR_CTRL_LECTEUR3, LED3_GREEN_PIN, LED3_RED_PIN);
-  updateLed(VAR_CTRL_LECTEUR4, LED4_GREEN_PIN, LED4_RED_PIN);
+  updateLed(ID_VDC_LECTEUR1, LED1_GREEN_PIN, LED1_RED_PIN);
+  updateLed(ID_VDC_LECTEUR2, LED2_GREEN_PIN, LED2_RED_PIN);
+  updateLed(ID_VDC_LECTEUR3, LED3_GREEN_PIN, LED3_RED_PIN);
+  updateLed(ID_VDC_LECTEUR4, LED4_GREEN_PIN, LED4_RED_PIN);
 
-  if (  getValeurVDC(VAR_CTRL_LECTEUR1) &&
-        getValeurVDC(VAR_CTRL_LECTEUR2) //&&
-        //getValeurVDC(VAR_CTRL_LECTEUR3) &&
-        //getValeurVDC(VAR_CTRL_LECTEUR4)
+  if (  getValeurVDC(ID_VDC_LECTEUR1) &&
+        getValeurVDC(ID_VDC_LECTEUR2) //&&
+        //getValeurVDC(ID_VDC_LECTEUR3) &&
+        //getValeurVDC(ID_VDC_LECTEUR4)
          )
-    setValeurVDC( VAR_CTRL_GACHE, 1 );
+    setValeurVDC( ID_VDC_GACHE, 1 );
   else
-    setValeurVDC( VAR_CTRL_GACHE, 0 );
+    setValeurVDC( ID_VDC_GACHE, 0 );
 }
 
 /**

@@ -35,11 +35,11 @@
 
 
 //####### ID VARIABLES DE CONTROLE ########
-#define VAR_CTRL_LECTEUR1 1
-#define VAR_CTRL_LECTEUR2 2
-#define VAR_CTRL_LECTEUR3 3
-#define VAR_CTRL_LECTEUR4 4
-#define VAR_CTRL_GACHE 5
+#define ID_VDC_LECTEUR1 1
+#define ID_VDC_LECTEUR2 2
+#define ID_VDC_LECTEUR3 3
+#define ID_VDC_LECTEUR4 4
+#define ID_VDC_GACHE 5
 //########################################
 
 
