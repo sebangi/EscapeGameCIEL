@@ -1,6 +1,6 @@
 /**
-   \file test_mecanisme.h
-   \brief Programme principal de l'application Arduino.
+   \file mecanismeBadges.h
+   \brief Programme principal de l'application Arduino gérant le mécanisme des badges.
 */
 
 #include "mecanismeBadges.h"

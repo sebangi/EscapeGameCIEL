@@ -1,0 +1,18 @@
+<map id="Libraries/MFRC522/examples" name="Libraries/MFRC522/examples">
+<area shape="rect" id="node2" href="dir_b1f4ea468043c4c4f08ca2ad0ed9f35a.html" title="ChangeUID" alt="" coords="1899,63,1986,88"/>
+<area shape="rect" id="node3" href="dir_eccb7c08e456f2b0a73e19ce2cea2bfc.html" title="DumpInfo" alt="" coords="1799,63,1875,88"/>
+<area shape="rect" id="node4" href="dir_0de53a8b0fa3dbe3ac3cf5df8f42f0e7.html" title="firmware_check" alt="" coords="1663,63,1775,88"/>
+<area shape="rect" id="node5" href="dir_5d9dafb15b7937cac466242732378ac8.html" title="FixBrickedUID" alt="" coords="1533,63,1638,88"/>
+<area shape="rect" id="node6" href="dir_b7a3e075e030058dfa1e578e0e420c4b.html" title="MifareClassicValueBlock" alt="" coords="1342,63,1509,88"/>
+<area shape="rect" id="node7" href="dir_b8cb9383c3df71b1c1b952a5d764e554.html" title="MinimalInterrupt" alt="" coords="1203,63,1317,88"/>
+<area shape="rect" id="node8" href="dir_6c1f24753cc21f8cec6215d7d491d98f.html" title="Ntag216_AUTH" alt="" coords="1067,63,1178,88"/>
+<area shape="rect" id="node9" href="dir_1856d0e3f3429a5358deddb37db019fd.html" title="ReadAndWrite" alt="" coords="936,63,1043,88"/>
+<area shape="rect" id="node10" href="dir_c0b51e4e539b88dae2d1195098d02594.html" title="ReadNUID" alt="" coords="829,63,912,88"/>
+<area shape="rect" id="node11" href="dir_ad5fdd68558b4e4f320dc36c8765313e.html" title="ReadUidMultiReader" alt="" coords="665,63,805,88"/>
+<area shape="rect" id="node12" href="dir_d365e05cb12f597b3050911c6277d274.html" title="RFID&#45;Cloner" alt="" coords="549,63,641,88"/>
+<area shape="rect" id="node13" href="dir_df79917beeab8471ec581c40171c26a8.html" title="rfid_default_keys" alt="" coords="406,63,525,88"/>
+<area shape="rect" id="node14" href="dir_b23d863a34ceed195dc3e683434ab54c.html" title="rfid_read_personal_data" alt="" coords="223,63,382,88"/>
+<area shape="rect" id="node15" href="dir_8e48d5cca2b443a963dc1275edf7b3fe.html" title="rfid_write_personal_data" alt="" coords="38,63,199,88"/>
+<area shape="rect" id="clust2" href="dir_62e3df4fb66db2e728feb5d7ac4407e4.html" alt="" coords="27,52,2100,99"/>
+<area shape="rect" id="clust1" href="dir_4ebf3565b03c34eefca0db2a7a123b11.html" title="MFRC522" alt="" coords="16,16,2111,109"/>
+</map>

@@ -2,7 +2,7 @@
 #define __MECANISME_BADGES__
 
 /**
-   \file MecanismeBadges.h
+   \file mecanismeBadges.h
 */
 #include "MFRC522.h"
 
