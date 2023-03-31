@@ -1,0 +1,7 @@
+
+
+# installation de bootstrap
+npm install bootstrap --save-dev
+
+# installation de webpack-encore
+composer require symfony/webpack-encore-bundle
