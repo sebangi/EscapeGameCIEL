@@ -14,7 +14,7 @@ class Salle
     #[ORM\Column]
     private ?int $id = null;
 
-    #[ORM\Column]
+    #[ORM\Column(unique:true)]
     private ?int $numero = null;
 
     #[ORM\Column(length: 255)]
