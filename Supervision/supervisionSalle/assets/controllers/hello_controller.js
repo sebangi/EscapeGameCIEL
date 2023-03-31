@@ -1,4 +1,6 @@
-import { Controller } from '@hotwired/stimulus';
+//import { Controller } from '@hotwired/stimulus';
+
+import { Controller } from "@symfony/stimulus-bridge/controllers.json";
 
 /*
  * This is an example Stimulus controller!
