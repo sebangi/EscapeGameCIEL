@@ -39,7 +39,9 @@
             </div>
         {% endfor %}
         
-        {% block body %}{% endblock %}        
+        <div class="m-2">
+            {% block body %}{% endblock %}        
+        </div>
         
         {% block javascripts %}
             {{ encore_entry_script_tags('app') }}

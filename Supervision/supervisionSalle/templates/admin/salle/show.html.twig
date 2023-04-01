@@ -3,18 +3,24 @@
 {% block title %}Salle{% endblock %}
 
 {% block body %}
-    <h1>Salle n°{{ salle.numero }} : {{ salle.nom }}</h1>
-
+    
+    <div>
+        <h1>
+            Salle n°{{ salle.numero }} : {{ salle.nom }}
+                    
+            <a href="{{ path('app_admin_salle_edit', {'id': salle.id}) }}" class="btn btn-primary">
+                <span class="fas fa-edit" aria-hidden="true"></span>
+            </a>
+            
+            {{ include('admin/salle/_delete_form.html.twig') }}
+        </h1>
+    </div>
+        
     <table class="table">
         <div>
             {{ salle.Description }}
         </div>
     </table>
 
-    <a href="{{ path('app_admin_salle_edit', {'id': salle.id}) }}" class="btn btn-primary m-2">
-        <span class="fas fa-edit" aria-hidden="true"></span>
-        Éditer
-    </a>
-
-    {{ include('admin/salle/_delete_form.html.twig') }}
+    
 {% endblock %}
