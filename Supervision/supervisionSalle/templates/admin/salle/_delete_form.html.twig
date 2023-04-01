@@ -1,0 +1,7 @@
+<form method="post" class="m-2" action="{{ path('app_admin_salle_delete', {'id': salle.id}) }}" onsubmit="return confirm('Etes-vous certain de supprimer cette salle ?');">
+    <input type="hidden" name="_token" value="{{ csrf_token('delete' ~ salle.id) }}">
+    <button class="btn btn-danger">
+        <span class="fas fa-trash" aria-hidden="true"></span>
+        Supprimer la salle
+    </button>
+</form>

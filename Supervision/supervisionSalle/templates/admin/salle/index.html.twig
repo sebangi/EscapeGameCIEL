@@ -1,0 +1,47 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Salle index{% endblock %}
+
+{% block body %}
+    <h1>Salle index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Numéro</th>
+                <th>Nom</th>
+                <th>Description</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for salle in salles %}
+            <tr>
+                <td>{{ salle.numero }}</td>
+                <td>{{ salle.nom }}</td>
+                <td>{{ salle.Description }}</td>
+                <td>
+                    <a href="{{ path('app_admin_salle_show', {'id': salle.id}) }}" class="btn btn-primary">
+                        <span class="fas fa-info-circle" aria-hidden="true"></span>
+                    </a>
+                    <a href="{{ path('app_admin_salle_edit', {'id': salle.id}) }}" class="btn btn-primary">
+                        <span class="fas fa-edit" aria-hidden="true"></span>
+                    </a>
+                    <a href="{{ path('app_admin_salle_delete', {'id': salle.id}) }}" class="btn btn-danger">
+                        <span class="fas fa-trash" aria-hidden="true"></span>
+                    </a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="5">Aucune salle n'est enregistrée</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_admin_salle_new') }}" class="btn btn-primary">
+        <span class="fas fa-plus-circle" aria-hidden="true"></span>
+        Créer une nouvelle salle
+    </a>
+{% endblock %}

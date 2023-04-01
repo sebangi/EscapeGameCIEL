@@ -1,0 +1,8 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Supervision de salle{% endblock %}
+
+{% block body %}     
+        <a href="{{ path('app_admin_salle_index') }}" class="btn btn-primary">Liste des salles</a>
+        <a href="{{ path('app_admin_utilisateur_index') }}" class="btn btn-primary">Liste des utilisateurs</a>  
+{% endblock %}
