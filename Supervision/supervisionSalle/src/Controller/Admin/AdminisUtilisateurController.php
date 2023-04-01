@@ -69,7 +69,7 @@ class AdminisUtilisateurController extends AbstractController
         ]);
     }
 
-    #[Route('/{id}', name: 'app_admin_utilisateur_delete', methods: ['POST'])]
+    #[Route('/{id}', name: 'app_admin_utilisateur_delete', methods: ['DELETE'])]
     public function delete(Request $request, Utilisateur $utilisateur, UtilisateurRepository $utilisateurRepository): Response
     {
         if ($this->isCsrfTokenValid('delete'.$utilisateur->getId(), $request->request->get('_token'))) {

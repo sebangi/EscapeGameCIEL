@@ -58,6 +58,14 @@ class Utilisateur implements UserInterface, PasswordAuthenticatedUserInterface
     }
 
     /**
+     * 
+     * @return bool
+     */
+    public function estAdmin(): bool {
+        return in_array("ROLE_ADMIN", $this->roles);
+    }
+    
+    /**
      * @see UserInterface
      */
     public function getRoles(): array

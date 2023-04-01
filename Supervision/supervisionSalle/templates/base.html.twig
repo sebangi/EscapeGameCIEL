@@ -17,17 +17,20 @@
                     Escape Game CIEL
                 </div>
             </a>
-                    
+        
+            <div class="m-2">
             {% if app.user %}
-            <div>
-                Bonjour {{ app.user.username }} <a class="btn btn-sm btn-danger" href="{{ path('app_logout') }}">Déconnexion</a>
-            </div>
+                {{ app.user.username }} 
+                <a href="{{ path('app_admin_utilisateur_edit', {'id': app.user.id}) }}" class="btn btn-sm btn-primary">
+                    <span class="fas fa-user-edit" aria-hidden="true"></span>
+                </a>
+                <a class="btn btn-sm btn-danger" href="{{ path('app_logout') }}">
+                    <span class="fas fa-sign-out-alt" aria-hidden="true"></span>
+                </a>
             {% else %}
-                <div>
-                    <a class="btn btn-sm btn-primary" href="{{ path('app_admin_utilisateur_new') }}">S'inscrire</a>
                     <a class="btn btn-sm btn-success" href="{{ path('app_login') }}">Se connecter</a>
-                </div>
             {% endif %}
+            </div>
         </nav>
         
          {% for message in app.flashes('success') %}
