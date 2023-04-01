@@ -13,7 +13,7 @@ Encore
         .setPublicPath('/build')
         // only needed for CDN's or sub-directory deploy
         //.setManifestKeyPrefix('build/')
-        .enableStimulusBridge('assets/controllers.json')
+        .enableStimulusBridge('./assets/controllers.json')
         /*
          * ENTRY CONFIG
          *
@@ -63,7 +63,7 @@ Encore
             delete options.outputStyle;
         }, {})
 
-        //.addStyleEntry('global', './assets/css/global.scss')
+        .addStyleEntry('global', './assets/styles/global.scss')
 
 
         // uncomment if you use TypeScript
