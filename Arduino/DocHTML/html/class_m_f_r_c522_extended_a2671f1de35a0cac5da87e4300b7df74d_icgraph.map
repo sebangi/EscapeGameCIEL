@@ -1,0 +1,7 @@
+<map id="MFRC522Extended::PICC_RequestATS" name="MFRC522Extended::PICC_RequestATS">
+<area shape="rect" id="node1" title=" " alt="" coords="923,5,1096,45"/>
+<area shape="rect" id="node2" href="$class_m_f_r_c522_extended.html#a0740187cc7f336b0aaea2db432185cb5" title=" " alt="" coords="701,5,875,45"/>
+<area shape="rect" id="node3" href="$class_m_f_r_c522_extended.html#ae68a2f90cec039dc856089aee08119ee" title=" " alt="" coords="480,5,653,45"/>
+<area shape="rect" id="node4" href="$class_m_f_r_c522_daisy.html#a2b046338f2b1a05475e472afe5d0a7f5" title="Lecture d&#39;un badge." alt="" coords="285,13,432,38"/>
+<area shape="rect" id="node5" href="$class_mecanisme_badges.html#a83e03e766fd0ce21349a58c16271afa9" title="Méthode appelée par le loop de base sur Arduino." alt="" coords="5,13,237,38"/>
+</map>

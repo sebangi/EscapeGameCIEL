@@ -1,0 +1,6 @@
+<map id="Mecanisme::setupGeneral" name="Mecanisme::setupGeneral">
+<area shape="rect" id="node1" title="Méthode appelée par le setup pour tous les mécanismes." alt="" coords="5,31,180,56"/>
+<area shape="rect" id="node2" href="$class_mecanisme.html#a94d6c17006071b1543e9ae740846fd96" title="Méthode aintialisant le bus I2C." alt="" coords="228,31,376,56"/>
+<area shape="rect" id="node3" href="$class_mecanisme.html#a91e0838445abe6068170ee827d9ba50f" title="Méthode appelée quand on reçoit un message depuis le bus I2C." alt="" coords="424,5,588,31"/>
+<area shape="rect" id="node4" href="$class_mecanisme.html#afcfec8cf53e2e178039052065cac59b2" title="Méthode appelée automatiquement après avoir lu un message depuis le bus I2C." alt="" coords="430,55,582,80"/>
+</map>

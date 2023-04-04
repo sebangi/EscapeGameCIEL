@@ -1,0 +1,9 @@
+<map id="Mecanisme::setup" name="Mecanisme::setup">
+<area shape="rect" id="node1" title="Méthode appelée par le setup de base sur Arduino." alt="" coords="5,80,135,105"/>
+<area shape="rect" id="node2" href="$class_mecanisme.html#afcc25321db0930910bdf5184ffd4dad1" title="Méthode appelée par le setup pour tous les mécanismes." alt="" coords="193,31,368,56"/>
+<area shape="rect" id="node6" href="$class_mecanisme.html#a272b0d7933c4f968347b97fa629c6959" title=" " alt="" coords="183,80,379,105"/>
+<area shape="rect" id="node7" href="$class_mecanisme.html#acda653c93d67f7863000c4d79bc422d5" title=" " alt="" coords="192,129,369,155"/>
+<area shape="rect" id="node3" href="$class_mecanisme.html#a94d6c17006071b1543e9ae740846fd96" title="Méthode aintialisant le bus I2C." alt="" coords="427,31,575,56"/>
+<area shape="rect" id="node4" href="$class_mecanisme.html#a91e0838445abe6068170ee827d9ba50f" title="Méthode appelée quand on reçoit un message depuis le bus I2C." alt="" coords="623,5,787,31"/>
+<area shape="rect" id="node5" href="$class_mecanisme.html#afcfec8cf53e2e178039052065cac59b2" title="Méthode appelée automatiquement après avoir lu un message depuis le bus I2C." alt="" coords="629,55,781,80"/>
+</map>

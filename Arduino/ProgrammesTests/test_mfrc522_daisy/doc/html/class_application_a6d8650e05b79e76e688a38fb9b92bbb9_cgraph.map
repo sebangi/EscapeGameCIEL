@@ -1,6 +1,0 @@
-<map id="Application::loop" name="Application::loop">
-<area shape="rect" id="node1" title="Méthode appelée par le loop de base sur Arduino." alt="" coords="5,31,124,56"/>
-<area shape="rect" id="node2" href="$class_m_f_r_c522_daisy.html#a2b046338f2b1a05475e472afe5d0a7f5" title="Lecture d&#39;un badge." alt="" coords="172,31,319,56"/>
-<area shape="rect" id="node3" href="$class_m_f_r_c522_daisy.html#ae422c1e9229e26587a6c9016384857d1" title="Affiche en hexadécimal un tableau." alt="" coords="381,5,551,31"/>
-<area shape="rect" id="node4" href="$class_m_f_r_c522_daisy.html#a35b01321ef868dd154a54c7705e367c8" title="Sélectionne un lecteur." alt="" coords="367,55,565,80"/>
-</map>

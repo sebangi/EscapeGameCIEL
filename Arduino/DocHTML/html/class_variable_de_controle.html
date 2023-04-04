@@ -1,0 +1,671 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Gestion de salle Escape Game: Référence de la classe VariableDeControle</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Gestion de salle Escape Game
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Types publics</a> &#124;
+<a href="#pub-methods">Fonctions membres publiques</a> &#124;
+<a href="#pri-types">Types privés</a> &#124;
+<a href="#pri-methods">Fonctions membres privées</a> &#124;
+<a href="#pri-attribs">Attributs privés</a> &#124;
+<a href="class_variable_de_controle-members.html">Liste de tous les membres</a>  </div>
+  <div class="headertitle"><div class="title">Référence de la classe VariableDeControle</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Déclaration de la classe <a class="el" href="class_variable_de_controle.html" title="Déclaration de la classe VariableDeControle décrivant une variable controlée par le système entier.">VariableDeControle</a> décrivant une variable controlée par le système entier.  
+ <a href="class_variable_de_controle.html#details">Plus de détails...</a></p>
+
+<p><code>#include &lt;<a class="el" href="variable_de_controle_8h_source.html">variableDeControle.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Types publics</h2></td></tr>
+<tr class="memitem:a5b18a50f5fdd976b406c35f9f9530d53"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_variable_de_controle.html#a5b18a50f5fdd976b406c35f9f9530d53">VDCType</a> { <a class="el" href="class_variable_de_controle.html#a5b18a50f5fdd976b406c35f9f9530d53a9ba49b83205755355cfe37b8fe4ccf78">VDC_IN</a>
+, <a class="el" href="class_variable_de_controle.html#a5b18a50f5fdd976b406c35f9f9530d53a1635bf6eae0e000832b743a62defc0e2">VDC_OUT</a>
+ }</td></tr>
+<tr class="memdesc:a5b18a50f5fdd976b406c35f9f9530d53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Les différents types de controle.  <a href="class_variable_de_controle.html#a5b18a50f5fdd976b406c35f9f9530d53">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a5b18a50f5fdd976b406c35f9f9530d53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7076d02110216c3f346f5e7bb68204c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_variable_de_controle.html#af7076d02110216c3f346f5e7bb68204c">VDCSignal</a> { <a class="el" href="class_variable_de_controle.html#af7076d02110216c3f346f5e7bb68204ca86676f1035a02ee483aac410b2496813">VDC_DIGITAL</a>
+, <a class="el" href="class_variable_de_controle.html#af7076d02110216c3f346f5e7bb68204cadd159f2c6848f22ac199b41f852b480b">VDC_ANALOG</a>
+ }</td></tr>
+<tr class="memdesc:af7076d02110216c3f346f5e7bb68204c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Les différents types de signaux.  <a href="class_variable_de_controle.html#af7076d02110216c3f346f5e7bb68204c">Plus de détails...</a><br /></td></tr>
+<tr class="separator:af7076d02110216c3f346f5e7bb68204c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Fonctions membres publiques</h2></td></tr>
+<tr class="memitem:afbb0f2fc4eaa8a372c678088f3c44268"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_variable_de_controle.html#afbb0f2fc4eaa8a372c678088f3c44268">VariableDeControle</a> (<a class="el" href="class_variable_de_controle.html#a5b18a50f5fdd976b406c35f9f9530d53">VDCType</a> t, <a class="el" href="class_variable_de_controle.html#af7076d02110216c3f346f5e7bb68204c">VDCSignal</a> s, int pin=<a class="el" href="variable_de_controle_8h.html#a21836618490e689c6a3cbbd358eee6a2">VDC_NO_PIN</a>)</td></tr>
+<tr class="memdesc:afbb0f2fc4eaa8a372c678088f3c44268"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur de la classe <a class="el" href="class_variable_de_controle.html" title="Déclaration de la classe VariableDeControle décrivant une variable controlée par le système entier.">VariableDeControle</a>.  <br /></td></tr>
+<tr class="separator:afbb0f2fc4eaa8a372c678088f3c44268"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74d2245b0b2494e76c75c025d2e8395f"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_variable_de_controle.html#a74d2245b0b2494e76c75c025d2e8395f">getValeur</a> () const</td></tr>
+<tr class="memdesc:a74d2245b0b2494e76c75c025d2e8395f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accesseur de la valeur.  <br /></td></tr>
+<tr class="separator:a74d2245b0b2494e76c75c025d2e8395f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af253eac98c745d1ffb6acae3d7af942c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_variable_de_controle.html#af253eac98c745d1ffb6acae3d7af942c">setValeur</a> (byte valeur)</td></tr>
+<tr class="memdesc:af253eac98c745d1ffb6acae3d7af942c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise la valeur du mode normal.  <br /></td></tr>
+<tr class="separator:af253eac98c745d1ffb6acae3d7af942c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1fbf764915af6519137b5c19fc30b01"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_variable_de_controle.html#aa1fbf764915af6519137b5c19fc30b01">verrouiller</a> (byte valeur)</td></tr>
+<tr class="memdesc:aa1fbf764915af6519137b5c19fc30b01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Méthode appelée par le <b>loop</b> pour tous les mécanismes.  <br /></td></tr>
+<tr class="separator:aa1fbf764915af6519137b5c19fc30b01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23db5a4a3efcc9bc0e7044d7f8fe7891"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_variable_de_controle.html#a23db5a4a3efcc9bc0e7044d7f8fe7891">deverrouiller</a> ()</td></tr>
+<tr class="memdesc:a23db5a4a3efcc9bc0e7044d7f8fe7891"><td class="mdescLeft">&#160;</td><td class="mdescRight">Méthode appelée par le <b>loop</b> pour tous les mécanismes.  <br /></td></tr>
+<tr class="separator:a23db5a4a3efcc9bc0e7044d7f8fe7891"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
+Types privés</h2></td></tr>
+<tr class="memitem:a8f48b29be50778c7768266392bf46dc7"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_variable_de_controle.html#a8f48b29be50778c7768266392bf46dc7">VDCMode</a> { <a class="el" href="class_variable_de_controle.html#a8f48b29be50778c7768266392bf46dc7a79a26e82128f5efa33084665bfa539a6">VDC_NORMAL</a>
+, <a class="el" href="class_variable_de_controle.html#a8f48b29be50778c7768266392bf46dc7a4f37aad69c3d7800aa80ca3ac1625744">VDC_VERROUILLE</a>
+ }</td></tr>
+<tr class="memdesc:a8f48b29be50778c7768266392bf46dc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Les différents modes d'utilisation.  <a href="class_variable_de_controle.html#a8f48b29be50778c7768266392bf46dc7">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a8f48b29be50778c7768266392bf46dc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Fonctions membres privées</h2></td></tr>
+<tr class="memitem:a752fa7c1e190c36b32725678a4f95cb8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_variable_de_controle.html#a752fa7c1e190c36b32725678a4f95cb8">write</a> ()</td></tr>
+<tr class="memdesc:a752fa7c1e190c36b32725678a4f95cb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mise à jour de la sortie.  <br /></td></tr>
+<tr class="separator:a752fa7c1e190c36b32725678a4f95cb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Attributs privés</h2></td></tr>
+<tr class="memitem:acf8935e092342f5ca351231f5ad2c0aa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_variable_de_controle.html#a5b18a50f5fdd976b406c35f9f9530d53">VDCType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_variable_de_controle.html#acf8935e092342f5ca351231f5ad2c0aa">m_type</a></td></tr>
+<tr class="memdesc:acf8935e092342f5ca351231f5ad2c0aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Le type de controle.  <br /></td></tr>
+<tr class="separator:acf8935e092342f5ca351231f5ad2c0aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a3782edcd4447027cc22909a8aeb16a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_variable_de_controle.html#af7076d02110216c3f346f5e7bb68204c">VDCSignal</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_variable_de_controle.html#a0a3782edcd4447027cc22909a8aeb16a">m_signal</a></td></tr>
+<tr class="memdesc:a0a3782edcd4447027cc22909a8aeb16a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Le type de signal.  <br /></td></tr>
+<tr class="separator:a0a3782edcd4447027cc22909a8aeb16a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abde602aadf6a8e49825293c02a1b8203"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_variable_de_controle.html#abde602aadf6a8e49825293c02a1b8203">m_pin</a></td></tr>
+<tr class="memdesc:abde602aadf6a8e49825293c02a1b8203"><td class="mdescLeft">&#160;</td><td class="mdescRight">Le pin pour l'écriture.  <br /></td></tr>
+<tr class="separator:abde602aadf6a8e49825293c02a1b8203"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a405f86d63531c4b3b2d5be375a177515"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_variable_de_controle.html#a8f48b29be50778c7768266392bf46dc7">VDCMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_variable_de_controle.html#a405f86d63531c4b3b2d5be375a177515">m_mode</a></td></tr>
+<tr class="memdesc:a405f86d63531c4b3b2d5be375a177515"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indique si la variable de controle est verrouillée (ie. piloté par l'extérieur).  <br /></td></tr>
+<tr class="separator:a405f86d63531c4b3b2d5be375a177515"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e2b5d3c027687706d53986e8b20d72b"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_variable_de_controle.html#a3e2b5d3c027687706d53986e8b20d72b">m_valeur</a></td></tr>
+<tr class="memdesc:a3e2b5d3c027687706d53986e8b20d72b"><td class="mdescLeft">&#160;</td><td class="mdescRight">La valeur en mode normal.  <br /></td></tr>
+<tr class="separator:a3e2b5d3c027687706d53986e8b20d72b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54876827ea4bc265db61df835b231080"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_variable_de_controle.html#a54876827ea4bc265db61df835b231080">m_valeur_verrouille</a></td></tr>
+<tr class="memdesc:a54876827ea4bc265db61df835b231080"><td class="mdescLeft">&#160;</td><td class="mdescRight">La valeur en mode verrouillé.  <br /></td></tr>
+<tr class="separator:a54876827ea4bc265db61df835b231080"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Déclaration de la classe <a class="el" href="class_variable_de_controle.html" title="Déclaration de la classe VariableDeControle décrivant une variable controlée par le système entier.">VariableDeControle</a> décrivant une variable controlée par le système entier. </p>
+<dl class="section author"><dt>Auteur</dt><dd>Sebastien Angibaud </dd></dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="variable_de_controle_8h_source.html#l00017">17</a> du fichier <a class="el" href="variable_de_controle_8h_source.html">variableDeControle.h</a>.</p>
+</div><h2 class="groupheader">Documentation des énumérations membres</h2>
+<a id="a8f48b29be50778c7768266392bf46dc7" name="a8f48b29be50778c7768266392bf46dc7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f48b29be50778c7768266392bf46dc7">&#9670;&#160;</a></span>VDCMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_variable_de_controle.html#a8f48b29be50778c7768266392bf46dc7">VariableDeControle::VDCMode</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Les différents modes d'utilisation. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Valeurs énumérées</th></tr><tr><td class="fieldname"><a id="a8f48b29be50778c7768266392bf46dc7a79a26e82128f5efa33084665bfa539a6" name="a8f48b29be50778c7768266392bf46dc7a79a26e82128f5efa33084665bfa539a6"></a>VDC_NORMAL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a8f48b29be50778c7768266392bf46dc7a4f37aad69c3d7800aa80ca3ac1625744" name="a8f48b29be50778c7768266392bf46dc7a4f37aad69c3d7800aa80ca3ac1625744"></a>VDC_VERROUILLE&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">Définition à la ligne <a class="el" href="variable_de_controle_8h_source.html#l00028">28</a> du fichier <a class="el" href="variable_de_controle_8h_source.html">variableDeControle.h</a>.</p>
+
+</div>
+</div>
+<a id="af7076d02110216c3f346f5e7bb68204c" name="af7076d02110216c3f346f5e7bb68204c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7076d02110216c3f346f5e7bb68204c">&#9670;&#160;</a></span>VDCSignal</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_variable_de_controle.html#af7076d02110216c3f346f5e7bb68204c">VariableDeControle::VDCSignal</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Les différents types de signaux. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Valeurs énumérées</th></tr><tr><td class="fieldname"><a id="af7076d02110216c3f346f5e7bb68204ca86676f1035a02ee483aac410b2496813" name="af7076d02110216c3f346f5e7bb68204ca86676f1035a02ee483aac410b2496813"></a>VDC_DIGITAL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af7076d02110216c3f346f5e7bb68204cadd159f2c6848f22ac199b41f852b480b" name="af7076d02110216c3f346f5e7bb68204cadd159f2c6848f22ac199b41f852b480b"></a>VDC_ANALOG&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">Définition à la ligne <a class="el" href="variable_de_controle_8h_source.html#l00024">24</a> du fichier <a class="el" href="variable_de_controle_8h_source.html">variableDeControle.h</a>.</p>
+
+</div>
+</div>
+<a id="a5b18a50f5fdd976b406c35f9f9530d53" name="a5b18a50f5fdd976b406c35f9f9530d53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b18a50f5fdd976b406c35f9f9530d53">&#9670;&#160;</a></span>VDCType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_variable_de_controle.html#a5b18a50f5fdd976b406c35f9f9530d53">VariableDeControle::VDCType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Les différents types de controle. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Valeurs énumérées</th></tr><tr><td class="fieldname"><a id="a5b18a50f5fdd976b406c35f9f9530d53a9ba49b83205755355cfe37b8fe4ccf78" name="a5b18a50f5fdd976b406c35f9f9530d53a9ba49b83205755355cfe37b8fe4ccf78"></a>VDC_IN&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5b18a50f5fdd976b406c35f9f9530d53a1635bf6eae0e000832b743a62defc0e2" name="a5b18a50f5fdd976b406c35f9f9530d53a1635bf6eae0e000832b743a62defc0e2"></a>VDC_OUT&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">Définition à la ligne <a class="el" href="variable_de_controle_8h_source.html#l00021">21</a> du fichier <a class="el" href="variable_de_controle_8h_source.html">variableDeControle.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
+<a id="afbb0f2fc4eaa8a372c678088f3c44268" name="afbb0f2fc4eaa8a372c678088f3c44268"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbb0f2fc4eaa8a372c678088f3c44268">&#9670;&#160;</a></span>VariableDeControle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VariableDeControle::VariableDeControle </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_variable_de_controle.html#a5b18a50f5fdd976b406c35f9f9530d53">VDCType</a>&#160;</td>
+          <td class="paramname"><em>t</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_variable_de_controle.html#af7076d02110216c3f346f5e7bb68204c">VDCSignal</a>&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pin</em> = <code><a class="el" href="variable_de_controle_8h.html#a21836618490e689c6a3cbbd358eee6a2">VDC_NO_PIN</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructeur de la classe <a class="el" href="class_variable_de_controle.html" title="Déclaration de la classe VariableDeControle décrivant une variable controlée par le système entier.">VariableDeControle</a>. </p>
+<p>t Le type (entrée ou sortie).</p>
+<p>s Le type de signal (digital ou analog).</p>
+<p>pin Le pin à utiliser pour l'écriture. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="variable_de_controle_8cpp_source.html#l00013">13</a> du fichier <a class="el" href="variable_de_controle_8cpp_source.html">variableDeControle.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions membres</h2>
+<a id="a23db5a4a3efcc9bc0e7044d7f8fe7891" name="a23db5a4a3efcc9bc0e7044d7f8fe7891"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23db5a4a3efcc9bc0e7044d7f8fe7891">&#9670;&#160;</a></span>deverrouiller()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VariableDeControle::deverrouiller </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Méthode appelée par le <b>loop</b> pour tous les mécanismes. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pin</td><td>Le pin à considérer. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="variable_de_controle_8cpp_source.html#l00058">58</a> du fichier <a class="el" href="variable_de_controle_8cpp_source.html">variableDeControle.cpp</a>.</p>
+<div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="class_variable_de_controle_a23db5a4a3efcc9bc0e7044d7f8fe7891_cgraph.png" border="0" usemap="#aclass_variable_de_controle_a23db5a4a3efcc9bc0e7044d7f8fe7891_cgraph" alt=""/></div>
+<map name="aclass_variable_de_controle_a23db5a4a3efcc9bc0e7044d7f8fe7891_cgraph" id="aclass_variable_de_controle_a23db5a4a3efcc9bc0e7044d7f8fe7891_cgraph">
+<area shape="rect" title="Méthode appelée par le loop pour tous les mécanismes." alt="" coords="5,5,139,45"/>
+<area shape="rect" href="class_variable_de_controle.html#a752fa7c1e190c36b32725678a4f95cb8" title="Mise à jour de la sortie." alt="" coords="187,5,320,45"/>
+</map>
+</div>
+<div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="class_variable_de_controle_a23db5a4a3efcc9bc0e7044d7f8fe7891_icgraph.png" border="0" usemap="#aclass_variable_de_controle_a23db5a4a3efcc9bc0e7044d7f8fe7891_icgraph" alt=""/></div>
+<map name="aclass_variable_de_controle_a23db5a4a3efcc9bc0e7044d7f8fe7891_icgraph" id="aclass_variable_de_controle_a23db5a4a3efcc9bc0e7044d7f8fe7891_icgraph">
+<area shape="rect" title="Méthode appelée par le loop pour tous les mécanismes." alt="" coords="811,5,944,45"/>
+<area shape="rect" href="class_mecanisme.html#a5d6a43d18c356c42bc0c1fb34dfef993" title="Déverouille un variable de controle." alt="" coords="597,13,763,38"/>
+<area shape="rect" href="class_mecanisme.html#aa69c6639c0825649c257f66d69d0a2e9" title="Méthode appelée automatiquement lorsque l&#39;on recoit un message sur le port série." alt="" coords="389,13,549,38"/>
+<area shape="rect" href="class_mecanisme.html#a42499afe585c537efe39ffde48a5d1ee" title="Méthode appelée par le loop pour tous les mécanismes." alt="" coords="175,13,341,38"/>
+<area shape="rect" href="class_mecanisme.html#a635bb11d93060a089b8257d0b5adfdae" title="Méthode appelée par le loop de base sur Arduino." alt="" coords="5,13,127,38"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a74d2245b0b2494e76c75c025d2e8395f" name="a74d2245b0b2494e76c75c025d2e8395f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74d2245b0b2494e76c75c025d2e8395f">&#9670;&#160;</a></span>getValeur()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">byte VariableDeControle::getValeur </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Accesseur de la valeur. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>La valeur actuelle (celle du sytème en mode nomrla ou celle imposée en mode verrouillage). </dd></dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="variable_de_controle_8cpp_source.html#l00024">24</a> du fichier <a class="el" href="variable_de_controle_8cpp_source.html">variableDeControle.cpp</a>.</p>
+<div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="class_variable_de_controle_a74d2245b0b2494e76c75c025d2e8395f_icgraph.png" border="0" usemap="#aclass_variable_de_controle_a74d2245b0b2494e76c75c025d2e8395f_icgraph" alt=""/></div>
+<map name="aclass_variable_de_controle_a74d2245b0b2494e76c75c025d2e8395f_icgraph" id="aclass_variable_de_controle_a74d2245b0b2494e76c75c025d2e8395f_icgraph">
+<area shape="rect" title="Accesseur de la valeur." alt="" coords="751,23,884,63"/>
+<area shape="rect" href="class_mecanisme.html#a443dda6b953f4722abb7a76c80cfcb77" title="Accesseur d&#39;une valeur d&#39;une variable de controle." alt="" coords="524,31,703,56"/>
+<area shape="rect" href="class_mecanisme_badges.html#a15ea4715472a76b462262063f5d4e16c" title="Gestion d&#39;une lecture et mise à jour des leds." alt="" coords="275,5,476,31"/>
+<area shape="rect" href="class_mecanisme_badges.html#a4690ba5effb3c65139c99695157f1aa9" title="Mise à jour des sorties." alt="" coords="5,31,227,56"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af253eac98c745d1ffb6acae3d7af942c" name="af253eac98c745d1ffb6acae3d7af942c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af253eac98c745d1ffb6acae3d7af942c">&#9670;&#160;</a></span>setValeur()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VariableDeControle::setValeur </td>
+          <td>(</td>
+          <td class="paramtype">byte&#160;</td>
+          <td class="paramname"><em>valeur</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialise la valeur du mode normal. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">valeur</td><td>La valeur voulue. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="variable_de_controle_8cpp_source.html#l00036">36</a> du fichier <a class="el" href="variable_de_controle_8cpp_source.html">variableDeControle.cpp</a>.</p>
+<div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="class_variable_de_controle_af253eac98c745d1ffb6acae3d7af942c_cgraph.png" border="0" usemap="#aclass_variable_de_controle_af253eac98c745d1ffb6acae3d7af942c_cgraph" alt=""/></div>
+<map name="aclass_variable_de_controle_af253eac98c745d1ffb6acae3d7af942c_cgraph" id="aclass_variable_de_controle_af253eac98c745d1ffb6acae3d7af942c_cgraph">
+<area shape="rect" title="Initialise la valeur du mode normal." alt="" coords="5,5,139,45"/>
+<area shape="rect" href="class_variable_de_controle.html#a752fa7c1e190c36b32725678a4f95cb8" title="Mise à jour de la sortie." alt="" coords="187,5,320,45"/>
+</map>
+</div>
+<div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="class_variable_de_controle_af253eac98c745d1ffb6acae3d7af942c_icgraph.png" border="0" usemap="#aclass_variable_de_controle_af253eac98c745d1ffb6acae3d7af942c_icgraph" alt=""/></div>
+<map name="aclass_variable_de_controle_af253eac98c745d1ffb6acae3d7af942c_icgraph" id="aclass_variable_de_controle_af253eac98c745d1ffb6acae3d7af942c_icgraph">
+<area shape="rect" title="Initialise la valeur du mode normal." alt="" coords="512,23,645,63"/>
+<area shape="rect" href="class_mecanisme.html#ac25812bd5148b0171723ffb981e89176" title="Initialise une variable de controle." alt="" coords="285,31,464,56"/>
+<area shape="rect" href="class_mecanisme_badges.html#a83e03e766fd0ce21349a58c16271afa9" title="Méthode appelée par le loop de base sur Arduino." alt="" coords="5,5,237,31"/>
+<area shape="rect" href="class_mecanisme_badges.html#a4690ba5effb3c65139c99695157f1aa9" title="Mise à jour des sorties." alt="" coords="11,55,232,80"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa1fbf764915af6519137b5c19fc30b01" name="aa1fbf764915af6519137b5c19fc30b01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1fbf764915af6519137b5c19fc30b01">&#9670;&#160;</a></span>verrouiller()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VariableDeControle::verrouiller </td>
+          <td>(</td>
+          <td class="paramtype">byte&#160;</td>
+          <td class="paramname"><em>valeur</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Méthode appelée par le <b>loop</b> pour tous les mécanismes. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pin</td><td>Le pin à considérer. </td></tr>
+    <tr><td class="paramname">valeur</td><td>La valeur à donner. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="variable_de_controle_8cpp_source.html#l00047">47</a> du fichier <a class="el" href="variable_de_controle_8cpp_source.html">variableDeControle.cpp</a>.</p>
+<div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="class_variable_de_controle_aa1fbf764915af6519137b5c19fc30b01_cgraph.png" border="0" usemap="#aclass_variable_de_controle_aa1fbf764915af6519137b5c19fc30b01_cgraph" alt=""/></div>
+<map name="aclass_variable_de_controle_aa1fbf764915af6519137b5c19fc30b01_cgraph" id="aclass_variable_de_controle_aa1fbf764915af6519137b5c19fc30b01_cgraph">
+<area shape="rect" title="Méthode appelée par le loop pour tous les mécanismes." alt="" coords="5,5,139,45"/>
+<area shape="rect" href="class_variable_de_controle.html#a752fa7c1e190c36b32725678a4f95cb8" title="Mise à jour de la sortie." alt="" coords="187,5,320,45"/>
+</map>
+</div>
+<div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="class_variable_de_controle_aa1fbf764915af6519137b5c19fc30b01_icgraph.png" border="0" usemap="#aclass_variable_de_controle_aa1fbf764915af6519137b5c19fc30b01_icgraph" alt=""/></div>
+<map name="aclass_variable_de_controle_aa1fbf764915af6519137b5c19fc30b01_icgraph" id="aclass_variable_de_controle_aa1fbf764915af6519137b5c19fc30b01_icgraph">
+<area shape="rect" title="Méthode appelée par le loop pour tous les mécanismes." alt="" coords="796,5,929,45"/>
+<area shape="rect" href="class_mecanisme.html#a07c8e5a4cc3bd4daf90011f7a940e030" title="Vérouille une variable de controle." alt="" coords="597,13,748,38"/>
+<area shape="rect" href="class_mecanisme.html#aa69c6639c0825649c257f66d69d0a2e9" title="Méthode appelée automatiquement lorsque l&#39;on recoit un message sur le port série." alt="" coords="389,13,549,38"/>
+<area shape="rect" href="class_mecanisme.html#a42499afe585c537efe39ffde48a5d1ee" title="Méthode appelée par le loop pour tous les mécanismes." alt="" coords="175,13,341,38"/>
+<area shape="rect" href="class_mecanisme.html#a635bb11d93060a089b8257d0b5adfdae" title="Méthode appelée par le loop de base sur Arduino." alt="" coords="5,13,127,38"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a752fa7c1e190c36b32725678a4f95cb8" name="a752fa7c1e190c36b32725678a4f95cb8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a752fa7c1e190c36b32725678a4f95cb8">&#9670;&#160;</a></span>write()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VariableDeControle::write </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Mise à jour de la sortie. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="variable_de_controle_8cpp_source.html#l00067">67</a> du fichier <a class="el" href="variable_de_controle_8cpp_source.html">variableDeControle.cpp</a>.</p>
+<div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="class_variable_de_controle_a752fa7c1e190c36b32725678a4f95cb8_icgraph.png" border="0" usemap="#aclass_variable_de_controle_a752fa7c1e190c36b32725678a4f95cb8_icgraph" alt=""/></div>
+<map name="aclass_variable_de_controle_a752fa7c1e190c36b32725678a4f95cb8_icgraph" id="aclass_variable_de_controle_a752fa7c1e190c36b32725678a4f95cb8_icgraph">
+<area shape="rect" title="Mise à jour de la sortie." alt="" coords="1077,69,1211,109"/>
+<area shape="rect" href="class_variable_de_controle.html#a23db5a4a3efcc9bc0e7044d7f8fe7891" title="Méthode appelée par le loop pour tous les mécanismes." alt="" coords="896,5,1029,45"/>
+<area shape="rect" href="class_variable_de_controle.html#af253eac98c745d1ffb6acae3d7af942c" title="Initialise la valeur du mode normal." alt="" coords="896,133,1029,173"/>
+<area shape="rect" href="class_variable_de_controle.html#aa1fbf764915af6519137b5c19fc30b01" title="Méthode appelée par le loop pour tous les mécanismes." alt="" coords="896,69,1029,109"/>
+<area shape="rect" href="class_mecanisme.html#a5d6a43d18c356c42bc0c1fb34dfef993" title="Déverouille un variable de controle." alt="" coords="676,17,841,42"/>
+<area shape="rect" href="class_mecanisme.html#aa69c6639c0825649c257f66d69d0a2e9" title="Méthode appelée automatiquement lorsque l&#39;on recoit un message sur le port série." alt="" coords="425,38,585,63"/>
+<area shape="rect" href="class_mecanisme.html#a42499afe585c537efe39ffde48a5d1ee" title="Méthode appelée par le loop pour tous les mécanismes." alt="" coords="175,38,341,63"/>
+<area shape="rect" href="class_mecanisme.html#a635bb11d93060a089b8257d0b5adfdae" title="Méthode appelée par le loop de base sur Arduino." alt="" coords="5,38,127,63"/>
+<area shape="rect" href="class_mecanisme.html#ac25812bd5148b0171723ffb981e89176" title="Initialise une variable de controle." alt="" coords="669,141,848,166"/>
+<area shape="rect" href="class_mecanisme_badges.html#a83e03e766fd0ce21349a58c16271afa9" title="Méthode appelée par le loop de base sur Arduino." alt="" coords="389,109,621,134"/>
+<area shape="rect" href="class_mecanisme_badges.html#a4690ba5effb3c65139c99695157f1aa9" title="Mise à jour des sorties." alt="" coords="395,158,616,183"/>
+<area shape="rect" href="class_mecanisme.html#a07c8e5a4cc3bd4daf90011f7a940e030" title="Vérouille une variable de controle." alt="" coords="683,70,834,95"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des données membres</h2>
+<a id="a405f86d63531c4b3b2d5be375a177515" name="a405f86d63531c4b3b2d5be375a177515"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a405f86d63531c4b3b2d5be375a177515">&#9670;&#160;</a></span>m_mode</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_variable_de_controle.html#a8f48b29be50778c7768266392bf46dc7">VDCMode</a> VariableDeControle::m_mode</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Indique si la variable de controle est verrouillée (ie. piloté par l'extérieur). </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="variable_de_controle_8h_source.html#l00052">52</a> du fichier <a class="el" href="variable_de_controle_8h_source.html">variableDeControle.h</a>.</p>
+
+</div>
+</div>
+<a id="abde602aadf6a8e49825293c02a1b8203" name="abde602aadf6a8e49825293c02a1b8203"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abde602aadf6a8e49825293c02a1b8203">&#9670;&#160;</a></span>m_pin</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int VariableDeControle::m_pin</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Le pin pour l'écriture. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="variable_de_controle_8h_source.html#l00049">49</a> du fichier <a class="el" href="variable_de_controle_8h_source.html">variableDeControle.h</a>.</p>
+
+</div>
+</div>
+<a id="a0a3782edcd4447027cc22909a8aeb16a" name="a0a3782edcd4447027cc22909a8aeb16a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a3782edcd4447027cc22909a8aeb16a">&#9670;&#160;</a></span>m_signal</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_variable_de_controle.html#af7076d02110216c3f346f5e7bb68204c">VDCSignal</a> VariableDeControle::m_signal</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Le type de signal. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="variable_de_controle_8h_source.html#l00046">46</a> du fichier <a class="el" href="variable_de_controle_8h_source.html">variableDeControle.h</a>.</p>
+
+</div>
+</div>
+<a id="acf8935e092342f5ca351231f5ad2c0aa" name="acf8935e092342f5ca351231f5ad2c0aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf8935e092342f5ca351231f5ad2c0aa">&#9670;&#160;</a></span>m_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_variable_de_controle.html#a5b18a50f5fdd976b406c35f9f9530d53">VDCType</a> VariableDeControle::m_type</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Le type de controle. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="variable_de_controle_8h_source.html#l00043">43</a> du fichier <a class="el" href="variable_de_controle_8h_source.html">variableDeControle.h</a>.</p>
+
+</div>
+</div>
+<a id="a3e2b5d3c027687706d53986e8b20d72b" name="a3e2b5d3c027687706d53986e8b20d72b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e2b5d3c027687706d53986e8b20d72b">&#9670;&#160;</a></span>m_valeur</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">byte VariableDeControle::m_valeur</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>La valeur en mode normal. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="variable_de_controle_8h_source.html#l00055">55</a> du fichier <a class="el" href="variable_de_controle_8h_source.html">variableDeControle.h</a>.</p>
+
+</div>
+</div>
+<a id="a54876827ea4bc265db61df835b231080" name="a54876827ea4bc265db61df835b231080"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54876827ea4bc265db61df835b231080">&#9670;&#160;</a></span>m_valeur_verrouille</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">byte VariableDeControle::m_valeur_verrouille</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>La valeur en mode verrouillé. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="variable_de_controle_8h_source.html#l00058">58</a> du fichier <a class="el" href="variable_de_controle_8h_source.html">variableDeControle.h</a>.</p>
+
+</div>
+</div>
+<hr/>La documentation de cette classe a été générée à partir des fichiers suivants :<ul>
+<li>Libraries/GestionSalle/<a class="el" href="variable_de_controle_8h_source.html">variableDeControle.h</a></li>
+<li>Libraries/GestionSalle/<a class="el" href="variable_de_controle_8cpp_source.html">variableDeControle.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Jeudi 30 Mars 2023 14:21:55 pour Gestion de salle Escape Game par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+</small></address>
+</body>
+</html>

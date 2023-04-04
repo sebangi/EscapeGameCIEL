@@ -1,0 +1,5 @@
+<map id="MFRC522Daisy::check" name="MFRC522Daisy::check">
+<area shape="rect" id="node1" title="Test si l&#39;uid du badge est reconnu." alt="" coords="480,5,636,31"/>
+<area shape="rect" id="node2" href="$class_m_f_r_c522_daisy.html#a2b046338f2b1a05475e472afe5d0a7f5" title="Lecture d&#39;un badge." alt="" coords="285,5,432,31"/>
+<area shape="rect" id="node3" href="$class_mecanisme_badges.html#a83e03e766fd0ce21349a58c16271afa9" title="Méthode appelée par le loop de base sur Arduino." alt="" coords="5,5,237,31"/>
+</map>

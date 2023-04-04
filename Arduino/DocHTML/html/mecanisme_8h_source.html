@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Gestion de salle Escape Game:  Fichier source de Libraries/GestionSalle/mecanisme.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Gestion de salle Escape Game
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_6d2d5b60bd20db849a9486835a2715aa.html">Libraries</a></li><li class="navelem"><a class="el" href="dir_c6399cfa60fef156f4fe0f51a7b98d58.html">GestionSalle</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">mecanisme.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="mecanisme_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef __MECANISME__</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define __MECANISME__</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="mecanisme_8h.html#a70a6a82ee28801afee9ddb2a8bb89725">    5</a></span><span class="preprocessor">#define NB_VDC_MAX 32</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;arduino.h&gt;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="variable_de_controle_8h.html">variableDeControle.h</a>&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="class_mecanisme.html">   19</a></span><span class="keyword">class </span><a class="code hl_class" href="class_mecanisme.html">Mecanisme</a></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>{</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  <span class="keyword">public</span>:  </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <a class="code hl_class" href="class_mecanisme.html">Mecanisme</a>(<span class="keywordtype">int</span> <span class="keywordtype">id</span>);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <a class="code hl_function" href="class_mecanisme.html#a83642d18aae65af360cfe0ac4471ea6d">~Mecanisme</a>();</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>      </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_mecanisme.html#ab6b9f5302039902ab0d644caf4570ecb">setup</a>();</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_mecanisme.html#a635bb11d93060a089b8257d0b5adfdae">loop</a>();</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  <span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_mecanisme.html#aee4802d8d66d163203aba27568df5c27">ajouterVDC</a>(<span class="keywordtype">int</span> <span class="keywordtype">id</span>, <a class="code hl_enumeration" href="class_variable_de_controle.html#a5b18a50f5fdd976b406c35f9f9530d53">VariableDeControle::VDCType</a> t, <a class="code hl_enumeration" href="class_variable_de_controle.html#af7076d02110216c3f346f5e7bb68204c">VariableDeControle::VDCSignal</a> s, <span class="keywordtype">int</span> pin = <a class="code hl_define" href="variable_de_controle_8h.html#a21836618490e689c6a3cbbd358eee6a2">VDC_NO_PIN</a>);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keywordtype">byte</span> <a class="code hl_function" href="class_mecanisme.html#a443dda6b953f4722abb7a76c80cfcb77">getValeurVDC</a>( <span class="keywordtype">int</span> <span class="keywordtype">id</span> ) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_mecanisme.html#ac25812bd5148b0171723ffb981e89176">setValeurVDC</a>( <span class="keywordtype">int</span> pin, <span class="keywordtype">int</span> valeur );</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_mecanisme.html#a07c8e5a4cc3bd4daf90011f7a940e030">verrouiller</a>( <span class="keywordtype">int</span> pin, <span class="keywordtype">int</span> valeur );</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_mecanisme.html#a5d6a43d18c356c42bc0c1fb34dfef993">deverrouiller</a>( <span class="keywordtype">int</span> pin );</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_mecanisme.html#afcc25321db0930910bdf5184ffd4dad1">setupGeneral</a>();</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_mecanisme.html#a42499afe585c537efe39ffde48a5d1ee">loopGeneral</a>();</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_mecanisme.html#aa69c6639c0825649c257f66d69d0a2e9">serialEvent</a>();</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_mecanisme.html#a94d6c17006071b1543e9ae740846fd96">setupI2C</a>();</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_mecanisme.html#a91e0838445abe6068170ee827d9ba50f">receiveData</a>(<span class="keywordtype">int</span> bytecount);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_mecanisme.html#afcfec8cf53e2e178039052065cac59b2">sendData</a>();</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="class_mecanisme.html#a272b0d7933c4f968347b97fa629c6959">   43</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_mecanisme.html#a272b0d7933c4f968347b97fa629c6959">setupMecanisme</a>() = 0;  </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="class_mecanisme.html#afcf3112c910eef6d3cc03a286b47f425">   44</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_mecanisme.html#afcf3112c910eef6d3cc03a286b47f425">loopMecanisme</a>() = 0;   </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="class_mecanisme.html#acda653c93d67f7863000c4d79bc422d5">   45</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_mecanisme.html#acda653c93d67f7863000c4d79bc422d5">updateSorties</a>() = 0; </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="class_mecanisme.html#ad543be363aac823c6f74392670fd6792">   49</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_mecanisme.html#ad543be363aac823c6f74392670fd6792">m_id</a>; </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="class_mecanisme.html#a880a3fc58a46f508b4adf9f269243eed">   52</a></span>    <a class="code hl_class" href="class_variable_de_controle.html">VariableDeControle</a> * <a class="code hl_variable" href="class_mecanisme.html#a880a3fc58a46f508b4adf9f269243eed">m_vdc</a>[<a class="code hl_define" href="mecanisme_8h.html#a70a6a82ee28801afee9ddb2a8bb89725">NB_VDC_MAX</a>];</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="class_mecanisme.html#a66067bffc823aea0a15af92f0b49f9ce">   55</a></span>    <span class="keywordtype">byte</span> <a class="code hl_variable" href="class_mecanisme.html#a66067bffc823aea0a15af92f0b49f9ce">m_slaveAddress</a>;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="class_mecanisme.html#a674a3dd7a5fdeb14f640cd2159b5fbd3">   58</a></span>    <span class="keyword">static</span> <span class="keywordtype">byte</span> <a class="code hl_variable" href="class_mecanisme.html#a674a3dd7a5fdeb14f640cd2159b5fbd3">m_data_to_echo</a>;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>};</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="preprocessor">#endif </span><span class="comment">// __MECANISME__</span></div>
+<div class="ttc" id="aclass_mecanisme_html"><div class="ttname"><a href="class_mecanisme.html">Mecanisme</a></div><div class="ttdoc">Déclaration de la classe Mecanisme décrivant le fonctionnement commun à tous les mécanismes.</div><div class="ttdef"><b>Definition:</b> <a href="mecanisme_8h_source.html#l00019">mecanisme.h:20</a></div></div>
+<div class="ttc" id="aclass_mecanisme_html_a07c8e5a4cc3bd4daf90011f7a940e030"><div class="ttname"><a href="class_mecanisme.html#a07c8e5a4cc3bd4daf90011f7a940e030">Mecanisme::verrouiller</a></div><div class="ttdeci">void verrouiller(int pin, int valeur)</div><div class="ttdoc">Vérouille une variable de controle.</div><div class="ttdef"><b>Definition:</b> <a href="mecanisme_8cpp_source.html#l00123">mecanisme.cpp:123</a></div></div>
+<div class="ttc" id="aclass_mecanisme_html_a272b0d7933c4f968347b97fa629c6959"><div class="ttname"><a href="class_mecanisme.html#a272b0d7933c4f968347b97fa629c6959">Mecanisme::setupMecanisme</a></div><div class="ttdeci">virtual void setupMecanisme()=0</div></div>
+<div class="ttc" id="aclass_mecanisme_html_a42499afe585c537efe39ffde48a5d1ee"><div class="ttname"><a href="class_mecanisme.html#a42499afe585c537efe39ffde48a5d1ee">Mecanisme::loopGeneral</a></div><div class="ttdeci">void loopGeneral()</div><div class="ttdoc">Méthode appelée par le loop pour tous les mécanismes.</div><div class="ttdef"><b>Definition:</b> <a href="mecanisme_8cpp_source.html#l00089">mecanisme.cpp:89</a></div></div>
+<div class="ttc" id="aclass_mecanisme_html_a443dda6b953f4722abb7a76c80cfcb77"><div class="ttname"><a href="class_mecanisme.html#a443dda6b953f4722abb7a76c80cfcb77">Mecanisme::getValeurVDC</a></div><div class="ttdeci">byte getValeurVDC(int id) const</div><div class="ttdoc">Accesseur d'une valeur d'une variable de controle.</div><div class="ttdef"><b>Definition:</b> <a href="mecanisme_8cpp_source.html#l00099">mecanisme.cpp:99</a></div></div>
+<div class="ttc" id="aclass_mecanisme_html_a5d6a43d18c356c42bc0c1fb34dfef993"><div class="ttname"><a href="class_mecanisme.html#a5d6a43d18c356c42bc0c1fb34dfef993">Mecanisme::deverrouiller</a></div><div class="ttdeci">void deverrouiller(int pin)</div><div class="ttdoc">Déverouille un variable de controle.</div><div class="ttdef"><b>Definition:</b> <a href="mecanisme_8cpp_source.html#l00133">mecanisme.cpp:133</a></div></div>
+<div class="ttc" id="aclass_mecanisme_html_a635bb11d93060a089b8257d0b5adfdae"><div class="ttname"><a href="class_mecanisme.html#a635bb11d93060a089b8257d0b5adfdae">Mecanisme::loop</a></div><div class="ttdeci">void loop()</div><div class="ttdoc">Méthode appelée par le loop de base sur Arduino.</div><div class="ttdef"><b>Definition:</b> <a href="mecanisme_8cpp_source.html#l00054">mecanisme.cpp:54</a></div></div>
+<div class="ttc" id="aclass_mecanisme_html_a66067bffc823aea0a15af92f0b49f9ce"><div class="ttname"><a href="class_mecanisme.html#a66067bffc823aea0a15af92f0b49f9ce">Mecanisme::m_slaveAddress</a></div><div class="ttdeci">byte m_slaveAddress</div><div class="ttdoc">L'adresse du mécanisme esclave sur le bus I2C.</div><div class="ttdef"><b>Definition:</b> <a href="mecanisme_8h_source.html#l00055">mecanisme.h:55</a></div></div>
+<div class="ttc" id="aclass_mecanisme_html_a674a3dd7a5fdeb14f640cd2159b5fbd3"><div class="ttname"><a href="class_mecanisme.html#a674a3dd7a5fdeb14f640cd2159b5fbd3">Mecanisme::m_data_to_echo</a></div><div class="ttdeci">static byte m_data_to_echo</div><div class="ttdoc">data_to_echo.</div><div class="ttdef"><b>Definition:</b> <a href="mecanisme_8h_source.html#l00058">mecanisme.h:58</a></div></div>
+<div class="ttc" id="aclass_mecanisme_html_a83642d18aae65af360cfe0ac4471ea6d"><div class="ttname"><a href="class_mecanisme.html#a83642d18aae65af360cfe0ac4471ea6d">Mecanisme::~Mecanisme</a></div><div class="ttdeci">~Mecanisme()</div><div class="ttdoc">Destructeur de la classe Mecanisme.</div><div class="ttdef"><b>Definition:</b> <a href="mecanisme_8cpp_source.html#l00026">mecanisme.cpp:26</a></div></div>
+<div class="ttc" id="aclass_mecanisme_html_a880a3fc58a46f508b4adf9f269243eed"><div class="ttname"><a href="class_mecanisme.html#a880a3fc58a46f508b4adf9f269243eed">Mecanisme::m_vdc</a></div><div class="ttdeci">VariableDeControle * m_vdc[NB_VDC_MAX]</div><div class="ttdoc">Le tableau des variables de controle.</div><div class="ttdef"><b>Definition:</b> <a href="mecanisme_8h_source.html#l00052">mecanisme.h:52</a></div></div>
+<div class="ttc" id="aclass_mecanisme_html_a91e0838445abe6068170ee827d9ba50f"><div class="ttname"><a href="class_mecanisme.html#a91e0838445abe6068170ee827d9ba50f">Mecanisme::receiveData</a></div><div class="ttdeci">static void receiveData(int bytecount)</div><div class="ttdoc">Méthode appelée quand on reçoit un message depuis le bus I2C.</div><div class="ttdef"><b>Definition:</b> <a href="mecanisme_8cpp_source.html#l00188">mecanisme.cpp:188</a></div></div>
+<div class="ttc" id="aclass_mecanisme_html_a94d6c17006071b1543e9ae740846fd96"><div class="ttname"><a href="class_mecanisme.html#a94d6c17006071b1543e9ae740846fd96">Mecanisme::setupI2C</a></div><div class="ttdeci">void setupI2C()</div><div class="ttdoc">Méthode aintialisant le bus I2C.</div><div class="ttdef"><b>Definition:</b> <a href="mecanisme_8cpp_source.html#l00177">mecanisme.cpp:177</a></div></div>
+<div class="ttc" id="aclass_mecanisme_html_aa69c6639c0825649c257f66d69d0a2e9"><div class="ttname"><a href="class_mecanisme.html#aa69c6639c0825649c257f66d69d0a2e9">Mecanisme::serialEvent</a></div><div class="ttdeci">void serialEvent()</div><div class="ttdoc">Méthode appelée automatiquement lorsque l'on recoit un message sur le port série.</div><div class="ttdef"><b>Definition:</b> <a href="mecanisme_8cpp_source.html#l00142">mecanisme.cpp:142</a></div></div>
+<div class="ttc" id="aclass_mecanisme_html_ab6b9f5302039902ab0d644caf4570ecb"><div class="ttname"><a href="class_mecanisme.html#ab6b9f5302039902ab0d644caf4570ecb">Mecanisme::setup</a></div><div class="ttdeci">void setup()</div><div class="ttdoc">Méthode appelée par le setup de base sur Arduino.</div><div class="ttdef"><b>Definition:</b> <a href="mecanisme_8cpp_source.html#l00037">mecanisme.cpp:37</a></div></div>
+<div class="ttc" id="aclass_mecanisme_html_ac25812bd5148b0171723ffb981e89176"><div class="ttname"><a href="class_mecanisme.html#ac25812bd5148b0171723ffb981e89176">Mecanisme::setValeurVDC</a></div><div class="ttdeci">void setValeurVDC(int pin, int valeur)</div><div class="ttdoc">Initialise une variable de controle.</div><div class="ttdef"><b>Definition:</b> <a href="mecanisme_8cpp_source.html#l00112">mecanisme.cpp:112</a></div></div>
+<div class="ttc" id="aclass_mecanisme_html_acda653c93d67f7863000c4d79bc422d5"><div class="ttname"><a href="class_mecanisme.html#acda653c93d67f7863000c4d79bc422d5">Mecanisme::updateSorties</a></div><div class="ttdeci">virtual void updateSorties()=0</div></div>
+<div class="ttc" id="aclass_mecanisme_html_ad543be363aac823c6f74392670fd6792"><div class="ttname"><a href="class_mecanisme.html#ad543be363aac823c6f74392670fd6792">Mecanisme::m_id</a></div><div class="ttdeci">int m_id</div><div class="ttdoc">L'identifiant du mécanisme.</div><div class="ttdef"><b>Definition:</b> <a href="mecanisme_8h_source.html#l00049">mecanisme.h:49</a></div></div>
+<div class="ttc" id="aclass_mecanisme_html_aee4802d8d66d163203aba27568df5c27"><div class="ttname"><a href="class_mecanisme.html#aee4802d8d66d163203aba27568df5c27">Mecanisme::ajouterVDC</a></div><div class="ttdeci">void ajouterVDC(int id, VariableDeControle::VDCType t, VariableDeControle::VDCSignal s, int pin=VDC_NO_PIN)</div><div class="ttdoc">Ajoute une variable de controle.</div><div class="ttdef"><b>Definition:</b> <a href="mecanisme_8cpp_source.html#l00068">mecanisme.cpp:68</a></div></div>
+<div class="ttc" id="aclass_mecanisme_html_afcc25321db0930910bdf5184ffd4dad1"><div class="ttname"><a href="class_mecanisme.html#afcc25321db0930910bdf5184ffd4dad1">Mecanisme::setupGeneral</a></div><div class="ttdeci">void setupGeneral()</div><div class="ttdoc">Méthode appelée par le setup pour tous les mécanismes.</div><div class="ttdef"><b>Definition:</b> <a href="mecanisme_8cpp_source.html#l00077">mecanisme.cpp:77</a></div></div>
+<div class="ttc" id="aclass_mecanisme_html_afcf3112c910eef6d3cc03a286b47f425"><div class="ttname"><a href="class_mecanisme.html#afcf3112c910eef6d3cc03a286b47f425">Mecanisme::loopMecanisme</a></div><div class="ttdeci">virtual void loopMecanisme()=0</div></div>
+<div class="ttc" id="aclass_mecanisme_html_afcfec8cf53e2e178039052065cac59b2"><div class="ttname"><a href="class_mecanisme.html#afcfec8cf53e2e178039052065cac59b2">Mecanisme::sendData</a></div><div class="ttdeci">static void sendData()</div><div class="ttdoc">Méthode appelée automatiquement après avoir lu un message depuis le bus I2C.</div><div class="ttdef"><b>Definition:</b> <a href="mecanisme_8cpp_source.html#l00210">mecanisme.cpp:210</a></div></div>
+<div class="ttc" id="aclass_variable_de_controle_html"><div class="ttname"><a href="class_variable_de_controle.html">VariableDeControle</a></div><div class="ttdoc">Déclaration de la classe VariableDeControle décrivant une variable controlée par le système entier.</div><div class="ttdef"><b>Definition:</b> <a href="variable_de_controle_8h_source.html#l00017">variableDeControle.h:18</a></div></div>
+<div class="ttc" id="aclass_variable_de_controle_html_a5b18a50f5fdd976b406c35f9f9530d53"><div class="ttname"><a href="class_variable_de_controle.html#a5b18a50f5fdd976b406c35f9f9530d53">VariableDeControle::VDCType</a></div><div class="ttdeci">VDCType</div><div class="ttdoc">Les différents types de controle.</div><div class="ttdef"><b>Definition:</b> <a href="variable_de_controle_8h_source.html#l00021">variableDeControle.h:21</a></div></div>
+<div class="ttc" id="aclass_variable_de_controle_html_af7076d02110216c3f346f5e7bb68204c"><div class="ttname"><a href="class_variable_de_controle.html#af7076d02110216c3f346f5e7bb68204c">VariableDeControle::VDCSignal</a></div><div class="ttdeci">VDCSignal</div><div class="ttdoc">Les différents types de signaux.</div><div class="ttdef"><b>Definition:</b> <a href="variable_de_controle_8h_source.html#l00024">variableDeControle.h:24</a></div></div>
+<div class="ttc" id="amecanisme_8h_html_a70a6a82ee28801afee9ddb2a8bb89725"><div class="ttname"><a href="mecanisme_8h.html#a70a6a82ee28801afee9ddb2a8bb89725">NB_VDC_MAX</a></div><div class="ttdeci">#define NB_VDC_MAX</div><div class="ttdef"><b>Definition:</b> <a href="mecanisme_8h_source.html#l00005">mecanisme.h:5</a></div></div>
+<div class="ttc" id="avariable_de_controle_8h_html"><div class="ttname"><a href="variable_de_controle_8h.html">variableDeControle.h</a></div></div>
+<div class="ttc" id="avariable_de_controle_8h_html_a21836618490e689c6a3cbbd358eee6a2"><div class="ttname"><a href="variable_de_controle_8h.html#a21836618490e689c6a3cbbd358eee6a2">VDC_NO_PIN</a></div><div class="ttdeci">#define VDC_NO_PIN</div><div class="ttdef"><b>Definition:</b> <a href="variable_de_controle_8h_source.html#l00010">variableDeControle.h:10</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Jeudi 30 Mars 2023 14:21:55 pour Gestion de salle Escape Game par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+</small></address>
+</body>
+</html>

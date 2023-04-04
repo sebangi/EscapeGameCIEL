@@ -1,0 +1,4 @@
+<map id="Mecanisme::ajouterVDC" name="Mecanisme::ajouterVDC">
+<area shape="rect" id="node1" title="Ajoute une variable de controle." alt="" coords="293,5,456,31"/>
+<area shape="rect" id="node2" href="$class_mecanisme_badges.html#a1109a09dec29b65931dbd39fad39d268" title="Méthode appelée par le setup de base sur Arduino." alt="" coords="5,5,245,31"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="Mecanisme::getValeurVDC" name="Mecanisme::getValeurVDC">
+<area shape="rect" id="node1" title="Accesseur d&#39;une valeur d&#39;une variable de controle." alt="" coords="524,31,703,56"/>
+<area shape="rect" id="node2" href="$class_mecanisme_badges.html#a15ea4715472a76b462262063f5d4e16c" title="Gestion d&#39;une lecture et mise à jour des leds." alt="" coords="275,5,476,31"/>
+<area shape="rect" id="node3" href="$class_mecanisme_badges.html#a4690ba5effb3c65139c99695157f1aa9" title="Mise à jour des sorties." alt="" coords="5,31,227,56"/>
+</map>

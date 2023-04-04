@@ -1,0 +1,6 @@
+warning: the dot tool could not be found as 'C:/Program Files (x86)/Graphviz2.38/bin/dot.exe'
+D:/EscapeGameCIEL/Arduino/Libraries/GestionSalle/mecanisme.cpp:96: warning: argument 'pin' of command @param is not found in the argument list of Mecanisme::getValeurVDC(int id) const
+D:/EscapeGameCIEL/Arduino/Libraries/GestionSalle/mecanisme.cpp:96: warning: The following parameter of Mecanisme::getValeurVDC(int id) const is not documented:
+  parameter 'id'
+D:/EscapeGameCIEL/Arduino/Libraries/GestionSalle/variableDeControle.cpp:56: warning: VariableDeControle::deverrouiller has @param documentation sections but no arguments
+D:/EscapeGameCIEL/Arduino/Libraries/GestionSalle/variableDeControle.cpp:44: warning: argument 'pin' of command @param is not found in the argument list of VariableDeControle::verrouiller(byte valeur)
