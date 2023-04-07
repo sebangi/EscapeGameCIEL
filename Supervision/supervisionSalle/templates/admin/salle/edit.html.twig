@@ -1,13 +1,10 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Edit Salle{% endblock %}
+{% block title %}Modification de salle{% endblock %}
 
 {% block body %}
-    <h1>Edit Salle</h1>
+    <h1>Modification <span class="salle">{{salle.nom}}</span></h1>
 
-    {{ include('admin/salle/_form.html.twig', {'button_label': 'Update'}) }}
+    {{ include('admin/salle/_form.html.twig', {'button_label': 'Sauvegarder'}) }}
 
-    <a href="{{ path('app_admin_salle_index') }}">back to list</a>
-
-    {{ include('admin/salle/_delete_form.html.twig') }}
 {% endblock %}

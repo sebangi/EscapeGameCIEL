@@ -1,0 +1,47 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}VariableDeControle index{% endblock %}
+
+{% block body %}
+    <h1>VariableDeControle index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nom</th>
+                <th>Numero</th>
+                <th>Valeur</th>
+                <th>Controle</th>
+                <th>ValeurControle</th>
+                <th>ValeurHorodatage</th>
+                <th>Type</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for variable_de_controle in variable_de_controles %}
+            <tr>
+                <td>{{ variable_de_controle.id }}</td>
+                <td>{{ variable_de_controle.nom }}</td>
+                <td>{{ variable_de_controle.numero }}</td>
+                <td>{{ variable_de_controle.valeur }}</td>
+                <td>{{ variable_de_controle.controle ? 'Yes' : 'No' }}</td>
+                <td>{{ variable_de_controle.valeurControle }}</td>
+                <td>{{ variable_de_controle.valeurHorodatage ? variable_de_controle.valeurHorodatage|date('Y-m-d H:i:s') : '' }}</td>
+                <td>{{ variable_de_controle.type }}</td>
+                <td>
+                    <a href="{{ path('app_variable_de_controle_show', {'id': variable_de_controle.id}) }}">show</a>
+                    <a href="{{ path('app_variable_de_controle_edit', {'id': variable_de_controle.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="9">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_variable_de_controle_new') }}">Create new</a>
+{% endblock %}

@@ -2,26 +2,30 @@
 
 namespace App\Form;
 
-use App\Entity\Salle;
+use App\Entity\VariableDeControle;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
-class SalleType extends AbstractType
+class VariableDeControleType extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $builder
-            ->add('numero')
             ->add('nom')
-            ->add('description')
+            ->add('numero')
+            ->add('valeur')
+            ->add('controle')
+            ->add('valeurControle')
+            ->add('valeurHorodatage')
+            ->add('type')
         ;
     }
 
     public function configureOptions(OptionsResolver $resolver): void
     {
         $resolver->setDefaults([
-            'data_class' => Salle::class,
+            'data_class' => VariableDeControle::class,
         ]);
     }
 }

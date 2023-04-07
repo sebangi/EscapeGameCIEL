@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Mecanisme index{% endblock %}
+
+{% block body %}
+    <h1>Mecanisme index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nom</th>
+                <th>Numero</th>
+                <th>Description</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for mecanisme in mecanismes %}
+            <tr>
+                <td>{{ mecanisme.id }}</td>
+                <td>{{ mecanisme.nom }}</td>
+                <td>{{ mecanisme.numero }}</td>
+                <td>{{ mecanisme.description }}</td>
+                <td>
+                    <a href="{{ path('app_mecanisme_show', {'id': mecanisme.id}) }}">show</a>
+                    <a href="{{ path('app_mecanisme_edit', {'id': mecanisme.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="5">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_mecanisme_new') }}">Create new</a>
+{% endblock %}

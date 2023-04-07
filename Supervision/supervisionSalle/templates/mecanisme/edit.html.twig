@@ -1,0 +1,9 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Modification de mécanisme{% endblock %}
+
+{% block body %}
+    <h1>Modification <span class="mecanisme">{{mecanisme.nom}}</h1>
+
+    {{ include('mecanisme/_form.html.twig', {'button_label': 'Sauvegarder'}) }}
+{% endblock %}

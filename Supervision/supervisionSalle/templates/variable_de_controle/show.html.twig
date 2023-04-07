@@ -1,0 +1,50 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}VariableDeControle{% endblock %}
+
+{% block body %}
+    <h1>VariableDeControle</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ variable_de_controle.id }}</td>
+            </tr>
+            <tr>
+                <th>Nom</th>
+                <td>{{ variable_de_controle.nom }}</td>
+            </tr>
+            <tr>
+                <th>Numero</th>
+                <td>{{ variable_de_controle.numero }}</td>
+            </tr>
+            <tr>
+                <th>Valeur</th>
+                <td>{{ variable_de_controle.valeur }}</td>
+            </tr>
+            <tr>
+                <th>Controle</th>
+                <td>{{ variable_de_controle.controle ? 'Yes' : 'No' }}</td>
+            </tr>
+            <tr>
+                <th>ValeurControle</th>
+                <td>{{ variable_de_controle.valeurControle }}</td>
+            </tr>
+            <tr>
+                <th>ValeurHorodatage</th>
+                <td>{{ variable_de_controle.valeurHorodatage ? variable_de_controle.valeurHorodatage|date('Y-m-d H:i:s') : '' }}</td>
+            </tr>
+            <tr>
+                <th>Type</th>
+                <td>{{ variable_de_controle.type }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_variable_de_controle_index') }}">back to list</a>
+
+    <a href="{{ path('app_variable_de_controle_edit', {'id': variable_de_controle.id}) }}">edit</a>
+
+    {{ include('variable_de_controle/_delete_form.html.twig') }}
+{% endblock %}

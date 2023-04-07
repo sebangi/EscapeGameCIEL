@@ -32,7 +32,9 @@ class AdminSalleController extends AbstractController
             $salleRepository->save($salle, true);
             $this->addFlash('success', 'Salle ajoutée avec succès.');
 
-            return $this->redirectToRoute('app_admin_salle_index', [], Response::HTTP_SEE_OTHER);
+            return $this->render('admin/salle/show.html.twig', [
+                'salle' => $salle,
+            ]);
         }
 
         return $this->renderForm('admin/salle/new.html.twig', [
@@ -57,8 +59,11 @@ class AdminSalleController extends AbstractController
 
         if ($form->isSubmitted() && $form->isValid()) {
             $salleRepository->save($salle, true);
+            $this->addFlash('success', 'Salle modifiée avec succès.');
 
-            return $this->redirectToRoute('app_admin_salle_index', [], Response::HTTP_SEE_OTHER);
+            return $this->render('admin/salle/show.html.twig', [
+                'salle' => $salle,
+            ]);
         }
 
         return $this->renderForm('admin/salle/edit.html.twig', [
@@ -72,9 +77,8 @@ class AdminSalleController extends AbstractController
     {
         if ($this->isCsrfTokenValid('delete'.$salle->getId(), $request->request->get('_token'))) {
             $salleRepository->remove($salle, true);
+            $this->addFlash('success', 'Salle supprimée avec succès.');
         }
-        
-        $this->addFlash('success', 'Salle supprimée avec succès.');
         
         return $this->redirectToRoute('app_admin_salle_index', [], Response::HTTP_SEE_OTHER);
     }

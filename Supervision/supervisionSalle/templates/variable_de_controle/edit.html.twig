@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit VariableDeControle{% endblock %}
+
+{% block body %}
+    <h1>Edit VariableDeControle</h1>
+
+    {{ include('variable_de_controle/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('app_variable_de_controle_index') }}">back to list</a>
+
+    {{ include('variable_de_controle/_delete_form.html.twig') }}
+{% endblock %}

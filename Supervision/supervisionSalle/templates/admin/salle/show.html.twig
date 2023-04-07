@@ -6,21 +6,64 @@
     
     <div>
         <h1>
-            Salle n°{{ salle.numero }} : {{ salle.nom }}
+            Salle n°{{ salle.numero }} : <span class="salle">{{ salle.nom }}<span>
                     
             <a href="{{ path('app_admin_salle_edit', {'id': salle.id}) }}" class="btn btn-primary">
                 <span class="fas fa-edit" aria-hidden="true"></span>
             </a>
             
-            {{ include('admin/salle/_delete_form.html.twig') }}
+            
         </h1>
-    </div>
-        
-    <table class="table">
         <div>
             {{ salle.Description }}
-        </div>
+        <div>
+    </div>
+        
+    <h2 class="mt-4">
+        Liste des mécanismes
+    </h2>
+    
+    <table class="table table-striped table-light">
+        <thead class="table-dark">
+            <tr>
+                <th scope="col">Numéro</th>
+                <th scope="col">Nom</th>
+                <th scope="col">Description</th>
+                <th scope="col">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for mecanisme in salle.mecanismes %}
+            <tr>
+                <td scope="row">{{ mecanisme.numero }}</td>
+                <td scope="row">{{ mecanisme.nom }}</td>
+                <td scope="row">{{ mecanisme.Description }}</td>
+                <td scope="row">
+                    <a href="{{ path('app_mecanisme_show', {'id': salle.id}) }}" class="btn btn-primary">
+                        <span class="fas fa-info-circle" aria-hidden="true"></span>
+                    </a>
+                    <a href="{{ path('app_mecanisme_edit', {'id': salle.id}) }}" class="btn btn-primary">
+                        <span class="fas fa-edit" aria-hidden="true"></span>
+                    </a>
+                    <a href="{{ path('app_mecanisme_delete', {'id': salle.id}) }}" class="btn btn-danger">
+                        <span class="fas fa-trash" aria-hidden="true"></span>
+                    </a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="5"  scope="row">Aucun mécanisme n'est enregistré dans cette salle</td>
+            </tr>
+        {% endfor %}            
+        </tbody>
     </table>
 
-    
+    <div>
+        <a href="{{ path('app_mecanisme_new', {'idsalle': salle.id} ) }}" class="btn btn-primary">
+            <span class="fas fa-plus-circle" aria-hidden="true"></span>
+            Ajouter un mécanisme
+        </a>
+    </div>
+     
+    {{ include('admin/salle/_delete_form.html.twig') }}
 {% endblock %}
