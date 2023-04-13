@@ -41,6 +41,7 @@ class AdminMecanismeController extends AbstractController
 
         return $this->renderForm('mecanisme/new.html.twig', [
             'mecanisme' => $mecanisme,
+                'salle' => $mecanisme->getSalle(),
             'form' => $form,
         ]);
     }

@@ -25,13 +25,7 @@
                     <td scope="row">{{ salle.Description }}</td>
                     <td scope="row">
                         <a href="{{ path('app_admin_salle_show', {'id': salle.id}) }}" class="btn btn-success">
-                            <span class="fas fa-info-circle" aria-hidden="true"></span>
-                        </a>
-                        <a href="{{ path('app_admin_salle_edit', {'id': salle.id}) }}" class="btn btn-primary">
-                            <span class="fas fa-edit" aria-hidden="true"></span>
-                        </a>
-                        <a href="{{ path('app_admin_salle_delete_verification', {'id': salle.id}) }}" class="btn btn-danger">
-                            <span class="fas fa-trash" aria-hidden="true"></span>
+                            Gérer
                         </a>
                     </td>
                 </tr>

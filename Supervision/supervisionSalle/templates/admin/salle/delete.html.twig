@@ -3,17 +3,33 @@
 {% block title %}Salle{% endblock %}
 
 {% block body %}
-    <h2>
-        Étes-vous certain de supprimer la salle {{ salle.nom }} ?
-    </h2>
-    <div class="fst-italic">
-        Attention, tous les mécanismes et les variables de contrôle de cette salle seront supprimée avec...
-    </div>
-    <div class="m-2 d-flex">
-        <a href="{{ path('app_admin_salle_index') }}" class="btn btn-success m-2">
-            Annuler
-        </a>    
-        {{ include('admin/salle/_delete_form.html.twig') }}
+    {{ include('admin/salle/_nav_salle.html.twig') }}
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-1"></div>
+
+            <div class="col-10">
+                <div class="card ">
+                    <h3 class="card-header text-bg-danger">
+                        Étes-vous certain de supprimer la salle {{ salle.nom }} ?
+                    </h3>
+                    <div class="card-body">
+                        <div class="fst-italic">
+                            Attention, tous les mécanismes et les variables de contrôle de cette salle seront supprimée aussi !
+                        </div>
+                        <div class="m-2 d-flex">
+                            <a href="{{ path('app_admin_salle_show', {'id': salle.id}) }}" class="btn btn-success m-2">
+                                Non, annuler
+                            </a>    
+                            {{ include('admin/salle/_delete_form.html.twig') }}
+                        </div> 
+                    </div>        
+                </div>  
+            </div>
+
+            <div class="col-1"></div>                
+        </div>
     </div>
 
 {% endblock %}

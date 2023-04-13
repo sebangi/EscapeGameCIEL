@@ -39,6 +39,7 @@ class AdminVariableDeControleController extends AbstractController
 
         return $this->renderForm('variable_de_controle/new.html.twig', [
             'variable_de_controle' => $variableDeControle,
+            'mecanisme' => $variableDeControle->getMecanisme(),
             'form' => $form,
         ]);
     }
@@ -66,6 +67,7 @@ class AdminVariableDeControleController extends AbstractController
 
         return $this->renderForm('variable_de_controle/edit.html.twig', [
             'variable_de_controle' => $variableDeControle,
+            'mecanisme' => $variableDeControle->getMecanisme(),
             'form' => $form,
         ]);
     }
@@ -87,6 +89,7 @@ class AdminVariableDeControleController extends AbstractController
     public function deleteVerification(Request $request, VariableDeControle $vdc): Response
     {
        return $this->render('variable_de_controle/delete.html.twig', [
+            'mecanisme' => $vdc->getMecanisme(),
             'variable_de_controle' => $vdc,
         ]);      
        

@@ -3,22 +3,35 @@
 {% block title %}Nouvelle variable de contrôle{% endblock %}
 
 {% block body %}
-    <h1>Création d'une nouvelle variable de contrôle</h1>
+    {{ include('mecanisme/_nav_mecanisme.html.twig') }}
 
-    {{ form_start(form) }} 
-    {{ include('variable_de_controle/_form.html.twig') }}
-    
-    <div>
-        <div class="row justify-content-start custom-line m-2"> 
-            <div class="col-2"></div> 
-            <div class="col-8">
-                <button class="btn btn-success">Ajouter</button>
-                <a href="{{ path('app_mecanisme_show', {'id': variable_de_controle.mecanisme.id}) }}" class="btn btn-danger">
-                    Annuler
-                </a>
-            </div>   
-        </div>    
-    </div>     
-    {{ form_end(form) }}
-    
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-1"></div>
+
+            <div class="col-10">
+                {{ form_start(form) }} 
+                <div class="card">
+                    <div class="card-header text-bg-primary">Nouvelle variable de contrôle</div>
+                    <div class="card-body">
+                        {{ include('variable_de_controle/_form.html.twig') }}
+                        <div>
+                            <div class="row justify-content-start custom-line m-2"> 
+                                <div class="col-4"></div> 
+                                <div class="col-6">
+                                    <button class="btn btn-success">Ajouter</button>
+                                    <a href="{{ path('app_mecanisme_show', {'id': variable_de_controle.mecanisme.id}) }}" class="btn  btn-secondary">
+                                        Annuler
+                                    </a>
+                                </div>   
+                            </div>    
+                        </div> 
+                    </div> 
+                </div>     
+                {{ form_end(form) }}
+            </div>
+
+            <div class="col-1"></div>                
+        </div>
+    </div>
 {% endblock %}

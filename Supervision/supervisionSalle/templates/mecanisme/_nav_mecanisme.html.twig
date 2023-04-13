@@ -1,0 +1,22 @@
+<nav class="navbar text-bg-dark bg-dark p-2">
+    <div class="">
+        <a href="{{ path('app_admin_salle_show', {'id': mecanisme.salle.id}) }}" class="btn btn-secondary disabled">
+            {{ mecanisme.salle.nom }} 
+        </a>    
+    </div>                
+
+    <div class="fs-5 fw-bold" >
+        Mécanisme n°{{ mecanisme.numero }} : 
+        <span class="mecanisme">{{ mecanisme.nom }}</span>
+    </div>
+
+    <div class="" style="display: flex;">
+        <a href="{{ path('app_mecanisme_edit', {'id': mecanisme.id}) }}" class="btn btn-secondary  m-2 disabled">
+            <span class="fas fa-edit" aria-hidden="true"></span>
+        </a>
+
+        <a href="{{ path('app_mecanisme_delete_verification', {'id': mecanisme.id}) }}" class="btn btn-secondary  m-2 disabled">
+            <span class="fas fa-trash" aria-hidden="true"></span>
+        </a>
+    </div>
+</nav>

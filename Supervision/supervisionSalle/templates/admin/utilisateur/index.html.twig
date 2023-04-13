@@ -23,7 +23,7 @@
                 <td>{{ utilisateur.roles ? utilisateur.roles|json_encode : '' }}</td>
                 <td>
                     <a href="{{ path('app_admin_utilisateur_show', {'id': utilisateur.id}) }}" class="btn btn-success">
-                        <span class="fas fa-info-circle" aria-hidden="true"></span>
+                        Gérer
                     </a>
                     <a href="{{ path('app_admin_utilisateur_edit', {'id': utilisateur.id}) }}" class="btn btn-primary">
                         <span class="fas fa-edit" aria-hidden="true"></span>

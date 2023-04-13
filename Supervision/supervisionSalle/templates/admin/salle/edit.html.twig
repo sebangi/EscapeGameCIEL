@@ -3,8 +3,23 @@
 {% block title %}Modification de salle{% endblock %}
 
 {% block body %}
-    <h1>Modification <span class="salle">{{salle.nom}}</span></h1>
+    {{ include('admin/salle/_nav_salle.html.twig') }}
 
-    {{ include('admin/salle/_form.html.twig', {'button_label': 'Sauvegarder'}) }}
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-1"></div>
+
+            <div class="col-10">
+                <div class="card">
+                    <div class="card-header text-bg-primary">Édition de la salle</div>
+                    <div class="card-body">
+                        {{ include('admin/salle/_form.html.twig', {'button_label': 'Sauvegarder', 'creation':'false'}) }}
+                    </div>        
+                </div>    
+            </div>
+
+            <div class="col-1"></div>                
+        </div>
+    </div> 
 
 {% endblock %}

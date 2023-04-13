@@ -2,7 +2,7 @@
     <form method="post"action="{{ path('app_admin_salle_delete', {'id': salle.id}) }}" onsubmit="return true;">
         <input type="hidden" name="_token" value="{{ csrf_token('delete' ~ salle.id) }}">
         <button class="btn btn-danger">
-            <span class="fas fa-trash" aria-hidden="true"></span> Suppprimer
+            <span class="fas fa-trash" aria-hidden="true"></span> Oui, suppprimer
         </button>
     </form>
 </a>
