@@ -1,13 +1,25 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Edit VariableDeControle{% endblock %}
+{% block title %}Modification d'une variable de controle{% endblock %}
 
 {% block body %}
-    <h1>Edit VariableDeControle</h1>
+    <h1>Modification <span class="vdc">{{variable_de_controle.nom}}</h1>
 
-    {{ include('variable_de_controle/_form.html.twig', {'button_label': 'Update'}) }}
+    <div class="m-4">
+        {{ form_start(form) }} 
+        {{ include('variable_de_controle/_form.html.twig', {'button_label': 'Sauvegarder'}) }}
 
-    <a href="{{ path('app_variable_de_controle_index') }}">back to list</a>
 
-    {{ include('variable_de_controle/_delete_form.html.twig') }}
+        <div class="row justify-content-start custom-line m-2"> 
+            <div class="col-2"></div> 
+            <div class="col-8">
+                <button class="btn btn-success">Sauvegarder</button>
+                <a href="{{ path('app_mecanisme_show', {'id': variable_de_controle.mecanisme.id}) }}" class="btn btn-danger">
+                    Annuler
+                </a>
+            </div>   
+        </div>     
+        {{ form_end(form) }} 
+
+    </div>
 {% endblock %}

@@ -3,32 +3,55 @@
 {% block title %}Mecanisme{% endblock %}
 
 {% block body %}
-    <h1>Mecanisme</h1>
+    <div>
+        <nav class="navbar text-bg-dark bg-dark p-2">
+            <div class="">
+                <a href="{{ path('app_admin_salle_show', {'id': mecanisme.salle.id}) }}" class="btn btn-success">
+                    <span class="fas fa-chevron-up" aria-hidden="true"></span>
+                    {{ mecanisme.salle.nom }} 
+                </a>    
+            </div>                
 
-    <table class="table">
-        <tbody>
-            <tr>
-                <th>Id</th>
-                <td>{{ mecanisme.id }}</td>
-            </tr>
-            <tr>
-                <th>Nom</th>
-                <td>{{ mecanisme.nom }}</td>
-            </tr>
-            <tr>
-                <th>Numero</th>
-                <td>{{ mecanisme.numero }}</td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>{{ mecanisme.description }}</td>
-            </tr>
-        </tbody>
-    </table>
+            <div class="fs-5 fw-bold" >
+                Mécanisme n°{{ mecanisme.numero }} : 
+                <span class="mecanisme">{{ mecanisme.nom }}</span>
+            </div>
 
-    <a href="{{ path('app_mecanisme_index') }}">back to list</a>
+            <div class="" style="display: flex;">
+                <a href="{{ path('app_mecanisme_edit', {'id': mecanisme.id}) }}" class="btn btn-primary m-2">
+                    <span class="fas fa-edit" aria-hidden="true"></span>
+                </a>
+                    
+                <a href="{{ path('app_mecanisme_delete_verification', {'id': mecanisme.id}) }}" class="btn btn-danger m-2">
+                    <span class="fas fa-trash" aria-hidden="true"></span>
+                </a>
+            </div>
+        </nav>
 
-    <a href="{{ path('app_mecanisme_edit', {'id': mecanisme.id}) }}">edit</a>
+        <div class="container">
+            <div class="row">
+                <div class="col-1"></div>
 
-    {{ include('mecanisme/_delete_form.html.twig') }}
+                <div class="col-10">
+                    <div class="mt-2">
+                        <span class="fw-bold"> Description : </span>
+                        <span class="fst-italic">
+                            {{ mecanisme.Description }}
+                        </span>
+                    </div>
+
+                    {{ include('variable_de_controle/index.html.twig', {'variable_de_controles': mecanisme.variables}) }}
+
+                    <div>
+                        <a href="{{ path('app_variable_de_controle_new', {'id': mecanisme.id} ) }}" class="btn btn-primary">
+                            <span class="fas fa-plus-circle" aria-hidden="true"></span>
+                            Ajouter une variable de contrôle
+                        </a>
+                    </div>                
+                </div>
+
+                <div class="col-1"></div>                
+            </div>
+        </div>
+    </div>
 {% endblock %}

@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Salle{% endblock %}
+
+{% block body %}
+    <h2>
+        Étes-vous certain de supprimer la salle {{ salle.nom }} ?
+    </h2>
+    <div class="fst-italic">
+        Attention, tous les mécanismes et les variables de contrôle de cette salle seront supprimée avec...
+    </div>
+    <div class="m-2 d-flex">
+        <a href="{{ path('app_admin_salle_index') }}" class="btn btn-success m-2">
+            Annuler
+        </a>    
+        {{ include('admin/salle/_delete_form.html.twig') }}
+    </div>
+
+{% endblock %}

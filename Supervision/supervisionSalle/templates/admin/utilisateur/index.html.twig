@@ -3,13 +3,16 @@
 {% block title %}Utilisateur index{% endblock %}
 
 {% block body %}
-    <h1>Utilisateur index</h1>
-
     <table class="table table-striped table-light">
         <thead class="table-dark">
             <tr>
-                <th>Username</th>
-                <th>Roles</th>
+                <th scope="col"  colspan="4" class="fs-5 fw-bold text-center">
+                    Liste des utilisateurs
+                </th>                
+            </tr>
+            <tr>
+                <th>Identifiant</th>
+                <th>Rôles</th>
                 <th>actions</th>
             </tr>
         </thead>
@@ -19,7 +22,7 @@
                 <td>{{ utilisateur.username }}</td>
                 <td>{{ utilisateur.roles ? utilisateur.roles|json_encode : '' }}</td>
                 <td>
-                    <a href="{{ path('app_admin_utilisateur_show', {'id': utilisateur.id}) }}" class="btn btn-primary">
+                    <a href="{{ path('app_admin_utilisateur_show', {'id': utilisateur.id}) }}" class="btn btn-success">
                         <span class="fas fa-info-circle" aria-hidden="true"></span>
                     </a>
                     <a href="{{ path('app_admin_utilisateur_edit', {'id': utilisateur.id}) }}" class="btn btn-primary">

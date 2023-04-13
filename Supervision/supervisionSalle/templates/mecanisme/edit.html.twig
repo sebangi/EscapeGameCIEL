@@ -5,5 +5,21 @@
 {% block body %}
     <h1>Modification <span class="mecanisme">{{mecanisme.nom}}</h1>
 
-    {{ include('mecanisme/_form.html.twig', {'button_label': 'Sauvegarder'}) }}
+    <div class="m-4">
+        {{ form_start(form) }} 
+
+        {{ include('mecanisme/_form.html.twig', {'button_label': 'Sauvegarder'}) }}
+
+        <div class="row justify-content-start custom-line m-2"> 
+            <div class="col-2"></div> 
+            <div class="col-8">
+                <button class="btn btn-success">Sauvegarder</button>
+                <a href="{{ path('app_mecanisme_show', {'id': mecanisme.id}) }}" class="btn btn-danger">
+                    Annuler
+                </a>
+            </div>   
+        </div>     
+        {{ form_end(form) }} 
+
+    </div>
 {% endblock %}

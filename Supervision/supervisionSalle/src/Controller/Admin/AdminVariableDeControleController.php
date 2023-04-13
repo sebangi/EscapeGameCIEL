@@ -3,6 +3,7 @@
 namespace App\Controller\Admin;
 
 use App\Entity\VariableDeControle;
+use App\Entity\Mecanisme;
 use App\Form\VariableDeControleType;
 use App\Repository\VariableDeControleRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -21,17 +22,19 @@ class AdminVariableDeControleController extends AbstractController
         ]);
     }
 
-    #[Route('/new', name: 'app_variable_de_controle_new', methods: ['GET', 'POST'])]
-    public function new(Request $request, VariableDeControleRepository $variableDeControleRepository): Response
+    #[Route('/{id}/newvdc', name: 'app_variable_de_controle_new', methods: ['GET', 'POST'])]
+    public function new(Request $request, Mecanisme $mecanisme, VariableDeControleRepository $variableDeControleRepository): Response
     {
         $variableDeControle = new VariableDeControle();
+        $variableDeControle->setMecanisme($mecanisme);
         $form = $this->createForm(VariableDeControleType::class, $variableDeControle);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
             $variableDeControleRepository->save($variableDeControle, true);
-
-            return $this->redirectToRoute('app_variable_de_controle_index', [], Response::HTTP_SEE_OTHER);
+            $this->addFlash('success', 'Variable de contrôle ajoutée avec succès.');    
+            
+            return $this->redirectToRoute('app_mecanisme_show', ['id' => $variableDeControle->getMecanisme()->getId()], Response::HTTP_SEE_OTHER);
         }
 
         return $this->renderForm('variable_de_controle/new.html.twig', [
@@ -56,8 +59,9 @@ class AdminVariableDeControleController extends AbstractController
 
         if ($form->isSubmitted() && $form->isValid()) {
             $variableDeControleRepository->save($variableDeControle, true);
-
-            return $this->redirectToRoute('app_variable_de_controle_index', [], Response::HTTP_SEE_OTHER);
+            $this->addFlash('success', 'Variable de contrôle modifiée avec succès.');
+            
+            return $this->redirectToRoute('app_mecanisme_show', ['id' => $variableDeControle->getMecanisme()->getId()], Response::HTTP_SEE_OTHER);
         }
 
         return $this->renderForm('variable_de_controle/edit.html.twig', [
@@ -69,10 +73,22 @@ class AdminVariableDeControleController extends AbstractController
     #[Route('/{id}', name: 'app_variable_de_controle_delete', methods: ['POST'])]
     public function delete(Request $request, VariableDeControle $variableDeControle, VariableDeControleRepository $variableDeControleRepository): Response
     {
+        $idMecanisme = $variableDeControle->getMecanisme()->getId();
+        
         if ($this->isCsrfTokenValid('delete'.$variableDeControle->getId(), $request->request->get('_token'))) {
             $variableDeControleRepository->remove($variableDeControle, true);
+            $this->addFlash('success', 'Variable de contrôle supprimée avec succès.');
         }
-
-        return $this->redirectToRoute('app_variable_de_controle_index', [], Response::HTTP_SEE_OTHER);
+            
+        return $this->redirectToRoute('app_mecanisme_show', ['id' => $idMecanisme], Response::HTTP_SEE_OTHER);
+    }    
+    
+    #[Route('/{id}/delete', name: 'app_variable_de_controle_delete_verification', methods: ['GET', 'POST'])]
+    public function deleteVerification(Request $request, VariableDeControle $vdc): Response
+    {
+       return $this->render('variable_de_controle/delete.html.twig', [
+            'variable_de_controle' => $vdc,
+        ]);      
+       
     }
 }

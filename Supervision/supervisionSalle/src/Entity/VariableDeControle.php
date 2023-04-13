@@ -32,13 +32,18 @@ class VariableDeControle
     #[ORM\Column(type: Types::DATETIME_MUTABLE, nullable: true)]
     private ?\DateTimeInterface $valeurHorodatage = null;
 
-    #[ORM\Column(length: 255)]
-    private ?string $type = null;
-
     #[ORM\ManyToOne(inversedBy: 'variables')]
     #[ORM\JoinColumn(nullable: false)]
     private ?Mecanisme $mecanisme = null;
 
+    #[ORM\Column]
+    private ?bool $estBooleen = null;
+
+    function __construct() {
+        $this->setControle(false);
+        $this->setValeurControle(0);        
+    }
+    
     public function getId(): ?int
     {
         return $this->id;
@@ -116,18 +121,6 @@ class VariableDeControle
         return $this;
     }
 
-    public function getType(): ?string
-    {
-        return $this->type;
-    }
-
-    public function setType(string $type): self
-    {
-        $this->type = $type;
-
-        return $this;
-    }
-
     public function getMecanisme(): ?Mecanisme
     {
         return $this->mecanisme;
@@ -136,6 +129,18 @@ class VariableDeControle
     public function setMecanisme(?Mecanisme $mecanisme): self
     {
         $this->mecanisme = $mecanisme;
+
+        return $this;
+    }
+
+    public function isEstBooleen(): ?bool
+    {
+        return $this->estBooleen;
+    }
+
+    public function setEstBooleen(bool $estBooleen): self
+    {
+        $this->estBooleen = $estBooleen;
 
         return $this;
     }

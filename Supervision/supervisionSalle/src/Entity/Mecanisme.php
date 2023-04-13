@@ -87,7 +87,7 @@ class Mecanisme
     public function setSalle(?Salle $salle): self
     {
         $this->salle = $salle;
-
+        
         return $this;
     }
 

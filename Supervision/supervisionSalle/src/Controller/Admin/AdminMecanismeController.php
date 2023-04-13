@@ -6,7 +6,6 @@ use App\Entity\Mecanisme;
 use App\Entity\Salle;
 use App\Form\MecanismeType;
 use App\Repository\MecanismeRepository;
-use App\Repository\SalleRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -23,8 +22,8 @@ class AdminMecanismeController extends AbstractController
         ]);
     }
 
-    #[Route('/new', name: 'app_mecanisme_new', methods: ['GET', 'POST'])]
-    public function new(Request $request, MecanismeRepository $mecanismeRepository, Salle $salle): Response
+    #[Route('/{id}/newmecanisme', name: 'app_mecanisme_new', methods: ['GET', 'POST'])]
+    public function new(Request $request, Salle $salle, MecanismeRepository $mecanismeRepository): Response
     {
         $mecanisme = new Mecanisme();
         $mecanisme->setSalle($salle);
@@ -33,7 +32,8 @@ class AdminMecanismeController extends AbstractController
 
         if ($form->isSubmitted() && $form->isValid()) {
             $mecanismeRepository->save($mecanisme, true);
-
+            $this->addFlash('success', 'Mécanisme ajouté avec succès.');
+            
             return $this->render('mecanisme/show.html.twig', [
                 'mecanisme' => $mecanisme,
             ]);
@@ -61,7 +61,8 @@ class AdminMecanismeController extends AbstractController
 
         if ($form->isSubmitted() && $form->isValid()) {
             $mecanismeRepository->save($mecanisme, true);
-
+            $this->addFlash('success', 'Mécanisme modifié avec succès.');
+            
             return $this->render('mecanisme/show.html.twig', [
                 'mecanisme' => $mecanisme,
             ]);
@@ -76,10 +77,22 @@ class AdminMecanismeController extends AbstractController
     #[Route('/{id}', name: 'app_mecanisme_delete', methods: ['POST'])]
     public function delete(Request $request, Mecanisme $mecanisme, MecanismeRepository $mecanismeRepository): Response
     {
+        $idSalle = $mecanisme->getSalle()->getId();
+                
         if ($this->isCsrfTokenValid('delete'.$mecanisme->getId(), $request->request->get('_token'))) {
             $mecanismeRepository->remove($mecanisme, true);
+            $this->addFlash('success', 'Mécanisme supprimé avec succès.');
         }
 
-        return $this->redirectToRoute('app_mecanisme_index', [], Response::HTTP_SEE_OTHER);
+        return $this->redirectToRoute('app_admin_salle_show', ['id' => $idSalle], Response::HTTP_SEE_OTHER);
+    }
+    
+    #[Route('/{id}/delete', name: 'app_mecanisme_delete_verification', methods: ['GET', 'POST'])]
+    public function deleteVerification(Request $request, Mecanisme $mecanisme): Response
+    {
+       return $this->render('mecanisme/delete.html.twig', [
+            'mecanisme' => $mecanisme,
+        ]);      
+       
     }
 }

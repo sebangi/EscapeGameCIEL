@@ -3,10 +3,13 @@
 {% block title %}Salle index{% endblock %}
 
 {% block body %}
-    <h1>Liste des salles</h1>
-
     <table class="table table-striped table-light">
         <thead class="table-dark">
+            <tr>
+                <th scope="col"  colspan="4" class="fs-5 fw-bold text-center">
+                    Liste des salles
+                </th>                
+            </tr>
             <tr>
                 <th scope="col">Numéro</th>
                 <th scope="col">Nom</th>
@@ -15,28 +18,28 @@
             </tr>
         </thead>
         <tbody>
-        {% for salle in salles %}
-            <tr>
-                <td scope="row">{{ salle.numero }}</td>
-                <td scope="row">{{ salle.nom }}</td>
-                <td scope="row">{{ salle.Description }}</td>
-                <td scope="row">
-                    <a href="{{ path('app_admin_salle_show', {'id': salle.id}) }}" class="btn btn-primary">
-                        <span class="fas fa-info-circle" aria-hidden="true"></span>
-                    </a>
-                    <a href="{{ path('app_admin_salle_edit', {'id': salle.id}) }}" class="btn btn-primary">
-                        <span class="fas fa-edit" aria-hidden="true"></span>
-                    </a>
-                    <a href="{{ path('app_admin_salle_delete', {'id': salle.id}) }}" class="btn btn-danger">
-                        <span class="fas fa-trash" aria-hidden="true"></span>
-                    </a>
-                </td>
-            </tr>
-        {% else %}
-            <tr>
-                <td colspan="5"  scope="row">Aucune salle n'est enregistrée</td>
-            </tr>
-        {% endfor %}
+            {% for salle in salles %}
+                <tr>
+                    <td scope="row">{{ salle.numero }}</td>
+                    <td scope="row">{{ salle.nom }}</td>
+                    <td scope="row">{{ salle.Description }}</td>
+                    <td scope="row">
+                        <a href="{{ path('app_admin_salle_show', {'id': salle.id}) }}" class="btn btn-success">
+                            <span class="fas fa-info-circle" aria-hidden="true"></span>
+                        </a>
+                        <a href="{{ path('app_admin_salle_edit', {'id': salle.id}) }}" class="btn btn-primary">
+                            <span class="fas fa-edit" aria-hidden="true"></span>
+                        </a>
+                        <a href="{{ path('app_admin_salle_delete_verification', {'id': salle.id}) }}" class="btn btn-danger">
+                            <span class="fas fa-trash" aria-hidden="true"></span>
+                        </a>
+                    </td>
+                </tr>
+            {% else %}
+                <tr>
+                    <td colspan="5"  scope="row">Aucune salle n'est enregistrée</td>
+                </tr>
+            {% endfor %}
         </tbody>
     </table>
 
@@ -44,4 +47,5 @@
         <span class="fas fa-plus-circle" aria-hidden="true"></span>
         Ajouter une nouvelle salle
     </a>
+
 {% endblock %}

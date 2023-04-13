@@ -1,47 +1,35 @@
-{% extends 'base.html.twig' %}
+<h2 class="mt-4">
+    Liste des variables de contrôle
+</h2>
 
-{% block title %}VariableDeControle index{% endblock %}
-
-{% block body %}
-    <h1>VariableDeControle index</h1>
-
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Id</th>
-                <th>Nom</th>
-                <th>Numero</th>
-                <th>Valeur</th>
-                <th>Controle</th>
-                <th>ValeurControle</th>
-                <th>ValeurHorodatage</th>
-                <th>Type</th>
-                <th>actions</th>
-            </tr>
-        </thead>
-        <tbody>
+<table class="table table-striped table-light">
+    <thead class="table-dark">
+        <tr>
+            <th>Numéro</th>
+            <th>Nom</th>
+            <th>Booléen</th>
+            <th>actions</th>
+        </tr>
+    </thead>
+    <tbody>
         {% for variable_de_controle in variable_de_controles %}
             <tr>
-                <td>{{ variable_de_controle.id }}</td>
-                <td>{{ variable_de_controle.nom }}</td>
-                <td>{{ variable_de_controle.numero }}</td>
-                <td>{{ variable_de_controle.valeur }}</td>
-                <td>{{ variable_de_controle.controle ? 'Yes' : 'No' }}</td>
-                <td>{{ variable_de_controle.valeurControle }}</td>
-                <td>{{ variable_de_controle.valeurHorodatage ? variable_de_controle.valeurHorodatage|date('Y-m-d H:i:s') : '' }}</td>
-                <td>{{ variable_de_controle.type }}</td>
-                <td>
-                    <a href="{{ path('app_variable_de_controle_show', {'id': variable_de_controle.id}) }}">show</a>
-                    <a href="{{ path('app_variable_de_controle_edit', {'id': variable_de_controle.id}) }}">edit</a>
+                <td scope="row">{{ variable_de_controle.numero }}</td>
+                <td scope="row">{{ variable_de_controle.nom }}</td>
+                <td scope="row">{{ variable_de_controle.estBooleen ? 'Oui' : 'Non' }}</td>
+                <td scope="row">
+                    <a href="{{ path('app_variable_de_controle_edit', {'id': variable_de_controle.id}) }}" class="btn btn-primary">
+                        <span class="fas fa-edit" aria-hidden="true"></span>
+                    </a>
+                    <a href="{{ path('app_variable_de_controle_delete_verification', {'id': variable_de_controle.id}) }}" class="btn btn-danger">
+                        <span class="fas fa-trash" aria-hidden="true"></span>
+                    </a>
                 </td>
             </tr>
         {% else %}
             <tr>
-                <td colspan="9">no records found</td>
+                <td colspan="9">Aucune variable de contrôle n'est enregistrée dans ce mécanisme</td>
             </tr>
         {% endfor %}
-        </tbody>
-    </table>
-
-    <a href="{{ path('app_variable_de_controle_new') }}">Create new</a>
-{% endblock %}
+    </tbody>
+</table>

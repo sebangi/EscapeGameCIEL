@@ -1,7 +1,9 @@
-<form method="post" class="btn btn-danger mt-4" action="{{ path('app_admin_salle_delete', {'id': salle.id}) }}" onsubmit="return confirm('Etes-vous certain de supprimer cette salle ?');">
-    <input type="hidden" name="_token" value="{{ csrf_token('delete' ~ salle.id) }}">
-    <a >
-        <span class="fas fa-trash" aria-hidden="true"></span>
-         Supprimer la salle
-    </a>
-</form>
+<a class="m-2">
+    <form method="post"action="{{ path('app_admin_salle_delete', {'id': salle.id}) }}" onsubmit="return true;">
+        <input type="hidden" name="_token" value="{{ csrf_token('delete' ~ salle.id) }}">
+        <button class="btn btn-danger">
+            <span class="fas fa-trash" aria-hidden="true"></span> Suppprimer
+        </button>
+    </form>
+</a>
+

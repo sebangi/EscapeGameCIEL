@@ -14,11 +14,7 @@ class VariableDeControleType extends AbstractType
         $builder
             ->add('nom')
             ->add('numero')
-            ->add('valeur')
-            ->add('controle')
-            ->add('valeurControle')
-            ->add('valeurHorodatage')
-            ->add('type')
+            ->add('estBooleen')
         ;
     }
 

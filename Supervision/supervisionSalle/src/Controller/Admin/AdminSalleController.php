@@ -72,7 +72,7 @@ class AdminSalleController extends AbstractController
         ]);
     }
 
-    #[Route('/{id}', name: 'app_admin_salle_delete', methods: ["POST"])]
+    #[Route('/{id}', name: 'app_admin_salle_delete', methods: ['POST'])]
     public function delete(Request $request, Salle $salle, SalleRepository $salleRepository): Response
     {
         if ($this->isCsrfTokenValid('delete'.$salle->getId(), $request->request->get('_token'))) {
@@ -81,5 +81,14 @@ class AdminSalleController extends AbstractController
         }
         
         return $this->redirectToRoute('app_admin_salle_index', [], Response::HTTP_SEE_OTHER);
+    }
+    
+    #[Route('/{id}/delete', name: 'app_admin_salle_delete_verification', methods: ['GET', 'POST'])]
+    public function deleteVerification(Request $request, Salle $salle): Response
+    {
+       return $this->render('admin/salle/delete.html.twig', [
+            'salle' => $salle,
+        ]);      
+       
     }
 }
