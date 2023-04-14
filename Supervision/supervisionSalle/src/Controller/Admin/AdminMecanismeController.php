@@ -17,7 +17,7 @@ class AdminMecanismeController extends AbstractController
     #[Route('/', name: 'app_mecanisme_index', methods: ['GET'])]
     public function index(MecanismeRepository $mecanismeRepository): Response
     {
-        return $this->render('mecanisme/index.html.twig', [
+        return $this->render('admin/mecanisme/index.html.twig', [
             'mecanismes' => $mecanismeRepository->findAll(),
         ]);
     }
@@ -34,12 +34,12 @@ class AdminMecanismeController extends AbstractController
             $mecanismeRepository->save($mecanisme, true);
             $this->addFlash('success', 'Mécanisme ajouté avec succès.');
             
-            return $this->render('mecanisme/show.html.twig', [
+            return $this->render('admin/mecanisme/show.html.twig', [
                 'mecanisme' => $mecanisme,
             ]);
         }
 
-        return $this->renderForm('mecanisme/new.html.twig', [
+        return $this->renderForm('admin/mecanisme/new.html.twig', [
             'mecanisme' => $mecanisme,
                 'salle' => $mecanisme->getSalle(),
             'form' => $form,
@@ -49,7 +49,7 @@ class AdminMecanismeController extends AbstractController
     #[Route('/{id}', name: 'app_mecanisme_show', methods: ['GET'])]
     public function show(Mecanisme $mecanisme): Response
     {
-        return $this->render('mecanisme/show.html.twig', [
+        return $this->render('admin/mecanisme/show.html.twig', [
             'mecanisme' => $mecanisme,
         ]);
     }
@@ -64,12 +64,12 @@ class AdminMecanismeController extends AbstractController
             $mecanismeRepository->save($mecanisme, true);
             $this->addFlash('success', 'Mécanisme modifié avec succès.');
             
-            return $this->render('mecanisme/show.html.twig', [
+            return $this->render('admin/mecanisme/show.html.twig', [
                 'mecanisme' => $mecanisme,
             ]);
         }
 
-        return $this->renderForm('mecanisme/edit.html.twig', [
+        return $this->renderForm('admin/mecanisme/edit.html.twig', [
             'mecanisme' => $mecanisme,
             'form' => $form,
         ]);
@@ -91,7 +91,7 @@ class AdminMecanismeController extends AbstractController
     #[Route('/{id}/delete', name: 'app_mecanisme_delete_verification', methods: ['GET', 'POST'])]
     public function deleteVerification(Request $request, Mecanisme $mecanisme): Response
     {
-       return $this->render('mecanisme/delete.html.twig', [
+       return $this->render('admin/mecanisme/delete.html.twig', [
             'mecanisme' => $mecanisme,
         ]);      
        

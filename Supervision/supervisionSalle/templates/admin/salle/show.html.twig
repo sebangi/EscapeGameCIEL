@@ -48,7 +48,7 @@
                             Mécanismes
                         </div>
                         <div class="card-body p-0">
-                            {{ include('mecanisme/index.html.twig', {'mecanismes': salle.mecanismes}) }}
+                            {{ include('admin/mecanisme/index.html.twig', {'mecanismes': salle.mecanismes}) }}
                         </div>  
                         <div class="card-footer">
                             <a href="{{ path('app_mecanisme_new', {'id': salle.id} ) }}" class="btn btn-primary">

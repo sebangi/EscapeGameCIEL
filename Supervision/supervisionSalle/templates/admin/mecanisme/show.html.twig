@@ -60,7 +60,7 @@
                             Variables de contrôle
                         </div>
                         <div class="card-body p-0">
-                            {{ include('variable_de_controle/index.html.twig', {'variable_de_controles': mecanisme.variables}) }}
+                            {{ include('admin/variable_de_controle/index.html.twig', {'variable_de_controles': mecanisme.variables}) }}
                         </div>  
                         <div class="card-footer">
                             <a href="{{ path('app_variable_de_controle_new', {'id': mecanisme.id} ) }}" class="btn btn-primary">

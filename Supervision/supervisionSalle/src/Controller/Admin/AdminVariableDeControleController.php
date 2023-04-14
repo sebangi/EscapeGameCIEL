@@ -17,7 +17,7 @@ class AdminVariableDeControleController extends AbstractController
     #[Route('/', name: 'app_variable_de_controle_index', methods: ['GET'])]
     public function index(VariableDeControleRepository $variableDeControleRepository): Response
     {
-        return $this->render('variable_de_controle/index.html.twig', [
+        return $this->render('admin/variable_de_controle/index.html.twig', [
             'variable_de_controles' => $variableDeControleRepository->findAll(),
         ]);
     }
@@ -37,7 +37,7 @@ class AdminVariableDeControleController extends AbstractController
             return $this->redirectToRoute('app_mecanisme_show', ['id' => $variableDeControle->getMecanisme()->getId()], Response::HTTP_SEE_OTHER);
         }
 
-        return $this->renderForm('variable_de_controle/new.html.twig', [
+        return $this->renderForm('admin/variable_de_controle/new.html.twig', [
             'variable_de_controle' => $variableDeControle,
             'mecanisme' => $variableDeControle->getMecanisme(),
             'form' => $form,
@@ -47,7 +47,7 @@ class AdminVariableDeControleController extends AbstractController
     #[Route('/{id}', name: 'app_variable_de_controle_show', methods: ['GET'])]
     public function show(VariableDeControle $variableDeControle): Response
     {
-        return $this->render('variable_de_controle/show.html.twig', [
+        return $this->render('admin/variable_de_controle/show.html.twig', [
             'variable_de_controle' => $variableDeControle,
         ]);
     }
@@ -65,7 +65,7 @@ class AdminVariableDeControleController extends AbstractController
             return $this->redirectToRoute('app_mecanisme_show', ['id' => $variableDeControle->getMecanisme()->getId()], Response::HTTP_SEE_OTHER);
         }
 
-        return $this->renderForm('variable_de_controle/edit.html.twig', [
+        return $this->renderForm('admin/variable_de_controle/edit.html.twig', [
             'variable_de_controle' => $variableDeControle,
             'mecanisme' => $variableDeControle->getMecanisme(),
             'form' => $form,
@@ -88,7 +88,7 @@ class AdminVariableDeControleController extends AbstractController
     #[Route('/{id}/delete', name: 'app_variable_de_controle_delete_verification', methods: ['GET', 'POST'])]
     public function deleteVerification(Request $request, VariableDeControle $vdc): Response
     {
-       return $this->render('variable_de_controle/delete.html.twig', [
+       return $this->render('admin/variable_de_controle/delete.html.twig', [
             'mecanisme' => $vdc->getMecanisme(),
             'variable_de_controle' => $vdc,
         ]);      
