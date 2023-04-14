@@ -4,6 +4,7 @@ namespace App\Entity;
 
 use App\Entity\Salle;
 use App\Repository\MecanismeRepository;
+use Symfony\Component\Validator\Constraints as Assert;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\DBAL\Types\Types;
@@ -33,9 +34,14 @@ class Mecanisme
     #[ORM\OneToMany(mappedBy: 'mecanisme', targetEntity: VariableDeControle::class, orphanRemoval: true)]
     private Collection $variables;
 
+    #[ORM\Column(length: 255)]
+    #[Assert\Ip]
+    private ?string $ip = null;
+
     public function __construct()
     {
         $this->variables = new ArrayCollection();
+        $this->ip = "0.0.0.0";
     }
 
     public function getId(): ?int
@@ -117,6 +123,18 @@ class Mecanisme
                 $variable->setMecanisme(null);
             }
         }
+
+        return $this;
+    }
+
+    public function getIp(): ?string
+    {
+        return $this->ip;
+    }
+
+    public function setIp(string $ip): self
+    {
+        $this->ip = $ip;
 
         return $this;
     }

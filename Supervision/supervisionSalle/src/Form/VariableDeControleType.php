@@ -22,6 +22,7 @@ class VariableDeControleType extends AbstractType
     {
         $resolver->setDefaults([
             'data_class' => VariableDeControle::class,
+            'translation_domain' => 'forms',
         ]);
     }
 }

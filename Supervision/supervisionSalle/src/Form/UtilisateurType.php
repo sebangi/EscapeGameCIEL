@@ -33,6 +33,7 @@ class UtilisateurType extends AbstractType
     {
         $resolver->setDefaults([
             'data_class' => Utilisateur::class,
+            'translation_domain' => 'forms',
             'nouveau' => false,
         ]);
     }

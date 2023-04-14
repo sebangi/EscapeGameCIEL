@@ -22,6 +22,7 @@ class SalleType extends AbstractType
     {
         $resolver->setDefaults([
             'data_class' => Salle::class,
+            'translation_domain' => 'forms',
         ]);
     }
 }

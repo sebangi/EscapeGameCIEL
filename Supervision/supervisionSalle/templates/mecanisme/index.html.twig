@@ -4,6 +4,7 @@
             <th scope="col">Numéro</th>
             <th scope="col">Nom</th>
             <th scope="col">Description</th>
+            <th scope="col">Adresse IP</th>
             <th scope="col">Actions</th>
         </tr>
     </thead>
@@ -13,6 +14,7 @@
                 <td scope="row">{{ mecanisme.numero }}</td>
                 <td scope="row">{{ mecanisme.nom }}</td>
                 <td scope="row">{{ mecanisme.Description }}</td>
+                <td scope="row">{{ mecanisme.Ip}}</td>
                 <td scope="row">
                     <a href="{{ path('app_mecanisme_show', {'id': mecanisme.id}) }}" class="btn btn-success">
                         Gérer

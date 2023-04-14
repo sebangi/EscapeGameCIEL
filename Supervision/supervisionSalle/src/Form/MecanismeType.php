@@ -15,6 +15,7 @@ class MecanismeType extends AbstractType
             ->add('nom')
             ->add('numero')
             ->add('description')
+            ->add('ip')
         ;
     }
 
@@ -22,6 +23,7 @@ class MecanismeType extends AbstractType
     {
         $resolver->setDefaults([
             'data_class' => Mecanisme::class,
+            'translation_domain' => 'forms',
         ]);
     }
 }

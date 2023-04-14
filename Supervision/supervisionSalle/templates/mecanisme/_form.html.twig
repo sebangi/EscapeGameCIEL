@@ -10,4 +10,13 @@
     <div class="col-4 mon_form_label">Description</div> 
     <div class="col-6">{{ form_widget(form.description) }}</div>   
 </div>  
+<div class="row justify-content-start custom-line m-2"> 
+    <div class="col-4 mon_form_label">Adresse IP</div> 
+    <div class="col-6">{{ form_widget(form.ip) }}</div>   
+</div> 
+<div class="row justify-content-start custom-line m-2"> 
+    <div class="col-4 mon_form_label"></div>
+    <div class="col-6 text-danger">{{ form_errors(form.ip) }}</div>
+</div> 
+
 
