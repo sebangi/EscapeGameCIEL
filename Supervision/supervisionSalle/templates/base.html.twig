@@ -36,6 +36,9 @@
         {% if is_granted('ROLE_ADMIN') %}
             {{ include('admin/_adminNavBar.html.twig') }}
         {% endif %}
+        {% if is_granted('ROLE_USER') %}
+            {{ include('supervision/_superviseurNavBar.html.twig') }}
+        {% endif %}
 
 
         {% for message in app.flashes('success') %}
